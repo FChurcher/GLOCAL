@@ -1,6 +1,6 @@
-# keeping empty /out dir
+# keeping only examples in /out dir
 /out/*
-!/out/.gitkeep
+!/out/example*
 
 # keeping empty out/debug dir
 !/out/debug
