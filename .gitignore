@@ -1,0 +1,9 @@
+/out/*
+!/out/debug
+/out/debug/*
+
+/bin
+/.settings
+
+.classpath
+.project
