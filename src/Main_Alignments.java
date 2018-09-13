@@ -20,7 +20,7 @@ public class Main_Alignments {
 //		} catch (FileNotFoundException e) { e.printStackTrace(); }
 		
 		
-		Sequence[] sequences = Settings.init("data\\test.fasta", "data\\locality.txt", "data\\AGCT.txt", "data\\codes.txt");
+		Sequence[] sequences = Settings.init("data\\test.fasta", "data\\locality.loc", "data\\AGCT.sco", "data\\codes.cod");
 		for (Sequence sequence : sequences) {
 			//System.out.println(sequence);
 		}

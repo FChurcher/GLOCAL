@@ -12,6 +12,7 @@ import model.Sequence;
  * @author Falco, inspired by Alignments/src/container/generalContainer.java written by Nancy
  */
 public class Settings {
+  // static values an methods
 	/** the scoring matrix (e.g. BLOSUM, PAM) */
 	public static Scoring scoring;
 	/** further coeds (e.g. 'N' for (A or G or T or C)) */

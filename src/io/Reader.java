@@ -10,9 +10,20 @@ import java.util.HashMap;
 import model.Scoring;
 import model.Sequence;
 
+/**
+ * a "static" Class to read input files
+ * @author Falco
+ */
 public class Reader {
+  // static values an methods
+	/** the reader */
 	private static BufferedReader reader;
 	
+	/**
+	 * reads the Sequences froma n imput file
+	 * @param path - the path of the file to read
+	 * @return - the Sequences
+	 */
 	public static Sequence[] readSequences(String path){
 		try {
 			Reader.reader = new BufferedReader(new FileReader(path));
@@ -39,6 +50,11 @@ public class Reader {
 		return sequecnes.toArray(new Sequence[sequecnes.size()]);
 	}
 	
+	/**
+	 * reads the Loclities froma n imput file
+	 * @param path - the path of the file to read
+	 * @return - the Loclities
+	 */
 	public static Sequence[] readLocality(String path, Sequence[] sequences) {
 		try {
 			Reader.reader = new BufferedReader(new FileReader(path));
@@ -59,6 +75,11 @@ public class Reader {
 		return sequences;
 	}
 	
+	/**
+	 * reads the ScoreMatrix froma n imput file
+	 * @param path - the path of the file to read
+	 * @return - the ScoreMatrix
+	 */
 	public static Scoring readScoreMatrix(String path) {
 		try {
 			Reader.reader = new BufferedReader(new FileReader(path));
@@ -90,6 +111,11 @@ public class Reader {
 		return new Scoring(chars, scores);
 	}
 	
+	/**
+	 * reads the codes froma n imput file
+	 * @param path - the path of the file to read
+	 * @return - the codes
+	 */
 	public static HashMap<Character, ArrayList<Character>> readCodes(String path){
 		try {
 			Reader.reader = new BufferedReader(new FileReader(path));
@@ -114,16 +140,20 @@ public class Reader {
 		return codes;
 	}
 	
+	/**
+	 * reads a single line from the file
+	 * @param commentsPrefix - the prefix of coments (to ignore them) 
+	 * @return - a line of the file (empty lines and comments are skipped)
+	 */
 	private static String readLine(String commentsPrefix) {
 		try {
 			String line;
 			while ((line = reader.readLine()) != null) {	
 				line = line.trim();
-				if (line.startsWith(commentsPrefix)) { continue; }					// skip comments
-				if (line.equals("")) { continue; }									// skip empty lines
 				if (line.contains(commentsPrefix)) {
-					line = line.substring(0, line.indexOf(commentsPrefix)).trim(); 	// skip comments at the end of the line
+					line = line.substring(0, line.indexOf(commentsPrefix)).trim(); 	// remove comments
 				}
+				if (line.equals("")) { continue; }									// skip empty lines
 				break;
 			}
 			return line;

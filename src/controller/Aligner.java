@@ -108,92 +108,88 @@ public class Aligner {
 	}
 
 	/**
-		 * activating all the finishable sequences pseudorecursively (used by generateHasseDiagram)
-		 * @param oldStates - list that shall hold all the obtained states
-		 * @param states - the States list for the actual iteration
-		 * @param newStates - the States list for the obtained States from the action iteration
-		 * @param finishable - a list of indices of activable Sequences
-		 */
-		private void activate(ArrayList<State> oldStates, ArrayList<State> states, ArrayList<Integer> activatable) {
-			ArrayList<State> newStates = new ArrayList<>();
-			while (true) {
-				for (Integer i : activatable) {
-					for (int j = 0; j < states.size(); j++) {					// activate all the left local sequences in each state
-						State newState = (State) states.get(j).clone();
-						if (newState.activate(i)) {
-							newState.order();									// put the indexlists in ascending order
-							if (!newStates.contains(newState)) { 
-								newStates.add(newState); 
-							}
+	 * activating all the finishable sequences pseudorecursively (used by generateHasseDiagram)
+	 * @param oldStates - list that shall hold all the obtained states
+	 * @param states - the States list for the actual iteration
+	 * @param newStates - the States list for the obtained States from the action iteration
+	 * @param finishable - a list of indices of activable Sequences
+	 */
+	private void activate(ArrayList<State> oldStates, ArrayList<State> states, ArrayList<Integer> activatable) {
+		ArrayList<State> newStates = new ArrayList<>();
+		while (true) {
+			for (Integer i : activatable) {
+				for (int j = 0; j < states.size(); j++) {					// activate all the left local sequences in each state
+					State newState = (State) states.get(j).clone();
+					if (newState.activate(i)) {
+						newState.order();									// put the indexlists in ascending order
+						if (!newStates.contains(newState)) { 
+							newStates.add(newState); 
 						}
 					}
 				}
-				if (newStates.size() == 0) {
-					break;
-				}
-	//////////////////////////////////////////////////////
-				//System.out.println("activating:");
-				for (State state : newStates) {
-					//System.out.println(state);
-				}
-	//////////////////////////////////////////////////////
-				for (State newstate : newStates) {								// connecting all old states to the new states
-					for (State oldstate : oldStates) {							// connect old to new (if valid)
-						State.connect(oldstate, newstate);
-					}
-					for (State newState2 : newStates) {							// connect new to new (if valid)
-						State.connect(newstate, newState2);
-					}
-				}	
-				oldStates.addAll(newStates);
-				states = newStates;
-				newStates = new ArrayList<>();
 			}
+			if (newStates.size() == 0) {
+				break;
+			}
+			//System.out.println("activating:");
+			for (State state : newStates) {
+				//System.out.println(state);
+			}
+			for (State newstate : newStates) {								// connecting all old states to the new states
+				for (State oldstate : oldStates) {							// connect old to new (if valid)
+					State.connect(oldstate, newstate);
+				}
+				for (State newState2 : newStates) {							// connect new to new (if valid)
+					State.connect(newstate, newState2);
+				}
+			}	
+			oldStates.addAll(newStates);
+			states = newStates;
+			newStates = new ArrayList<>();
 		}
+	}
 
 	/**
-		 * finishing all the finishable sequences pseudorecursively (used by generateHasseDiagram)
-		 * @param oldStates - list that shall hold all the obtained states
-		 * @param states - the States list for the actual iteration
-		 * @param newStates - the States list for the obtained States from the action iteration
-		 * @param finishable - a list of indices of finishable Sequences
-		 */
-		private void finish(ArrayList<State> oldStates, ArrayList<State> states, ArrayList<Integer> finishable) {
-			ArrayList<State> newStates = new ArrayList<>();
-			while (true) {
-				for (Integer i : finishable) {
-					for (int j = 0; j < states.size(); j++) {					// finish all the right global sequences in each state
-						State newState = (State) states.get(j).clone();
-						if (newState.finish(i)) {
-							
-							if (newState.isOrdered()) {
-								newStates.add(newState);
-							}
+	 * finishing all the finishable sequences pseudorecursively (used by generateHasseDiagram)
+	 * @param oldStates - list that shall hold all the obtained states
+	 * @param states - the States list for the actual iteration
+	 * @param newStates - the States list for the obtained States from the action iteration
+	 * @param finishable - a list of indices of finishable Sequences
+	 */
+	private void finish(ArrayList<State> oldStates, ArrayList<State> states, ArrayList<Integer> finishable) {
+		ArrayList<State> newStates = new ArrayList<>();
+		while (true) {
+			for (Integer i : finishable) {
+				for (int j = 0; j < states.size(); j++) {					// finish all the right global sequences in each state
+					State newState = (State) states.get(j).clone();
+					if (newState.finish(i)) {
+						
+						if (newState.isOrdered()) {
+							newStates.add(newState);
 						}
 					}
 				}
-				if (newStates.size() == 0) {
-					break;
-				}
-	//////////////////////////////////////////////////////
-				//System.out.println("finishing:");
-				for (State state : newStates) {
-					//System.out.println(state);
-				}
-	//////////////////////////////////////////////////////
-				for (State newstate : newStates) {								// connecting all old states to the new states
-					for (State oldstate : oldStates) {							// connect old to new (if valid)
-						State.connect(oldstate, newstate);
-					}
-					for (State newState2 : newStates) {							// connect new to new (if valid)
-						State.connect(newstate, newState2);
-					}
-				}
-				oldStates.addAll(newStates);
-				states = newStates;
-				newStates = new ArrayList<>();
 			}
+			if (newStates.size() == 0) {
+				break;
+			}
+			//System.out.println("finishing:");
+			for (State state : newStates) {
+				//System.out.println(state);
+			}
+			for (State newstate : newStates) {								// connecting all old states to the new states
+				for (State oldstate : oldStates) {							// connect old to new (if valid)
+					State.connect(oldstate, newstate);
+				}
+				for (State newState2 : newStates) {							// connect new to new (if valid)
+					State.connect(newstate, newState2);
+				}
+			}
+			oldStates.addAll(newStates);
+			states = newStates;
+			newStates = new ArrayList<>();
 		}
+	}
 		
 	private void markFinalStates(ArrayList<State> states, Sequence[] sequences) {
 		for (State state : states) {
@@ -237,8 +233,6 @@ public class Aligner {
 	/** computes a states scoreMatrix */
 	private void compute (State state, HasseGraph hasseGraph) {
 		state.setScoreMatrix(computeMatrix(state, hasseGraph));
-		//System.out.println(state);
-		//System.out.println(state.getScoreMatrix());
 	}
 
 	/**
@@ -284,11 +278,6 @@ public class Aligner {
 			while (true) {															// iteration over every possible i-dimensional (hyper) plane starts here
 				
 				computeMatrixPlane(state, scoreMatrix, sequences, allSequences, indicesToCount, hasseGraph);// compute Matrix plane using the chosen Sequences (Dimensions)
-				if (indicesToCount != null) { //System.out.print("indicesToCount:          ");
-					for (int index : indicesToCount) {
-						//System.out.print(index + ",");	
-					}
-				} //System.out.println();
 				
 				indicesToCount[indicesToCount.length-1]++;										// iteration logic (binomial (n over i))
 				for (int j = indicesToCount.length -1 ; j > 0 ; j--) {							// just go down to 1 ( j > 0 )
@@ -417,8 +406,6 @@ public class Aligner {
 	 * @return
 	 */
 	private IndexVector getMaxScoreCandidateIndices(State actualState, State previousState, Sequence[] sequences, Sequence[] allSequences, IndexVector actualStateIPattern, int[] indicesToCount){
-		//# check that previus candidates dont exceed the sequence lengths of their seqences
-		//# check that prevrious candidates dont have negetive index
 		ArrayList<Integer> actualActiveIndices;
 		if (indicesToCount == null) {
 			actualActiveIndices = actualState.getActive();	
@@ -471,7 +458,6 @@ public class Aligner {
 		//System.out.println("matchingIPattern:        " + matchingIPattern);
 		
 		if (matchingPiPattern.length() == 0) {
-			//System.out.println("previousState.getMaxScoreIndices();");
 			return previousState.getMaxScoreIndices();
 		}
 		
@@ -580,10 +566,10 @@ public class Aligner {
 		}
 		
 		if (maxScoreCandidateIPattern != null) {
-//			System.out.println("maxscoreCandidateIPattern: " + maxScoreCandidateIPattern + " Score: " + maxScore);// DEBUGGING
+			//System.out.println("maxscoreCandidateIPattern: " + maxScoreCandidateIPattern + " Score: " + maxScore);// DEBUGGING
 			return maxScoreCandidateIPattern;
 		} else {
-//			System.out.println("NO CANDIDATES");
+			//System.out.println("NO CANDIDATES");
 			return null;																				// without iPattern no piPattern
 		}
 	}
@@ -615,7 +601,6 @@ public class Aligner {
 				piPattern.set(-1, i);																	// read one if new sequence is opened, so pipattern is 1 (-1 for negative pipattern)
 			}
 		}
-		//System.out.println("PI PATTERN: " + piPattern);
 		return piPattern;
 	}
 	
@@ -665,7 +650,7 @@ public class Aligner {
 		State actualState = hasseGraph.getMaxFinalState();						// initialize with maxFinalState of the HasseGraph
 		//System.out.println("maxfinalstate: " + hasseGraph.getMaxFinalState());
 		//System.out.println(hasseGraph.getInitialState().getScoreMatrix());
-//		//System.out.println(hasseGraph.getInitialState().getFollowing().get(0).getScoreMatrix());
+		//System.out.println(hasseGraph.getInitialState().getFollowing().get(0).getScoreMatrix());
 		
 		Sequence[] sequences = new Sequence[actualState.getActive().size()];
 		for (int i = 0; i < sequences.length; i++) {
