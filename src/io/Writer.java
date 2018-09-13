@@ -1,6 +1,7 @@
 package io;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -14,8 +15,8 @@ import java.util.HashMap;
  */
 public class Writer {
   // static values an methods
-	public static final String DIR_NAME_OUTPUT = "out/";
-	public static final String DIR_NAME_DEBUG = "out/debug/";
+	public static final String DIR_NAME_OUTPUT = "out" + File.separator;
+	public static final String DIR_NAME_DEBUG = "out" + File.separator + "debug" + File.separator;
 	
 	/** stores all the writers */
 	private static HashMap<String, BufferedWriter> writers = new HashMap<String, BufferedWriter>();

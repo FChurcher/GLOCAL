@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -17,6 +18,8 @@ public class Settings {
 	public static Scoring scoring;
 	/** further coeds (e.g. 'N' for (A or G or T or C)) */
 	public static HashMap<Character, ArrayList<Character>> codes;
+	/** the name of this alignment */
+	public static String name;
 	
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
@@ -28,22 +31,25 @@ public class Settings {
 		}
 		Settings.codes = Reader.readCodes(codeFilePath);
 		Sequence[] sequences = Reader.readLocality(localityPath,  Reader.readSequences(sequencesFilePath));
+		if (sequencesFilePath.contains(File.separator)) {
+			Settings.name = sequencesFilePath.substring(sequencesFilePath.lastIndexOf(File.separator), sequencesFilePath.lastIndexOf("."));	
+		}
 		return sequences;
 	}
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
 	public static Sequence[] init(String sequencesLocalitiesName, String scoringFilePath, String codeFilePath) {
-		return init("data\\"+sequencesLocalitiesName+".fasta", "data\\"+sequencesLocalitiesName+".loc", scoringFilePath, codeFilePath);
+		return init("data\\"+sequencesLocalitiesName + ".fasta", "data" + File.separator + sequencesLocalitiesName + ".loc", scoringFilePath, codeFilePath);
 	}
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
 	public static Sequence[] init(String sequencesLocalitiesName, String scoringFilePath) {
-		return init(sequencesLocalitiesName, scoringFilePath, "data\\default_codes.cod");
+		return init(sequencesLocalitiesName, scoringFilePath, "data" + File.separator + "default_codes.cod");
 	}
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
 	public static Sequence[] init(String sequencesLocalitiesName) {
-		return init(sequencesLocalitiesName, "data\\default_scores.sco");
+		return init(sequencesLocalitiesName, "data" + File.separator + "default_scores.sco");
 	}
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
