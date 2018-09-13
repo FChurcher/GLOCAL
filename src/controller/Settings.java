@@ -19,13 +19,7 @@ public class Settings {
 	public static HashMap<Character, ArrayList<Character>> codes;
 	
 	
-	/**
-	 * reads all the given files and extracts sequences, locality and scoring
-	 * @param scoringFilePath
-	 * @param codeFilePath
-	 * @param sequencesFilePath
-	 * @return the given sequences
-	 */
+	/** reads all the given files and extracts sequences, locality and scoring */
 	public static Sequence[] init(String sequencesFilePath, String localityPath, String scoringFilePath, String codeFilePath) {
 		if (scoringFilePath == null) {
 			Settings.scoring = null;
@@ -35,6 +29,26 @@ public class Settings {
 		Settings.codes = Reader.readCodes(codeFilePath);
 		Sequence[] sequences = Reader.readLocality(localityPath,  Reader.readSequences(sequencesFilePath));
 		return sequences;
+	}
+	
+	/** reads all the given files and extracts sequences, locality and scoring */
+	public static Sequence[] init(String sequencesLocalitiesName, String scoringFilePath, String codeFilePath) {
+		return init("data\\"+sequencesLocalitiesName+".fasta", "data\\"+sequencesLocalitiesName+".loc", scoringFilePath, codeFilePath);
+	}
+	
+	/** reads all the given files and extracts sequences, locality and scoring */
+	public static Sequence[] init(String sequencesLocalitiesName, String scoringFilePath) {
+		return init(sequencesLocalitiesName, scoringFilePath, "data\\default_codes.cod");
+	}
+	
+	/** reads all the given files and extracts sequences, locality and scoring */
+	public static Sequence[] init(String sequencesLocalitiesName) {
+		return init(sequencesLocalitiesName, "data\\default_scores.sco");
+	}
+	
+	/** reads all the given files and extracts sequences, locality and scoring */
+	public static Sequence[] init() {
+		return init("example");
 	}
 	
 	public static String printToString() { 

@@ -40,6 +40,11 @@ public class TimeStampMaganer {
 		System.out.println("[" + differenceToFirst + "|" + differenceToLast + "]\t" + messege);
 	}
 	
+	public long getActualRunTime() {
+		long actualStamp = getSystemSeconds();
+		return actualStamp - firstStamp;
+	}
+	
 	public long getSystemSeconds() {
 		return System.currentTimeMillis()/1000;
 	}
