@@ -6,10 +6,8 @@
 !/out/debug
 /out/debug/*
 
-# ignoring dirs
+# ignoring eclpise specific dirs and files
 /bin
 /.settings
-
-# ignoring files
 .classpath
 .project
