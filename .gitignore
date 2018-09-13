@@ -3,6 +3,7 @@
 !/out/example*
 !/out/debug
 /out/debug/*
+!/out/debug/.gitkeep
 
 # keep only default end example
 /data/*
