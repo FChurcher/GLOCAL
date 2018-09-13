@@ -1,10 +1,15 @@
+# keeping empty /out dir
 /out/*
 !/out/.gitkeep
+
+# keeping empty out/debug dir
 !/out/debug
 /out/debug/*
 
+# ignoring dirs
 /bin
 /.settings
 
+# ignoring files
 .classpath
 .project
