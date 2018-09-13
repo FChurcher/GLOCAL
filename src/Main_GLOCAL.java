@@ -10,10 +10,6 @@ import ui.TimeStampMaganer;
 public class Main_GLOCAL {
 
 	public static void main(String[] args) {
-//		try {
-//			System.setOut(new PrintStream(new BufferedOutputStream(new FileOutputStream("log.log"))));
-//		} catch (FileNotFoundException e) { e.printStackTrace(); }
-		
 		TimeStampMaganer.getInstance().printGuide();
 		TimeStampMaganer.getInstance().printTimeStamp("reading input files...");
 		//Sequence[] sequences = Settings.init("t4long");

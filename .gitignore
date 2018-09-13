@@ -1,8 +1,6 @@
-# keeping only examples in /out dir
+# keeping only examples in /out dir and keeping /out/debug dir
 /out/*
 !/out/example*
-
-# keeping empty out/debug dir
 !/out/debug
 /out/debug/*
 
