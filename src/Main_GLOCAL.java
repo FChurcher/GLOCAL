@@ -4,9 +4,10 @@ import controller.Settings;
 import io.Writer;
 import model.Alignment;
 import model.Sequence;
+import ui.ArgsParser;
 import ui.TimeStampMaganer;
 
-public class Main_Alignments {
+public class Main_GLOCAL {
 
 	public static void main(String[] args) {
 //		try {
@@ -15,7 +16,8 @@ public class Main_Alignments {
 		
 		TimeStampMaganer.getInstance().printGuide();
 		TimeStampMaganer.getInstance().printTimeStamp("reading input files...");
-		Sequence[] sequences = Settings.init();
+		//Sequence[] sequences = Settings.init("t4long");
+		Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
 		for (Sequence sequence : sequences) {
 			System.out.println(sequence);
 		}
