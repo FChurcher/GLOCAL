@@ -12,8 +12,8 @@ public class Main_GLOCAL {
 	public static void main(String[] args) {
 		TimeStampMaganer.getInstance().printGuide();
 		TimeStampMaganer.getInstance().printTimeStamp("reading input files...");
-		Sequence[] sequences = Settings.init("t4long");
-		//Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
+		//Sequence[] sequences = Settings.init("t4long");
+		Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
 		for (Sequence sequence : sequences) {
 			System.out.println(sequence);
 		}

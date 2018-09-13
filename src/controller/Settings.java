@@ -39,7 +39,7 @@ public class Settings {
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
 	public static Sequence[] init(String sequencesLocalitiesName, String scoringFilePath, String codeFilePath) {
-		return init("data\\"+sequencesLocalitiesName + ".fasta", "data" + File.separator + sequencesLocalitiesName + ".loc", scoringFilePath, codeFilePath);
+		return init("data" + File.separator + sequencesLocalitiesName + ".fasta", "data" + File.separator + sequencesLocalitiesName + ".loc", scoringFilePath, codeFilePath);
 	}
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
