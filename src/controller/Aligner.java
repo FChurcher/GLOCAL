@@ -10,6 +10,7 @@ import model.Matrix;
 import model.Sequence;
 import model.hasse.HasseGraph;
 import model.hasse.State;
+import ui.TimeStampMaganer;
 
 /**
  * The Aligner Class is a singleton class containing methods to compute Alignments
@@ -37,12 +38,11 @@ public class Aligner {
 	 * @return the Alignment of the given Sequences
 	 */
 	public Alignment align(Sequence... sequences){
+		TimeStampMaganer.getInstance().printTimeStamp("generating Hassegraph... ");
 		HasseGraph hasseGraph = generateHasseGraph(sequences);
+		TimeStampMaganer.getInstance().printTimeStamp("computing " + hasseGraph.getStates().size() + " matrices... ");
 		compute(hasseGraph);
-		//System.out.println(hasseGraph);
-		for (State state : hasseGraph.getStates()) {
-			//System.out.println(state + "\n" + state.getScoreMatrix());
-		}
+		TimeStampMaganer.getInstance().printTimeStamp("backtracking... ");
 		return new Alignment(backtrack(hasseGraph), hasseGraph);
 	}
 	
@@ -208,6 +208,7 @@ public class Aligner {
 	public void compute (HasseGraph hasseGraph) {
 		ArrayList<State> statesToCompute = new ArrayList<>(hasseGraph.getStates());
 		compute(hasseGraph.getInitialState(), hasseGraph);
+		System.out.print("#");
 		statesToCompute.remove(hasseGraph.getInitialState());
 		while (true) {
 			if (statesToCompute.size() == 0) { break; }
@@ -224,6 +225,7 @@ public class Aligner {
 				if (computable) {
 					compute(state, hasseGraph);
 					statesToCompute.remove(state);
+					System.out.print("#");
 					i--;
 				}
 			}

@@ -1,12 +1,12 @@
 # global = 1; local = 0
 # leftglobal rightglobal
 
->seq1
-false false
->seq2
-false false
->seq3
-false false
+#>seq1
+#false false
+#>seq2
+#false false
+#>seq3
+#false false
 
 #>dog_3726
 #false false
@@ -15,14 +15,14 @@ false false
 #>pig_2314
 #false false
 
-#>NP_001269509.1 ubiquitin-conjugating enzyme E2 variant 1 isoform i [Homo sapiens]
-#false false
-#>NP_001269504.1 ubiquitin-conjugating enzyme E2 variant 1 isoform h [Homo sapiens]
-#false false
-#>NP_001244328.1 ubiquitin-conjugating enzyme E2 variant 1 isoform g [Homo sapiens]
-#true true
-#>NP_001244325.1 ubiquitin-conjugating enzyme E2 variant 1 isoform f [Homo sapiens]
-#true true
+>NP_001269509.1 ubiquitin-conjugating enzyme E2 variant 1 isoform i [Homo sapiens]
+true true
+>NP_001269504.1 ubiquitin-conjugating enzyme E2 variant 1 isoform h [Homo sapiens]
+true true
+>NP_001244328.1 ubiquitin-conjugating enzyme E2 variant 1 isoform g [Homo sapiens]
+false false
+>NP_001244325.1 ubiquitin-conjugating enzyme E2 variant 1 isoform f [Homo sapiens]
+false false
 
 #>NP_001244324.1 ubiquitin-conjugating enzyme E2 variant 1 isoform e [Homo sapiens]
 #false false
