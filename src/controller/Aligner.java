@@ -230,6 +230,7 @@ public class Aligner {
 				}
 			}
 		}
+		System.out.println();
 	}
 
 	/** computes a states scoreMatrix */

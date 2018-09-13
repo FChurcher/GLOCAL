@@ -22,23 +22,22 @@ public class Main_Alignments {
 		
 		TimeStampMaganer.getInstance().printGuide();
 		TimeStampMaganer.getInstance().printTimeStamp("reading input files...");
-		Sequence[] sequences = Settings.init("data\\sequences.fasta", "data\\locality.loc", "data\\AGCT.sco", "data\\codes.cod");
+		Sequence[] sequences = Settings.init("data\\test.fasta", "data\\locality.loc", "data\\AGCT.sco", "data\\codes.cod");
 		for (Sequence sequence : sequences) {
 			System.out.println(sequence);
 		}
 		
 		TimeStampMaganer.getInstance().printTimeStamp("aligning...");
 		Alignment a = Aligner.getInstance().align(sequences);
-		System.out.println(a);
+		//System.out.println(a);
 		
-		System.out.print("writing files... ");
+		TimeStampMaganer.getInstance().printTimeStamp("writing files...");
 		String writername = "alignment";
 		Writer.registerWriter(Writer.DIR_NAME_OUTPUT, writername);
 		Writer.write(writername, Settings.printToString() + "\n\n");
 		Writer.write(writername, a.toString() + "\n");
 		//Writer.write(writername, a.getHasseGraph().toLongString());
 		Writer.closeAll();
-		
-		System.out.println("done.");
+		TimeStampMaganer.getInstance().printTimeStamp("done");
 	}
 }
