@@ -32,7 +32,7 @@ public class Settings {
 		Settings.codes = Reader.readCodes(codeFilePath);
 		Sequence[] sequences = Reader.readLocality(localityPath,  Reader.readSequences(sequencesFilePath));
 		if (sequencesFilePath.contains(File.separator)) {
-			Settings.name = sequencesFilePath.substring(sequencesFilePath.lastIndexOf(File.separator), sequencesFilePath.lastIndexOf("."));	
+			Settings.name = sequencesFilePath.substring(sequencesFilePath.lastIndexOf(File.separator)+1, sequencesFilePath.lastIndexOf("."));	
 		}
 		return sequences;
 	}
@@ -54,7 +54,7 @@ public class Settings {
 	
 	/** reads all the given files and extracts sequences, locality and scoring */
 	public static Sequence[] init() {
-		return init("example");
+		return init("data" + File.separator + "example");
 	}
 	
 	public static String printToString() { 

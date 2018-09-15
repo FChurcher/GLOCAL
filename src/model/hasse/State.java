@@ -119,6 +119,26 @@ public class State {
 		s += "})";
 		return s;
 	}
+	
+	/** @return a short String representation of this object */
+	public String toGraphString() {
+		String s = "";
+		for (int i = 0; i < ready.size(); i++) {
+			s += ready.get(i);
+			if (i < ready.size()-1) { s += ""; }
+		}
+		s += "_";
+		for (int i = 0; i < active.size(); i++) {
+			s += active.get(i);
+			if (i < active.size()-1) { s += ""; }
+		}
+		s += "_";
+		for (int i = 0; i < done.size(); i++) {
+			s += done.get(i);
+			if (i < done.size()-1) { s += ""; }
+		}
+		return s;
+	}
 
 	/** @return a new State with the same ready, active and done lists, but empty previous and following lists and initialState = false and finalState = false */
 	@Override

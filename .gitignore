@@ -1,6 +1,6 @@
 # keeping only one example in /out dir and keeping /out/debug dir
 /out/*
-!/out/example_2018_09_13_19_07_28.txt
+!/out/example*
 !/out/debug
 /out/debug/*
 !/out/debug/.gitkeep

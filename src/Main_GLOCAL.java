@@ -12,8 +12,8 @@ public class Main_GLOCAL {
 	public static void main(String[] args) {
 		TimeStampMaganer.getInstance().printGuide();
 		TimeStampMaganer.getInstance().printTimeStamp("reading input files...");
-		//Sequence[] sequences = Settings.init("t5medium");
-		Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
+		Sequence[] sequences = Settings.init();
+		//Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
 		for (Sequence sequence : sequences) {
 			System.out.println(sequence);
 		}
@@ -28,6 +28,10 @@ public class Main_GLOCAL {
 		Writer.write(writername, Settings.printToString() + "\n\n");
 		Writer.write(writername, a.toString() + "\n");
 		//Writer.write(writername, a.getHasseGraph().toLongString());
+		
+		String graphWriterName = Settings.name + "_graph";
+		Writer.registerWriter(Writer.DIR_NAME_OUTPUT, graphWriterName);
+		Writer.write(graphWriterName, a.getHasseGraph());
 		Writer.closeAll();
 		TimeStampMaganer.getInstance().printTimeStamp("done");
 	}

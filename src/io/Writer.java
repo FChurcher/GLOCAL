@@ -9,6 +9,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
+import controller.Settings;
+import model.hasse.HasseGraph;
+import model.hasse.State;
+
 /**
  * a static Class to write output files
  * @author Falco
@@ -46,6 +50,21 @@ public class Writer {
 	public static void write(String name, String text) {
 		try {
 			writers.get(name).write(text);
+		} catch (IOException e) { e.printStackTrace(); }
+	}
+	
+	public static void write(String name, HasseGraph hasseGraph) {
+		try {
+			BufferedWriter writer = writers.get(name);
+			StringBuilder s = new StringBuilder();
+			s.append("digraph ").append(Settings.name).append(" {\n");
+			for (State state : hasseGraph.getStates()) {
+				for (State followingState : state.getFollowing()) {
+					s.append("\t").append(state.toGraphString()).append(" -> " + followingState.toGraphString()).append(";\n");
+				}
+			}
+			s.append("}");
+			writer.write(s.toString());
 		} catch (IOException e) { e.printStackTrace(); }
 	}
 	
