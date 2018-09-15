@@ -7,10 +7,8 @@
 
 # keep only default end example
 #/data/*
-!/data/default_codes.cod
-!/data/default_scores.sco
-!/data/example.fasta
-!/data/example.loc
+!/data/default_*
+!/data/example.*
 
 # ignoring eclpise specific dirs and files
 /bin
