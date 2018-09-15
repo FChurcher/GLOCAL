@@ -1,0 +1,43 @@
+########################################
+# Program: water
+# Rundate: Sat 15 Sep 2018 14:15:55
+# Commandline: water
+#    -auto
+#    -stdout
+#    -asequence emboss_water-I20180915-141555-0153-36522599-p1m.asequence
+#    -bsequence emboss_water-I20180915-141555-0153-36522599-p1m.bsequence
+#    -datafile EDNAFULL
+#    -gapopen 1.0
+#    -gapextend 1.0
+#    -aformat3 pair
+#    -snucleotide1
+#    -snucleotide2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: s1
+# 2: s2
+# Matrix: EDNAFULL
+# Gap_penalty: 1.0
+# Extend_penalty: 1.0
+#
+# Length: 22
+# Identity:      14/22 (63.6%)
+# Similarity:    14/22 (63.6%)
+# Gaps:           8/22 (36.4%)
+# Score: 62.0
+# 
+#
+#=======================================
+
+s1                 1 GCG----CGCGCGCGC-AAAAA     17
+                     ||     |||||| |  |||||
+s2                 1 GC-TTTTCGCGCG-G-GAAAAA     19
+
+
+#---------------------------------------
+#---------------------------------------
