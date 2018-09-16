@@ -1,4 +1,4 @@
-# keeping only one example in /out dir and keeping /out/debug dir
+# keep only one example in /out dir and keeping /out/debug dir
 /out/*
 !/out/example*
 !/out/debug
@@ -10,8 +10,11 @@
 !/data/default_*
 !/data/example.*
 
-# ignoring eclpise specific dirs and files
+# ignore eclpise specific dirs and files
 /bin
 /.settings
 .classpath
 .project
+
+# ignore log files
+*.log
