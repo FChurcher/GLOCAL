@@ -6,3 +6,6 @@ Multiple sequence alignments are a crucial intermediate step in a plethora of da
 GLOCAL is the first implementation of partially local multiple alignments of a few sequences and provides convenient access to this family of specialized alignment algorithms.
 
 source: https://github.com/Nunca131/implementationGLOCAL
+
+http://www.compbio.dundee.ac.uk/downloads/oxbench/
+http://www.lbgi.fr/balibase/
