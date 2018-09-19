@@ -13,6 +13,8 @@
 # ignore eclpise specific dirs and files
 /bin
 /.settings
+.project
+.classpath
 
 # ignore log files
 *.log
