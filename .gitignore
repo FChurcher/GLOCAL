@@ -10,11 +10,19 @@
 !/data/default_*
 !/data/example.*
 
-# ignore eclpise specific dirs and files
+# ignore eclpise specific dirs and files for GLOCAL
 /bin
 /.settings
-.project
-.classpath
+#.project
+#.classpath
+
+# ignore eclpise specific dirs and files for measures
+/measures/bin
+/measures/.settings
+#/measures/.project
+#/measures/.classpath
+
+
 
 # ignore log files
 *.log
