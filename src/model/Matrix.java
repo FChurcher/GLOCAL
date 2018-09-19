@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 /**
  * Objects of this class are representing represent lengths.length-dimensional Matrices stored in 1-dimensional matrices. lengths.length-dimensional indices are mapped to 1-dimensional indices.
  * @author Falco
