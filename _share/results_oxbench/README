@@ -1,0 +1,10 @@
+
+Alignment files for the master data set.
+
+Files are in Fasta format. Regions of the alignments that are defined 
+as structurally conserved regions (SCRs) are represented in uppercase 
+letters. Regions not in SCRs are in lowercase letters.
+
+An SCR is a contiguous set of 3 or more alignment columns for which
+the STAMP Pij' score is 6 or greater in each column. See the Oxbench
+paper for more details.

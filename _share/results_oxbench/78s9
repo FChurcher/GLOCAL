@@ -1,0 +1,28 @@
+>1fga-1-GJB | (cluster A) sequence |  160 residues
+--------------PKRLYcKNGGFFLRih-----pdGRVDGV--rekSDPHIKLQLQAeergvvSIKgv-caNRYLAMk
+---edGRLLASK---cvTDECFFFERLesnnyNTYRSRKy--tSWYVAL-krt--gQYKLGsktGPGQKAILFLPMS---
+
+>1bara-1-DOMAK | (cluster A) sequence |  160 residues
+--------------PKLLYcSNGGYFLRil-----pdGTVDGT--kdrSDQHIQLQLAAesigevYIKst-etGQFLAMd
+---tdGLLYGSQ---tpNEECLFLERLeengyNTYISKKhaekHWFVGL-kkn--gRSKLGprtHFGQKAILFLPLPv--
+
+>2afgc-1-AUTO.1 | (cluster A) sequence |  160 residues
+--------------PKLLYcSNGGHFLRil-----pdGTVDGT--rdrSDQHIQLQLSAesvgevYIKst-etGQYLAMd
+---tdGLLYGSQ---tpNEECLFLERLeenhyNTYISKKhaekNWFVGL-kkn--gSCKRGprtHYGQKAILFLPLPv--
+
+>2aaib-2-DOMAK | (cluster B) sequence |  160 residues
+------------pfVTTIV-GLYGLCLQa------nsGQVWIEd-cssEKAEQQWALYA----dgSIRpqqnrDNCLTSd
+snireTVVKILSc-gpaSSGQRWMFKN----dGTILNLY---sGLVLDVrasdpslKQIIL-ypLHGDPNQIWLPLF---
+
+>1abrb-2-AUTO.1 | (cluster B) sequence |  160 residues
+------------pfVTSIS-GYSDLCMQa------qgSNVWMAd-cdsNKKEQQWALYT----dgSIRsvqntNNCLTSk
+dhkqgSTILLMGc-sngWASQRWVFKN----dGSIYSLY---dDMVMDVkgsdpslKQIIL-wpYTGKPNQIWLTLF---
+
+>2aaib-1-DOMAK | (cluster B) sequence |  160 residues
+-----advcmdpepIVRIV-GRNGLCVDvrdgrfhngNAIQLWpcksnTDANQLWTLKR----dnTIRs---nGKCLTTy
+gyspgVYVMIYDcntaaTDATRWQIWD----nGTIINPR---sSLVLAAtsgns-gTTLTV-qtNIYAVSQGWLPTNntq
+
+>1abrb-1-AUTO.1 | (cluster B) sequence |  160 residues
+ivekskicssryepTVRIG-GRDGMCVDvydngyhngNRIIMWkckdrLEENQLWTLKS----dkTIRs---nGKCLTTy
+gyapgSYVMIYDctsavAEATYWEIWD----nGTIINPK---sALVLSAesssm-gGTLTV-qtNEYLMRQGWRTGNnts
+

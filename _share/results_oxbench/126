@@ -1,0 +1,15 @@
+>1enz-1-AUTO.1 | (cluster A) sequence |  280 residues
+aglldgKRILVSGIItdssIAFHIARVAQEQGAQLVLTgfdrlrliqritdrlpakAPLLEld--vqnEEHLASLAGRVt
+eaigAGNKLDGVVHAIGFmpqtgmginpFFD-apya-dvskgihISAySYASMAKalLPIMNPGGSIVGMDF-dPSRamp
+aynWMTVAKSALESVNRFVA--reagkyGVRSNLVAAgPIRTLAMSAIvggalgeeagaqiqlleegwdqrapigwnmkd
+ATPVAKTVCALLSDWlpatTGDIIYADg-----gahtqll
+>1hdr-1-AS | (cluster B) sequence |  280 residues
+----eaRRVLVYGGR--gaLGSRCVQAFRARNWWVASVdvv----------eneeaSASIIvkmtdsfTEQADQVTAEVg
+kl-lGEEKVDAILCVAGGwag------gNAKskslfkncdlmwkQSIwTSTISSHlaTKHLKEGGLLTLAGAkaALDgtp
+gmiGYGMAKGAVHQLCQSLAgknsgmppGAAAIAVLPvTLDTPMNRKSmpe--------------------adfsswt-p
+LEFLVETFHDWITGKnrpsSGSLIQVVttegrteltpayf
+>1dird-1-DOMAK | (cluster B) sequence |  280 residues
+----eaRRVLVYGGR--gaLGSRCVQAFRARNWWVASIdvv----------eneeaSASVIvkmtdsfTEQADQVTAEVg
+kl-lGDQKVDAILCVAGGwag------gNAKskslfkncdlmwkQSIwTSTISSHlaTKHLKEGGLLTLAGAkaALDgtp
+gmiGYGMAKGAVHQLCQSLAgknsgmpsGAAAIAVLPvTLDTPMNRKSmpe--------------------adfsswt-p
+LEFLVETFHDWITGNkrpnSGSLIQVVttdgkteltpayf

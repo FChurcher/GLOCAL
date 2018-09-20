@@ -1,0 +1,60 @@
+>1iaii-2-AUTO.1 | (cluster A) sequence |  106 residues
+---KTTPPSVYPlapgsaaqtnsMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVTvpstwr-p
+seTVTCNVAH-PASsTKVDKki----
+>1iaih-2-AUTO.1 | (cluster B) sequence |  106 residues
+---KTTAPSVYPlapvcgdttgsSVTLGCLVKGYFPEPVTLTWNSgslSSGVHTFPAVl-qSDLYTLSSSVTvtsstt-p
+sqSITCNVAH-PASsTKVDKkid---
+>1rmfh-2-AUTO.1 | (cluster B) sequence |  106 residues
+---KTTAPSVTPlapvcgdttgsSVTLGVLVKGYFPEPVTLTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vtsstwp
+sqSITCNVAH-PAS-STKVDkki---
+>1eapb-2-AUTO.1 | (cluster B) sequence |  106 residues
+---KTTPPSVYPlapgcgdttgsSVTLGCLVKGYFPESVTVTWNSgglSSSVHTFPALl-qSGLYTMSSSVTvpgggw-p
+saTVTCSVAHpASStTVDKKl-----
+>7fabh-2-DOMAK | (cluster B) sequence |  106 residues
+---STKGPSVFPl--------apTAALGCLVKDYFPEPVTVSWNSgalTSGVHTFPAVlqsSGLYSLSSVVT-vpssslg
+tqTYICNVNHkPSNtKVDKKvep---
+>1mrfh-2-AUTO.2 | (cluster B) sequence |  106 residues
+---KTTPPSVYPla------pgsSVTLGCLVKGYFPESVTVTWNSgslSSSVHTFPALl-qSGLYTMSSSVT-vpsstwp
+sqTVTCSVAHpASStTVDKKlep---
+>1teth-2-DOMAK | (cluster B) sequence |  106 residues
+--aKTTPPSVYPla-------psMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vpssprp
+seTVTCNVAHpASStKVDKKivpr--
+>1mfbh-2-DOMAK | (cluster B) sequence |  106 residues
+--aKTTPPSVYPla-------pgMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vpsstwp
+seTVTCNVAHpASStKVDKKivpr--
+>1ikfh-2-AUTO.1 | (cluster B) sequence |  106 residues
+---KTTPPSVYPlapgsaaqtnsMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vpsssrp
+seTVTCNVAHpASStKVDKKivprdc
+>1mlbb-2-AUTO.1 | (cluster B) sequence |  106 residues
+---STTPPSVFPlapgsaaqtnsMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vpssprp
+seTVTCNVAHpASStKVDKKivprdc
+>1jelh-2-DOMAK | (cluster B) sequence |  106 residues
+---ATTPPSVYPlapgsaagtnsMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qGDLYTLSSSVT-vpssprp
+seTVTCNVAHpASStKVDKKi-----
+>2f19h-2-DOMAK | (cluster B) sequence |  106 residues
+--aKTTPPSVYPlapgcgdttgsSVTLGCLVKGYFPESVTVTWNSgslSSSVHTFPALl-qSALYTMSSSVT-vpsstwp
+sqTVTCSVAHpASStTVDKKl-----
+>1ibgh-2-AUTO.2 | (cluster B) sequence |  106 residues
+---KTTPPSVYPlapgcgdttgsSVTSGCLVKGYFPEPVTVTWNSgslSSSVHTFPALl-qSGLYTMSSSVT-vpsstwp
+sqTVTCSVAHpASStTVDKKl-----
+>1igjd-2-DOMAK | (cluster B) sequence |  106 residues
+ssaKTTAPSVYPlapvcgdttgsSVTLGCLVKGYFPEPVTLTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vtsstwp
+sqSITCNVAHpASStKVDKKiep---
+>1gigh-2-DOMAK | (cluster B) sequence |  106 residues
+--aKTTPPSVYPlapgsaaqtnsMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vpsstwp
+seTVTCNVAHpASStKVDKKivp---
+>2iffh-2-AUTO.2 | (cluster B) sequence |  106 residues
+---KTTPPSVYPlapgsaaqtnsMVTLGCLVKGYFPEPVTVTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vpssprp
+seTVTCNVAHpASStKVDKKivp---
+>1ncdh-2-DOMAK | (cluster B) sequence |  106 residues
+--aKTTAPSVYPlapvcgdttgsSVTLGCLVKGYFPEPVTLTWNSgslSSGVHTFPAVl-qSDLYTLSSSVT-vtsstwp
+sqSITCNVAHpASStKVDKKieprg-
+>1forh-2-DOMAK | (cluster B) sequence |  106 residues
+--aKTTAPSVYPlapvcggttgsSVTLGCLVKGYFPEPVTLTWNSgslSSGVHTFPAVl-qSGLYTLSSSVT-vtsstwp
+sqTITCNVAHpASStKVDKKiepr--
+>1bbjh-2-DOMAK | (cluster B) sequence |  106 residues
+---STKGPSVFPlapcsrstsesTAALGCLVKDYFPEPVTVSWNSgalTSGVHTFPAVlqsSGLYSLSSVVT-vpssslg
+tkTYTCNVDHkPSNtKVDKRv-----
+>2fb4h-2-DOMAK | (cluster B) sequence |  106 residues
+---STKGPSVFPlapsskstsggTAALGCLVKDYFPQPVTVSWNSgalTSGVHTFPAVlqsSGLYSLSSVVT-vpssslg
+tqTYICNVNHkPSNtKVDKRvepksc

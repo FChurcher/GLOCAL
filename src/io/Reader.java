@@ -43,7 +43,8 @@ public class Reader {
 					sequence += line;
 				}
 			} else {
-				// invalid format
+				System.out.println("invalid format");
+				return null;
 			}
 			sequecnes.add(new Sequence(sequence.toCharArray(), true, true, sequenceName));
 		}

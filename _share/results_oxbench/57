@@ -1,0 +1,55 @@
+>1pov0-1-AS | (cluster A) sequence |  317 residues
+apmlnspnieacgylqltlgnstittqeaansvvaygrwpeylrdvaacrfytlDTVSwtke------srgwWWKlpda-
+------lrdmgLFGQNMYYHYL-gRSGYTVHVQCNASKFHQGALGVFavpemclagdsntttmhtsyqnanpgekggtft
+gtftpdnnqtsparrfcpvdyllgngtlLGNAF-vFPHQIInlr----------------tnnCATLVLpyv-nslSIDS
+mvk-----------------hnnWGIAILPlAPLnfasessPEIPITLTIAp--mCCEFNGlrnitlprlq------
+>1bbt2-1-GJB | (cluster A) sequence |  317 residues
+-------------------vgvtygyataedfvsgpntsgletrvvqaerffktHLFDwvtsd---sfgrchLLElpt--
+-------dhkgVYGSLTDSYAY-mRNGWDVEVTAVGNQFNGGCLLVAmvpel----------------------------
+---------------------csiqkreLYQLT-lFPHQFInpr----------------tnmTAHITVpfv-gvnRYDQ
+ykv-----------------hkpWTLVVMVvAPLtvntegaPQIKVYANIAp--tNVHVAGefpske----------
+>1mec2-1-DOMAK | (cluster A) sequence |  317 residues
+------------------vgrlvgygtvhdgehpascadtasekilaveryytfKVNDwtstq---kpfeyiRIPlphvl
+-----sgedggVFGATLRRHYL-vKTGWRVQVQCNASQFHAGSLLVFmapeyptldvfamdnrwskd-------------
+------nlpngtrtqtnrkgpfamdhqnFWQWT-lYPHQFLnlr----------------tntTVDLEVpyv-niaPTSS
+wtq-----------------hasWTLVIAVvAPLtystgasTSLDITASIQp--vRPVFNGlrhevlsrq-------
+>1bmv2-1-DOMAK | (cluster B) sequence |  317 residues
+--------------------------------------dvetpkgsmldlkisqSKIAlpkntv--ggtilrSDLlanfl
+------tegnfRASVDLQRTHR-iKGMIKMVATVGIPENTGIALACAmnssi----------------------------
+---------------------rgrassdIYTIC-sQDCELWnpa----------------ctkAMTMSFnpn-pcsDAWS
+lefl---------------krtgFHCDIICvTGWta--tpmQDVQVTIDWFissqECVPRTy---------------
+>1bmv2-2-DOMAK | (cluster B) sequence |  317 residues
+---------------------------------------cvlnpqnpfvlnrwmGKLTfpqgt----srsvkRMPlsigg
+gagaksailmnMPNAVLSMWRY-fVGDLVFEVSKMTSPYIKCTVSFFiaf------------------------------
+----------------------gnladdTINFE-aFPHKLVqfg---------------eiqeKVVLKFsqe-eflTAWS
+tqvrpat---------tlladgcPYLYAMVhDSSvs--tipGDFVIGVKLTi-ieNMCAYGlnpgisgsrllgtipq
+>1bbt3-1-DOMAK | (cluster B) sequence |  317 residues
+--------------------------------------------ptflrfeggvPYVTtktds----drvlaQFDmslaa
+-----khmsntFLAGLAQYYTQ-ySGTINLHFMFTGPTDAKARYMVAyapp-----------------------------
+---------------------gmeppktPEAAA-hCIHAEWdtg----------------lnsKFTFSIpyl-saaDYTY
+tasdva-----------ettnvqGWVCLFQ-ITHg----kaDGDALVVLASa-gkDFELRLpvdarae---------
+>1mec3-1-DOMAK | (cluster B) sequence |  317 residues
+-------------------------------------------tfignkmpnavPYIEasntav--ktqplaVYQvtlsc
+-----sclantFLAALSRNFAQ-yRGSLVYTFVFTGTAMMKGKFLIAytpp-----------------------------
+---------------------gagkptsRDQAM-qATYAIWdlg----------------lnsSYSFTVpfi-sptHFRM
+vgtdqa-----------nitnvdGWVTVWQlTPLtyppgcpTSAKILTMVSa-gkDFSLKM----------------
+>1pvc3-1-AUTO.1 | (cluster B) sequence |  317 residues
+-------------------------------------tmiplnlestkrntmdmYRVTlsdsad--lsqpilCLSlspaf
+d----prlshtMLGEVLNYYTH-wAGSLKFTFLFCGSMMATGKILVAyapp-----------------------------
+---------------------gaqpptsRKEAM-lGTHVIWdlg----------------lqsSCTMVVpwi-snvTYRQ
+ttqd--------------sftegGYISMFYqTRIvvplstpKSMSMLGFVSa-cnDFSVRLlrdtthisqsa-----
+>1pov3-1-AUTO.1 | (cluster B) sequence |  317 residues
+--------------------idipgevknmmelaeidtmipfdlsatkkntmemYRVRlsdkph--tddpilCLSlspas
+d----prlshtMLGEILNYYTH-wAGSLKFTFLFCGSMMATGKLLVSyapp-----------------------------
+---------------------gadppkkRKEAM-lGTHVIWdig----------------lqsSCTMVVpwi-sntTYRQ
+tidd--------------sftegGYISVFYqTRIvvplstpREMDILGFVSa-cnDFSVRLlrdtthieqkalaq--
+>2tbvc-1-DOMAK | (cluster B) sequence |  317 residues
+----------------------pvavsrqlvgskpkftgrtsggvtvtshreylTQVNnssgfvvnggivgnSLQlnpsn
+------gtlfsWLPALASNFDQysFNSVVLDYVPLCGTTEVGRVALYfdkds----------------------------
+---------------------qdpepadRVELAnfGVLKETap------------------waEAMLRIpt---dkVKRY
+cndsatv---------dqklidlGQLGIAT-YGGa-----gADAVGELFLA---rSVTLYFpqptntl---------
+>1smvc-1-AUTO.1 | (cluster B) sequence |  317 residues
+---------------------------qgamvrirnpavsssrgaitvlhceltAEIGvtds------ivvsSELvmpy-
+-------tvgtWLRGVADNWSKysWLSVRYTYIPSCPSSTAGSIHMGfqydm----------------------------
+---------------------adtvpvsVNKLSnlRGYVSGqvwsgsaglcfinnsrcsdtstAISTTLdvselgkKWYP
+yktsadyatavgvdvniatdlvpARLVIAL-LDGss---stAVAAGRIYDT---yTIQMIEptasalnl--------

@@ -1,0 +1,44 @@
+>1fga-1-GJB | (cluster A) sequence |  176 residues
+--------------PKRLYcknGGFFLRih-----pdGRVDGV----reksdphIKLQLQAee------rgVVSIKgv-c
+aNRYLAm---kedGRLLASK----------cvTDECFFFERLesnnYNTYRSRKy--tSWYVA-lKRT--gQYKLgsktg
+pgqk-aILFLPMS---
+>1bara-1-DOMAK | (cluster A) sequence |  176 residues
+--------------PKLLYcsnGGYFLRil-----pdGTVDGT----kdrsdqhIQLQLAAes------igEVYIKst-e
+tGQFLAm---dtdGLLYGSQ----------tpNEECLFLERLeengYNTYISKKhaekHWFVG-lKKN--gRSKLgprth
+fgqk-aILFLPLPv--
+>2afgc-1-AUTO.1 | (cluster A) sequence |  176 residues
+--------------PKLLYcsnGGHFLRil-----pdGTVDGT----rdrsdqhIQLQLSAes------vgEVYIKst-e
+tGQYLAm---dtdGLLYGSQ----------tpNEECLFLERLeenhYNTYISKKhaekNWFVG-lKKN--gSCKRgprth
+ygqk-aILFLPLPv--
+>2aaib-2-DOMAK | (cluster A) sequence |  176 residues
+------------pfVTTIV-glYGLCLQa------nsGQVWIEd---cssekaeQQWALYA----------DGSIRpqqn
+rDNCLTsdsnireTVVKILSc--------gpaSSGQRWMFKN----DGTILNLY---sGLVLDvrASDpslKQIIly-pl
+hgdp-nQIWLPLF---
+>1abrb-2-AUTO.1 | (cluster A) sequence |  176 residues
+------------pfVTSIS-gySDLCMQa------qgSNVWMAd---cdsnkkeQQWALYT----------DGSIRsvqn
+tNNCLTskdhkqgSTILLMGc--------sngWASQRWVFKN----DGSIYSLY---dDMVMDvkGSDpslKQIIlw-py
+tgkp-nQIWLTLF---
+>2aaib-1-DOMAK | (cluster A) sequence |  176 residues
+-----advcmdpepIVRIV-grNGLCVDvrdgrfhngNAIQLWp--cksntdanQLWTLKR----------DNTIRs---
+nGKCLTtygyspgVYVMIYDcn-------taaTDATRWQIWD----NGTIINPR---sSLVLAatSGNs-gTTLTvq-tn
+iyav-sQGWLPTNntq
+>1abrb-1-AUTO.1 | (cluster A) sequence |  176 residues
+ivekskicssryepTVRIG-grDGMCVDvydngyhngNRIIMWk--ckdrleenQLWTLKS----------DKTIRs---
+nGKCLTtygyapgSYVMIYDct-------savAEATYWEIWD----NGTIINPK---sALVLSaeSSSm-gGTLTvq-tn
+eylm-rQGWRTGNnts
+>1ilr1-1-AUTO.1 | (cluster B) sequence |  176 residues
+----------skmqAFRIW-dvNQKTFYl------rnNQLVAGylqgpnvn-leEKIDVVPie------phALFLGih-g
+gKMCLScvksgdeTRLQLEAvnitdlsenrkqDKRFAFIRSDs-gpTTSFESAAc--pGWFLC-tAMEa-dQPVSltnmp
+degvmvTKFYFQEde-
+>8i1b-1-DOMAK | (cluster B) sequence |  176 residues
+------------qlHYRLR-deQQKSLVls-----dpYELKALhlngqnin-qqVIFSMSFvqgepsndkiPVALGlk-g
+kNLYLScvmkdgtPTLQLESvdpkq-ypkkkmEKRFVFNKIEv-ksKVEFESAEf--pNWYIS-tSQAe-hKPVFl--gn
+nsgqdiIDFTMESv--
+>1hib-1-GJB | (cluster B) sequence |  176 residues
+----------vrslNCGLR-dsQQKSLVms-----gpYELKALhlqgqdme-qqVVFSMSFvqgeesndkiPVALGlk-e
+kNLYLScvlkddkPTLQLESvdpkn-ypkkkmEKRFVFNKIEi--nKLEFESAQf--pNWYIS-tSQAe-nMPVFlg-gt
+kggqdiTDFTMQFvss
+>2i1b-1-DOMAK | (cluster B) sequence |  176 residues
+--------apvrslNCTLR-dsQQKSLVms-----gpYELKALhlqgqdme-qqVVFSMSFvqgeesndkiPVALGlk-e
+kNLYLScvlkddkPTLQLESvdpkn-ypkkkmEKRFVFNKIEi-nnKLEFESAQf--pNWYIS-tSQAe-nMPVFlg-gt
+kggqdiTDFTMQFvss

@@ -1,0 +1,33 @@
+>1fiva-1-AS | (cluster A) sequence |  113 residues
+vgttttlekrpEILIFVNGYPIKFLLDTGADITILNrrdfqvknsienGRQNMIGVGGGKRGTNYINVHLEirdenyktQ
+CIFGNVCvlednsLIQPLLGRDNMIKFnIRLVM
+>1hvc-1-AS | (cluster B) sequence |  113 residues
+--pqitlwqrpLVTIRIGGQLKEALLDTGADDTVLE--emnl-pgk-wKPKMIGGIGGFIKVRQYDQILIE-----icgH
+KAIGTVL---vgpTPVNIIGRNLLTQIgCTLNF
+>1hvc-2-AS | (cluster B) sequence |  113 residues
+--pqitlwqrpLVTIKIGGQLKEALLDTGADDTVLE--emsl-pgr-wKPKMIGGIGGFIKVRQYDQILIE-----icgH
+KAIGTVL---vgpTPVNIIGRNLLTQIgCTLNF
+>1aaqa-1-DOMAK | (cluster B) sequence |  113 residues
+--pqitlwqrpLVTIKIGGQLKEALLDTGADDTVLE--emsl-pgr-wKPKMIGGIGGFIKVRQYDQIIIE-----icgH
+KAIGTVL---vgpTPVNIIGRNLLTQIgCTLNF
+>9hvpa-1-DOMAK | (cluster B) sequence |  113 residues
+--pqitlwqrpLVTIKIGGQLKEALLDTGADDTVLE--emnl-pgr-wKPKMIGGIGGFIKVRQYDQILIE-----icgH
+KAIGTVL---vgpTPVNIIGRNLLTQIgCTLNF
+>1hefe-1-DOMAK | (cluster B) sequence |  113 residues
+--pqitlwqrpLVTIKIGGQLKEALLDTGADDTVLE--ensl-pgr-wKPKMIGGIGGFIKVRQYDQILIE-----icgH
+KAIGTVL---vgpTPVNIIGRNLLTQIgCTLNF
+>1siva-1-DOMAK | (cluster B) sequence |  113 residues
+--pqfslwrrpVVTAHIEGQPVEVLLDTGADDSIVT--giel-gph-yTPKIVGGIGGFINTKEYKNVKIE-----vlgK
+RIKGTIM---tgdTPINIFGRNLLTALgMSLNL
+>2sam-1-DOMAK | (cluster B) sequence |  113 residues
+--pqfhlwkrpVVTAHIEGQPVEVLLDTGADDSIVT--giel-gph-yTPKIVGGIGGFINTKEYKNVEIE-----vlgK
+RIKGTIM---tgdTPINIFGRNLLTALgMSLNF
+>1hiia-1-AUTO.1 | (cluster B) sequence |  113 residues
+-----------VVTAYIEGQPVEVLLDTGADDSIVA--giel-gnn-ySPKIVGGIGGFINTKEYKNVEIE-----vlnK
+KVRATIM---tgdTPINIFGRNILTALgMSLNL
+>1hvra-1-AUTO.1 | (cluster B) sequence |  113 residues
+-----------LVTIKIGGQLKEALLDTGADDTVLE--emsl-pgr-wKPKMIGGIGGFIKVRQYDQILIE-----icgH
+KAIGTVL---vgpTPVNIIGRNLLTQIgATLNF
+>1cpia-1-AUTO.1 | (cluster B) sequence |  113 residues
+-----------LVTIRIGGQLKEALLDTGADDTVLE--emnl-pgk-wKPKMIGGIGGFIKVRQYDQIPVE------igH
+KAIGTVL---vgpTPVNIIGRNLLTQI-GTLNF

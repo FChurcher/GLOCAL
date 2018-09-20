@@ -1,0 +1,57 @@
+>3pal-1-DOMAK | (cluster A) sequence |  116 residues
+-sfaglkdadvaaalaacsaadsfkhkeffakvglaskSLDDVKKAFYVi--dqDKSGFIEEDELKLFlqnfspsaralt
+dAETKAFladgdkdgdgMIGVDEFAamika------
+>1omd-1-DOMAK | (cluster A) sequence |  116 residues
+-itdilsaediaaalqecqdpdtfepqkffqtsglskmSASQVKDIFRFi--dnDQSGYLDGDELKYFlqkfqsdarelt
+eSETKSLmdaadndgdgKIGADEFQemvhs------
+>5pal-1-DOMAK | (cluster A) sequence |  116 residues
+pmtkvlkaddinkaisafkdpgtfdykrffhlvglkgkTDAQVKEVFEIl--dkDQSGFIEEEELKGVlkgfsahgrdln
+dTETKALlaagdsdhdgKIGADEFAkmvaqa-----
+>1rtp2-1-DOMAK | (cluster A) sequence |  116 residues
+smtdllsaedikkaigaftaadsfdhkkffqmvglkkkSADDVKKVFHIl--dkDKSGFIEEDELGSIlkgfssdardls
+aKETKTLmaagdkdgdgKIGVEEFStlvaes-----
+>1cdp-1-DOMAK | (cluster A) sequence |  116 residues
+afagvlndadiaaaleackaadsfnhkaffakvgltskSADDVKKAFAIi--dqDKSGFIEEDELKLFlqnfkadaralt
+dGETKTFlkagdsdgdgKIGVDEFTalvka------
+>1pvaa-1-AUTO.2 | (cluster A) sequence |  116 residues
+aakdllkaddikkaldavkaegsfnhkkffalvglkamSANDVKKVFKAi--daDASGFIEEEELKFVlksfaadgrdlt
+dAETKAFlkaadkdgdgKIGIDEFEtlvhea-----
+>3icb-1-DOMAK | (cluster A) sequence |  116 residues
+-------------------------------------kSPEELKGIFEKyaakeGDPNQLSKEELKLLlqtefp-sllkg
+pSTLDELfeeldkngdgEVSFEEFQvlvkkisq---
+>1scmb-1-DOMAK | (cluster A) sequence |  116 residues
+----------------------------------lpqkQIQEMKEAFSMi--dvDRDGFVSKEDIKAIseqlg---rapd
+dKELTAMlk----eapgPLNFTMFLsifsdklsgt-
+>5tnc-2-DOMAK | (cluster A) sequence |  116 residues
+----------------------------------akgkSEEELEDCFRIf--dkNADGFIDIEELGEIlratg---ehvt
+eEDIEDLmkdsdknndgRIDFDEFLkmmegvq----
+>1top-2-DOMAK | (cluster A) sequence |  116 residues
+----------------------------------akgkSEEELANCFRIf--dkNADGFIDIEELGEIlratg---ehvt
+eEDIEDLmkdsdknndgRIDFDEFLkmmegvq----
+>1cdla-2-DOMAK | (cluster A) sequence |  116 residues
+---------------------------------mkdtdSEEEIREAFRVf--dkDGNGYISAAELRHVmtnlg---eklt
+dEEVDEMireadidgdgQVNYEEFVqmmt-------
+>1cdma-1-DOMAK | (cluster A) sequence |  116 residues
+----------------------------------lteeQIAEFKEAFSLf--dkDGDGTITTKELGTVmrslg---qnpt
+eAELQDMinevdadgngTIDFPEFLtmma-------
+>4cln-2-DOMAK | (cluster A) sequence |  116 residues
+-------------------------------------dSEEEIREAFRVf--dkDGNGFISAAELRHVmtnlg---eklt
+dEEVDEMireadidgdgQVNYEEFVtmmtsk-----
+>1osa-2-GJB | (cluster A) sequence |  116 residues
+------------------------------------qdSEEELIEAFKVf--drDGNGLISAAELRHVmtnlg---eklt
+dDEVDEMireadidgdgHINYEEFVrmmvsk-----
+>3cln-2-DOMAK | (cluster A) sequence |  116 residues
+--------------------------------------SEEEIREAFRVf--dkDGNGYISAAELRHVmtnlg---eklt
+dEEVDEMireanidgdgQVNYEEFVqmmta------
+>1osa-1-GJB | (cluster A) sequence |  116 residues
+-------------------------------aeqlteeQIAEFKEAFALf--dkDGDGTITTKELGTVmrslg---qnpt
+eAELQDMinevdadgngTIDFPEFLslmarkmke--
+>3cln-1-DOMAK | (cluster A) sequence |  116 residues
+-----------------------------------teeQIAEFKEAFSLf--dkDGDGTITTKELGTVmrslg---qnpt
+eAELQDMinevdadgngTIDFPEFLtmmarkmkdtd
+>1scmc-1-DOMAK | (cluster B) sequence |  116 residues
+-----------------------------------sqdEIDDLKDVFELfdfwdGRDGAVDAFKLGDVcrclg----inp
+rNEDVFAvggthkmgekSLPFEEFLpayeglmdceq
+>5tnc-1-DOMAK | (cluster B) sequence |  116 residues
+----------------------smtdqqaearaflseeMIAEFKAAFDMf--daDGGGDISTKELGTVmrmlg---qnpt
+kEELDAIieevdedgsgTIDFEEFLvmmvrqmked-

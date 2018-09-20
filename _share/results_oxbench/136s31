@@ -1,0 +1,108 @@
+>1hlb-1-DOMAK | (cluster A) sequence |  166 residues
+ggtlaiqaqgdltlAQKKIVRKTWHQlmrnktsFVTDVFIRIFAYDPSAQNKFpqmag-msasqlrssrQMQAHAIRVSS
+IMSEYVeel-dsdiLPELLATLARTH-dLNKVGADHYNLFAKVLMEALQaelgsdFNEKTRDAWAKAFsvvqAVLlvkhg
+------
+>1hlm-1-AUTO.2 | (cluster B) sequence |  166 residues
+gatqsfqsvgdltpAEKDLIRSTWDQlmthrtgFVADVFIRIFHNDPTAQRKFpqmag-lspaelrtsrQMHAHAIRVSA
+LMTTYIdem-dtevLPELLATLTRTH-dKNHVGKKNYDLFGKVLMEAIKaelgvgFTKQVHDAWAKTFa-ivQGVlitkh
+as----
+>1mbs-1-DOMAK | (cluster B) sequence |  166 residues
+----------glsdGEWHLVLNVWGKvetdlagHGQEVLIRLFKSHPETLEKFdkfkhlkseddmrrseDLRKHGNTVLT
+ALGGILkk---kghHEAELKPLAQSHatKHKIPIKYLEFISEAIIHVLHskhpaeFGADAQAAMKKALelfrNDIaakyk
+elgfhg
+>1hbhc-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------slsdKDKAAVRALWSKigksadaIGNDALSRMIVVYPQTKTYFshw-----pdvtpgspHIKAHGKKVMG
+GIALAVsk---iddLKTGLMELSEQHayKLRVDPANFKILNHCILVVIStmfpkeFTPEAHVSLDKFLsgvaLALaeryr
+------
+>2dhba-1-GJB | (cluster B) sequence |  166 residues
+----------vlsaADKTNVKAAWSKvgghageYGAEALERMFLGFPTTKTYFphf------dlshgsaQVKAHGKKVAD
+GLTLAVgh---lddLPGALSDLSNLHahKLRVDPVNFKLLSHCLLSTLAvhlpndFTPAVHASLDKFLssvsTVLtskyr
+------
+>2pgha-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------vlsaADKANVKAAWGKvggqagaHGAEALERMFLGFPTTKTYFphf------nlshgsdQVKAHGQKVAD
+ALTKAVgh---lddLPGALSALSDLHahKLRVDPVNFKLLSHCLLVTLAahhpddFNPSVHASLDKFLanvsTVLtskyr
+------
+>1coha-1-DOMAK | (cluster B) sequence |  166 residues
+----------vlspADKTNVKAAWGKvgahageYGAEALERMFLSFPTTKTYFphf------dlshgsaQVKGHGKKVAD
+ALTNAVah---vddMPNALSALSDLHahKLRVDPVNFKLLSHCLLVTLAahlpaeFTPAVHASLDKFLasvsTVLtskyr
+------
+>1hdaa-1-DOMAK | (cluster B) sequence |  166 residues
+----------vlsaADKGNVKAAWGKvgghaaeYGAEALERMFLSFPTTKTYFphf------dlshgsaQVKGHGAKVAA
+ALTKAVeh---lddLPGALSELSDLHahKLRVDPVNFKLLSHSLLVTLAshlpsdFTPAVHASLDKFLanvsTVLtskyr
+------
+>1hbhd-1-AUTO.1 | (cluster B) sequence |  166 residues
+---------vewtdKERSIISDIFSHm--dyddIGPKALSRCLIVYPWTQRHFsgfgnlynaeaiignaNVAAHGIKVLH
+GLDRGVkn---mdnIAATYADLSTLHseKLHVDPDNFKLLSDCITIVLAakmghaFTAETQGAFQKFLavvvSALgkqyh
+------
+>2pghb-1-AUTO.1 | (cluster B) sequence |  166 residues
+---------vhlsaEEKEAVLGLWGKv--nvdeVGGEALGRLLVVYPWTQRFFesfgdlsnadavmgnpKVKAHGKKVLQ
+SFSDGLkh---ldnLKGTFAKLSELHcdQLHVDPENFRLLGNVIVVVLArrlghdFNPDVQAAFQKVVagvaNALahkyh
+------
+>2mhbb-1-DOMAK | (cluster B) sequence |  166 residues
+---------vqlsgEEKAAVLALWDKv--neeeVGGEALGRLLVVYPWTQRFFdsfgdlsnpgavmgnpKVKAHGKKVLH
+SFGEGVhh---ldnLKGTFAALSELHcdKLHVDPENFRLLGNVLVVVLArhfgkdFTPELQASYQKVVagvaNALahkyh
+------
+>1hdab-1-DOMAK | (cluster B) sequence |  166 residues
+----------mltaEEKAAVTAFWGKv--kvdeVGGEALGRLLVVYPWTQRFFesfgdlstadavmnnpKVKAHGKKVLD
+SFSNGMkh---lddLKGTFAALSELHcdKLHVDPENFKLLGNVLVVVLArnfgkeFTPVLQADFQKVVagvaNALahryh
+------
+>1fdhg-1-DOMAK | (cluster B) sequence |  166 residues
+---------ghfteEDKATITSLWGKv--nvedAGGETLGRLLVVYPWTQRFFdsfgnlssasaimgnpKVKAHGKKVLT
+SLGDAIkh---lddLKGTFAQLSELHcdKLHVDPENFKLLGNVLVTVLAihfgkeFTPEVQASWQKMVtgvaSALssryh
+------
+>1cohb-1-DOMAK | (cluster B) sequence |  166 residues
+---------vhltpEEKSAVTALWGKv--nvdeVGGEALGRLLVVYPWTQRFFesfgdlstpdavmgnpKVKAHGKKVLG
+AFSDGLah---ldnLKGTFATLSELHcdKLHVDPENFRLLGNVLVCVLAhhfgkeFTPPVQAAYQKVVagvaNALahkyh
+------
+>1myt-1-DOMAK | (cluster B) sequence |  166 residues
+--------------ADFDAVLKCWGPveadyttMGGLVLTRLFKEHPETQKLFpkfag-iaqadiagnaAISAHGATVLK
+KLGELLka---kgsHAAILKPLANSHatKHKIPINNFKLISEVLVKVMHe--kagLDAGGQTALRNVMgiiiADLeanyk
+elgfs-
+>1lht-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------glsdDEWNHVLGIWAKvepdlsaHGQEVIIRLFQLHPETQERFakfknlttidalksseEVKKHGTTVLT
+ALGRILkq---knnHEQELKPLAESHatKHKIPVKYLEFICEIIVKVIAekhpsdFGADSQAAMKKALelfrNDMaskyk
+------
+>1hrm-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------glsdGEWQQVLNVWGKveadiagHGQEVLIRLFTGHPETLEKFdkfkhlkteaemkaseDLKKHGTVVLT
+ALGGILkk---kghHEAELKPLAQSYatKHKIPIKYLEFISDAIIHVLHskhpgdFGADAQGAMTKALelfrNDIaakyk
+------
+>1mnh-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------glsdGEWQLVLNVWGKveadvagHGQEVLIRLFKGHPETLEKFdkfkhlksedemkaseDLKKVGNRVLT
+ALGGILkk---kghHEAELTPLAQSHatKHKIPVKYLEFISEAIIQVLQskhpgdFGADAQGAMSKALelfrNDMaakyk
+------
+>1emy-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------glsdGEWELVLKTWGKveadipgHGETVFVRLFTGHPETLEKFdkfkhlktegemkaseDLKKQGVTVLT
+ALGGILkk---kghHEAEIQPLAQSHatKHKIPIKYLEFISDAIIHVLQskhpaeFGADAQGAMKKALelfrNDIaakyk
+------
+>1mnja-1-AUTO.1 | (cluster B) sequence |  166 residues
+----------glsdGEWQLVLNVWGKveadvagHGQEVLIRLFKGHPETLEKFdkfkhlksedemkaseDLKKVGNTILT
+ALGGILkk---kghHEAELTPLAQSHatKHKIPVKYLEFISEAIIQVLQskhpgdFGADAQGAMSKALelfrNDMaakyk
+------
+>1mlu-1-DOMAK | (cluster B) sequence |  166 residues
+---------mvlseGEWQLVLHVWAKveadvagHGQDILIRLFKSHPETLEKFdrfkhlkteaemkaseDLKKGGVTALT
+ALGAILkk---kghHEAELKPLAQSHatKHKIPIKYLEFISEAIIHVLHsrhpgnFGADAQGAMNKALelfrKDIaakyk
+elgyqg
+>2mga-1-DOMAK | (cluster B) sequence |  166 residues
+---------mvlseGEWQLVLHVWAKveadvagHGQDILIRLFKSHPETLEKFdrfkhlkteaemkaseDLKKGGVTVLT
+ALGAILkk---kghHEAELKPLAQSHatKHKIPIKYLEFISEAIIHVLHsrhpgnFGADAQGAMNKALelfrKDIaakyk
+elgyqg
+>2mb5-1-DOMAK | (cluster B) sequence |  166 residues
+----------vlseGEWQLVLHVWAKveadvagHGQDILIRLFKSHPETLEKFdrfkhlkteaemkaseDLKKHGVTVLT
+ALGAILkk---kghHEAELKPLAQSHatKHKIPIKYLEFISEAIIHVLHsrhpgdFGADAQGAMNKALelfrKDIaakyk
+elgyqg
+>2mm1-1-DOMAK | (cluster B) sequence |  166 residues
+----------glsdGEWQLVLNVWGKveadipgHGQEVLIRLFKGHPETLEKFdrfkhlksedemkaseDLKKHGATVLT
+ALGGILkk---kghHEAEIKPLAQSHatKHKIPVKYLEFISEAIIQVLQskhpgdFGADAQGAMNKALelfrKDMasnyk
+elgfqg
+>1hbia-1-DOMAK | (cluster B) sequence |  166 residues
+---svydaaaqltaDVKKDLRDSWKVigsdkkgNGVALMTTLFADNQETIGYFkrlg---nvsqgmandKLRGHSITLMY
+ALQNFIdqldnpddLVCVVEKFAVNH-iTRKISAAEFGKINGPIKKVLAs---knFGDKYANAWAKLV----AVVqaal-
+------
+>1scte-1-AUTO.2 | (cluster B) sequence |  166 residues
+--vdaavakvcgseAIKANLRRSWGVlsadieaTGLMLMSNLFTLRPDTKTYFtrlg---dvqkgkansKLRGHAITLTY
+ALNNFVdslddpsrLKCVVEKFAVNH-iNRKISGDAFGAIVEPMKETLKarmgnyYSDDVAGAWAALV----GVVqaal-
+------
+>1sctf-1-AUTO.1 | (cluster B) sequence |  166 residues
+-kvaelanavvsnaDQKDLLRMSWGVlsvdmegTGLMLMANLFKTSPSAKGKFarlg---dvsagkdnsKLRGHSITLMY
+ALQNFVdalddverLKCVVEKFAVNH-iNRQISADEFGEIVGPLRQTLKarmgnyFDEDTVAAWASLV----AVVqasl-
+------

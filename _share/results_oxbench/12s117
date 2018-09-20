@@ -1,0 +1,345 @@
+>1cdi-1-DOMAK | (cluster A) sequence |  143 residues
+--------tkkVVLGKKGDTVELTCTAsqk------ksiQFHWKN----snQIKilgnqgsf---ltkgpsklnDRADsr
+rslwdQGNFPLIIKNLKIEDSDTYICe--------------vedqk-EEVQLLVf--------
+>1bec-1-AS | (cluster B) sequence |  143 residues
+----avtqsprNKVAVTGGKVTLSCQQtn-------nhnNMYWYRqdtghgLRLihysygag----stekgdipDGYKas
+--rpsQEQFSLILELATPSQTSVYFCasggg------rgsyaeqffgPGTRLTVledl-----
+>7fabl-1-DOMAK | (cluster B) sequence |  143 residues
+---asvltqppSVSGAPGQRVTISCTGsssn---igaghNVKWYQqlpgtaPKLlif--------------hnnARFSvs
+---ksGTSATLAITGLQAEDEADYYCqsy----------drslrvfgGGTKLTVlrq------
+>1inel-1-DOMAK | (cluster B) sequence |  143 residues
+----avvtqesALTTSPGETVTLTCRSstga---vttsnYANWVQekpdhlFTGliggtn-------nrapgvpARFSgs
+---liGDKAALTITGAQTEDEARYFCalw----------ysnlwvfgGGTKLTVl--------
+>1mfa-1-DOMAK | (cluster B) sequence |  143 residues
+---qivvtqesALTTSPGETVTLTCRSstgt---vtsgnHANWVQekpdhlFTGligdtn-------nrapgvpARFSgs
+---liGDKAALTITGAQPEDEAIYFCalw----------snnhwifgGGTKLTVlgq------
+>1mfbl-1-DOMAK | (cluster B) sequence |  143 residues
+---qavvtqesALTTSPGETVTLTCRSstgt---vtsgnHANWVQekpdhlFTGligdtn-------nrapgvpARFSgs
+---liGDKAALTITGAQPEDEAIYFCalw----------cnnhwifgGGTKLTVlg-------
+>8faba-1-DOMAK | (cluster B) sequence |  143 residues
+-----eltqppSVSVSPGQTARITCSAnal------pnqYAYWYQqkpgraPVMviykdt-------qrpsgipQRFSss
+---tsGTTVTLTISGVQAEDEADYYCqaw----------dnsasifgGGTKLTVl--------
+>1figl-1-DOMAK | (cluster B) sequence |  143 residues
+--envltqspaIMSASPGEKVTMACRAsss-----vsstYLHWYQqksgasPKLliysts-------nlasgvpARFSgs
+---gsGTSYSLTISSVEAEDAATYYCqqy----------sgypltfgAGTKLELk--------
+>1igml-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspsSLSASVGDRVTITCQAsqd------isnYLAWYQqkpgkaPELriydas-------nletgvpSRFSgs
+---gsGTDFTFTISSLQPEDIATYYCqqy----------qnlpltfgPGTKVDIkrtvaapsv
+>1nsnl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--divltqspsSLAVSLGQRATISCRAsqsvs--tssfrYMHWYQqkpgqpPRLlikyas-------nlesgvpARFSgs
+---gsGTDFTLNIHPVEEEDTATYYCqhs----------weipytfgGGTKLEIk--------
+>1frgl-1-DOMAK | (cluster B) sequence |  143 residues
+--divmtqspsSLTVTAGEKVTMSCKSsqslfnsgkrknFLTWYHqkpgqpPKLliywas-------tresgvpDRFSgs
+---gsGTDFTLTITSVQAEDLAIYYCqnd----------yshpltfgAGTKLELk--------
+>1ifhl-1-DOMAK | (cluster B) sequence |  143 residues
+--divmtqspsSLTVTAGEKVTMSCTSsqslfnsgkqknYLTWYQqkpgqpPKVliywas-------tresgvpDRFTgs
+---gsGTDFTLTISSVQAEDLAVYYCqnd----------ysnpltfgGGTKLELk--------
+>2imm-1-DOMAK | (cluster B) sequence |  143 residues
+--divmtqspsSLSVSAGERVTMSCKSsqsllnsgnqknFLAWYQqkpgqpPKLliygas-------tresgvpDRFTgs
+---gsGTDFTLTISSVQAEDLAVYYCqnd----------hsypltfgAGTKLELkr-------
+>2imn-1-DOMAK | (cluster B) sequence |  143 residues
+--divmtqspsSLSVSAGERVTMSCKSsqsll-ykdgknFLAWYQqkpgqpPKLliygas-------tresgvpDRFTgs
+---gsGTDFTLTISSVQAEDLAVYYCqnd----------hsypltfgAGTKLELkr-------
+>1igfm-1-DOMAK | (cluster B) sequence |  143 residues
+--dvlmtqtplSLPVSLGDQASISCRSnqtil-lsdgdtYLEWYLqkpgqsPKLliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYYCfqg----------shvpptfgGGTKLEIk--------
+>1lmke-2-AS | (cluster B) sequence |  143 residues
+gsdieltqsplSLPVSLGDQASISCRSsqslv-hsngntSLHWYLkkpgqsPKLliykvs-------trfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYFCsqs----------thvpftfgSGTKLELk--------
+>1cbvl-1-DOMAK | (cluster B) sequence |  143 residues
+--dvvmtqtplSLPVSLGDQASISCRSsqslv-hsngntYLHWYLqkpgqsPKLliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYFCsqs----------thvpltfgAGTKLELk--------
+>1jell-1-DOMAK | (cluster B) sequence |  143 residues
+--dvlmtqtplSLPVSLGDQASISCRSsqsiv-hgngntYLEWYLqkpgqsPKLliysis-------srfsgvpDRFSgs
+---gsGTDFTLKISRVQAEDLGVYYCfqg----------shvpytfgGGTKLEIk--------
+>2cgrl-1-DOMAK | (cluster B) sequence |  143 residues
+--elvmtqsplSLPVSLGDQASISCRPsqslv-hsngntYLHWYLqkpgqsPKLliyrvs-------nrfsgvpDRFSgs
+---gsGTAFTLKISRVEAEDLGVYFCsqg----------thvpytfgGGTKLELk--------
+>1fptl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dvvmtqtplSLPVSLGDQASISCSSsqslv-hsngktYLHWYLqkpgqsPKLliykvs-------nrfsgvpDRFSgs
+---gsGTYFTLKISRVEAEDLGVYFCsqs----------thvpytfgGGTKLEIk--------
+>1tetl-1-DOMAK | (cluster B) sequence |  143 residues
+--dvlmtqtplSLPVSLGDQASISCKSsqsiv-hssgntYFEWYLqkpgqsPKLliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYYCfqg----------shipftfgSGTKLEIk--------
+>1dbal-1-DOMAK | (cluster B) sequence |  143 residues
+--dvvmtqiplSLPVNLGDQASISCRSsqsli-hsngntYLHWYLqkpgqsPKLlmykvs-------nrfygvpDRFSgs
+---gsGTDFTLKISRVEAEDLGIYFCsqs----------shvpptfgGGTKLEIk--------
+>1rmfl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dvvmtqsplSLPVSLGDQASISCRSsqslv-hsngnnYLHWYLqksgqaPKLliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYFCsqs----------thvpltfgGGTKLEIk--------
+>1igja-1-DOMAK | (cluster B) sequence |  143 residues
+--dvvmtqtplSLPVSLGDQASISCRSsqslv-hsngntYLNWYLqkagqsPKLliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGIYFCsqt----------thvpptfgGGTKLEIk--------
+>1flrl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dvvmtqtplSLPVSLGDQASISCRSsqslv-hsngntYLRWYLqkpgqsPKVliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYFCsqs----------thvpwtfgGGTKLEIk--------
+>1mrfl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dvvmtqtplSLPVSLGDQASISCRSsqslv-hsngntYLHWYLqkpgqsPKLliykvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYFCsqs----------thvprtfgGGTKLEI---------
+>1plgl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dvvmtqtplSLPVSLGDQASISCRSsqslv-hsngntYLYWYLqkpgqsPKPliyrvs-------nrfsgvpDRFSgs
+---gsGTDFTLKISRVEAEDLGVYFCfqg----------thvpytfgGGTRLEI---------
+>1acyl-1-DOMAK | (cluster B) sequence |  143 residues
+--divmtqspaSLVVSLGQRATISCRAsesvd--sygksFMHWYQqkpgqpPKVliyias-------nlesgvpARFSgs
+---gsRTDFTLTIDPVEADDAATYYCqqn----------nedpptfgAGTKLEMr--------
+>1ggil-1-DOMAK | (cluster B) sequence |  143 residues
+--divltqspgSLAVSLGQRATISCRAsesvd--ddgnsFLHWYQqkpgqpPKLliyrss-------nlisgipDRFSgs
+---gsRTDFTLTINPVEADDVATYYCqqs----------nedpltfgAGTKLEIk--------
+>1ibgl-1-AUTO.1 | (cluster B) sequence |  143 residues
+---ivltqspaSLAVSLGQRATISCRAsksvs--tsgysHIHWYQqkpgqpPKLliylas-------ilesgvpARFSgs
+---gsGTDFTLNIHPVEEEDAATYYCqhs----------reypltfgAGTELELk--------
+>1nmal-1-AUTO.1 | (cluster B) sequence |  143 residues
+--diqmtqttsSLSASLGDRVTISCRAsqd------isnYLNWYQqnpdgtVKLliyyts-------nlhsevpSRFSgs
+---gsGTDYSLTISNLEQEDIATYFCqqd----------ftlpftfgGGTKLEIrra------
+>1iaim-1-AUTO.1 | (cluster B) sequence |  143 residues
+--diqltqspaFMAASPGEKVTITCSVsss-----isssNLHWYQqksetsPKPwiygts-------nlasgvpVRFSgs
+---gsGTSYSLTISSMEAEDAATYYCqqw----------nsypytfgGGTKLEI---------
+>1dfbl-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspsTLSASVGDRVTITCRAsqs------isrWLAWYQqkpgkvPKLliykas-------slesgvpSRFSgs
+---gsGTEFTLTISSLQPDDFATYYCqq------------ynsysfgPGTKVDIk--------
+>1eapa-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dieltqspsSLSASLGGKVTITCKAsqd------ikkYIGWYQhkpgkgPRLlihyts-------tllpgipSRFRgs
+---gsGRDYSFSISNLEGGDIATYYClqy-----------ynlrtfgGGTKLEIk--------
+>1bafl-1-DOMAK | (cluster B) sequence |  143 residues
+--qivltqspaIMSASPGEKVTMTCSAss-------svyYMYWYQqkpgssPRLliydts-------nlasgvpVRFSgs
+---gsGTSYSLTISRMEAEDAATYYCqqws---------syppitfgVGTKLELk--------
+>2iffl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--divltqspaIMSASPGEKVTMTCSAss-------svnYMYWYQqksgtsPKRwiydts-------klasgvpVRFSgs
+---gsGTSYSLTISSMETEDAATYYCqqw-----------grnptfgGGTKLEIk--------
+>6fabl-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqipsSLSASLGDRVSISCRAsqd------innFLNWYQqkpdgtIKLliyfts-------rsqsgvpSRFSgs
+---gsGTDYSLTISNLEQEDIATYFCqqg----------nalprtfgGGTKLEIk--------
+>1knoe-1-AUTO.2 | (cluster B) sequence |  143 residues
+--qiqmtqspsSLSASLGERVSLTCRAsqe------isgYLSWLQqkpdgtIKRliyaas-------tldsgvpKRFSgs
+---rsGSDYSLTISSLESEDFADYYClqy----------asspytfgGGTKLEIl--------
+>1brec-1-AUTO.1 | (cluster B) sequence |  143 residues
+--diqmtqspsSLSASVGDRVTITCQAsqd------isdYLIWYQqklgkaPNLliydas-------tletgvpSRFSgs
+---gsGTEYTFTISSLQPEDIATYYCqqy----------ddlpytfgQGTKVEIk--------
+>1iail-1-AUTO.1 | (cluster B) sequence |  143 residues
+--divmtqshkFMSTSVGDRVSITCKAsqd------vstAVAWYQqkpgqsPKLliysas-------yqytgvpDRFTgs
+---gsRTDFTFTINSVQAEDLAVYYChqh----------ystpftfgSGTKLEI---------
+>1jhll-1-DOMAK | (cluster B) sequence |  143 residues
+--dieltqspsYLVASPGETITINCRAsks------iskSLAWYQekpgktNNLliysgs-------tlqsgipSRFSgs
+---gsGTDFTLTISSLEPEDFAMYICqqh----------neypwtfgGGTKLEIkr-------
+>1vfaa-1-DOMAK | (cluster B) sequence |  143 residues
+--divltqspaSLSASVGETVTITCRAsgn------ihnYLAWYQqkqgksPQLlvyytt-------tladgvpSRFSgs
+---gsGTQYSLKINSLQPEDFGSYYCqhf----------wstprtfgGGTKLEIkr-------
+>1fvea-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspsSLSASVGDRVTITCRAsqd------vntAVAWYQqkpgkaPKLliysas-------flesgvpSRFSgs
+---rsGTDFTLTISSLQPEDFATYYCqqh----------yttpptfgQGTKVEIk--------
+>1ncdl-1-DOMAK | (cluster B) sequence |  143 residues
+--divmtqspkFMSTSVGDRVTITCKAsqd------vstAVVWYQqkpgqsPKLliywas-------trhigvpDRFAgs
+---gsGTDYTLTISSVQAEDLALYYCqqh----------ysppwtfgGGTKLEIk--------
+>1fbil-1-AUTO.1 | (cluster B) sequence |  143 residues
+--diqmtqttsSLSASLGDRVTISCRAsqd------isnYLNWYQkkpdgtVKLliyyts-------rlhsgvpSRFSgs
+---gsGTDYSLTIRNLEQEDIATYFCqqg----------ytlpytfgGGTKLEIk--------
+>2f19l-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqttsSLSASLGDRVTISCRAsqd------isnYLNWYQqkpdgtVKLliyyts-------rlhsgvpSRFSgs
+---gsGTDYSLTISNLEHEDIATYFCqqg----------stlprtfgGGTKLEIk--------
+>1ikfl-1-AUTO.1 | (cluster B) sequence |  143 residues
+--diqmtqttsSLSASLGDRVTISCRAsqd------istYLNWYQqkpdgtVKLlifyts-------rlrsgvpSRFSgs
+---gsGTDYSLTISNLEQEDIATYFCqqg----------sripptfgGGTKLEIl--------
+>1maml-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqttsSLSASLGDRVTISCRAsqd------iynYLNWYQqkpdgtVKLliyyts-------rlhsgvpSRFSgs
+---gsGTDYSLTISNLNQEDMATYICqqg----------ntlpftfgSGTKLEIk--------
+>1ivla-1-DOMAK | (cluster B) sequence |  143 residues
+--dieltqspaTLSVTPGNSVSISCRAsqs------ignRLFWYQqkshesPRLlikyas-------qsisgipSRFSgs
+---gsGTDFTLSINSVETEDLAVYFCqqv----------sewpftfgGGTKLEIk--------
+>1wtla-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspsSLSASVGDRVTITCRAsqd------itnYVNWFQqrpgqaPKVliygas-------iletgvpSRFSgs
+---gsGTDFTFTISSLQPEDIATYYCqqy----------dtlpltfgGGTKVDIkr-------
+>1bbjl-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspaSLSVSVGETVTITCRAsen------iysNLAWYQqkqgksPQLlvyaat-------nladgvpSRFSgs
+---gsGTQYSLKINSLQSEDFGSYYCqhf----------wgtpytfgGGTRLEIk--------
+>3hfml-1-DOMAK | (cluster B) sequence |  143 residues
+--divltqspaTLSVTPGNSVSLSCRAsqs------ignNLHWYQqkshesPRLlikyas-------qsisgipSRFSgs
+---gsGTDFTLSINSVETEDFGMYFCqqs----------nswpytfgGGTKLEIk--------
+>1mlba-1-AUTO.1 | (cluster B) sequence |  143 residues
+--dieltqspaTLSVTPGDSVSLSCRAsqs------isnNLHWYQqkshesPRLlikyvs-------qsssgipSRFSgs
+---gsGTDFTLSINSVETEDFGMYFCqqs----------nswprtfgGGTKLEIk--------
+>2fgwl-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspsSLSASVGDRVTITCRAsqd------innYLNWYQqkpgkaPKLliyyts-------tlhsgvpSRFSgs
+---gsGTDYTLTISSLQPEDFATYYCqqg----------ntlpptfgQGTKVEIk--------
+>1reia-1-DOMAK | (cluster B) sequence |  143 residues
+--diqmtqspsSLSASVGDRVTITCQAsqd------iikYLNWYQqtpgkaPKLliyeas-------nlqagvpSRFSgs
+---gsGTDYTFTISSLQPEDIATYYCqqy----------qslpytfgQGTKLQIt--------
+>1forl-1-DOMAK | (cluster B) sequence |  143 residues
+--qivltqspaIMSAFPGEKVTITCSAts-------svnYMHWFQqkpgtsPKLwiysss-------nlasgvpARFSgs
+---gsGTSYSLTISRMEAEDAATYYCqqr----------ssypitfgSGTKLEIk--------
+>2fbjl-1-DOMAK | (cluster B) sequence |  143 residues
+--eivltqspaITAASLGQKVTITCSAss-------svsSLHWYQqksgtsPKPwiyeis-------klasgvpARFSgs
+---gsGTSYSLTINTMEAEDAAIYYCqqw----------typlitfgAGTKLELk--------
+>1mcia-1-DOMAK | (cluster B) sequence |  143 residues
+---psaltqppSASGSLGQSVTISCTGtssd---vggynYVSWYQqhagkaPKViiyevn-------krpsgvpDRFSgs
+---ksGNTASLTVSGLQAEDEADYYCssye---------gsdnfvfgTGTKVTVlg-------
+>2rhe-1-DOMAK | (cluster B) sequence |  143 residues
+---esvltqppSASGTPGQRVTISCTGsatd----igsnSVIWYQqvpgkaPKLliyynd-------llpsgvsDRFSas
+---ksGTSASLAISGLESEDEADYYCaawn--------dsldepgfgGGTKLTVlgqpk----
+>2fb4l-1-DOMAK | (cluster B) sequence |  143 residues
+---qsvltqppSASGTPGQRVTISCSGtssn----igssTVNWYQqlpgmaPKLliyrda-------mrpsgvpDRFSgs
+---ksGASASLAIGGLQSEDETDYYCaawd--------vslnayvfgTGTKVTVl--------
+>4bjla-1-AUTO.1 | (cluster B) sequence |  143 residues
+---xsvltqppSASGTPGQRVTISCSGsssn----igenSVTWYQhlsgtaPKLliyedn-------srasgvsDRFSas
+---ksGTSASLAISGLQPEDETDYYCaawd--------dsldvavfgTGTKVTVl--------
+>1iaii-1-AUTO.1 | (cluster B) sequence |  143 residues
+---evklqesgGGLVQPGGSMKLSCVAsgft----fnnyWMSWVRqspekgLEWvaeirlnsdnfathyaesvkGKFIis
+r-ddsKSRLYLQMNSLRAEDTGIYYCvlrpl-------fyyavdywgQGTSVTVssa------
+>1rmfh-1-AUTO.1 | (cluster B) sequence |  143 residues
+---qvqlqqsgPELVRPGVSVKISCKGsgyt----fidyAIHWVKeshaksLEWigvisaysg--dtnynqkfkGKATmt
+v-dksSNTAYLELARLTSEDSAIYYCarggw-------lllsfdywgQGTTLTVssa------
+>1lmke-1-AS | (cluster B) sequence |  143 residues
+----vqlqqsgTELMKPGRSLKISCKTtgyi----fsnyWIEWVKqrpghgLEWigkilpggg--sntyndkfkGKATft
+a-dtsSNIAYMQLSSLTSEDSAVYYCargedy----yaywyvldywgQGTTVTVssggg----
+>1flrh-1-AUTO.1 | (cluster B) sequence |  143 residues
+---evkldetgGGLVQPGRPMKLSCVAsgft----fsdyWMNWVRqspekgLEWvaqirnkpynyetyysdsvkGRFTis
+---rdDSSVYLQMNNLRVEDMGIYYCtgs----------yygmdywgQGTSVTVssa------
+>1igjb-1-DOMAK | (cluster B) sequence |  143 residues
+----vqlqqsgPELVKPGASVRMSCKSsgyi----ftdfYMNWVRqshgksLDYigyispysg--vtgynqkfkGKATlt
+v-dksSSTAYMELRSLTSEDSAVYYCagssg-------nkwamdywgHGASVTV---------
+>1nsnh-1-AUTO.1 | (cluster B) sequence |  143 residues
+---dvqlqesgPGLVKPSQSLSLTCTVtgys---itsdyAWNWIRqfpgnkLEWmgyitysg---ttsynpslkSRISis
+r-dtsKNQFFMQLNSVTTEDTGTFYCtr-------------gngdwgQGTTLTVssa------
+>1figh-1-DOMAK | (cluster B) sequence |  143 residues
+---dvqlqqsgPELEKPGASVKISCKAsgfs----lpghNINWIVqrngksLEWignidpyyg--gtnfnpkfkGKATlt
+v-dksSSTLYMHLTSLQSEDSAVYYCarrrd-------gnygftywgQGTLVTVsa-------
+>6fabh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlqqsgVELVRAGSSVKMSCKAsgyt----ftsnGINWVKqrpgqgLEWigynnpgng--yiaynekfkGKTTlt
+v-dksSSTAYMQLRSLTSEDSAVYFCarseyy-----ggsykfdywgQGTTLTVs--------
+>1ibgh-1-AUTO.2 | (cluster B) sequence |  143 residues
+----vhlvqsgPGLVAPSQSLSITCTVsgfs----lttyGVHWFRqppgkgLEWlgliwagg---ntdynsalmSRLSin
+k-dnsKSQVFLKMNSLQADDTAMYYCarfrfa----syydyavdywgQGTSVTVssa------
+>1mamh-1-DOMAK | (cluster B) sequence |  143 residues
+---evklvesgGGLVQPGGSLRLSCATsgft----ftdyYMSWVRqppgkaLEWlgfirnkadgytteysasvkGRFTis
+r-dnsQSILYLQMNTLRAEDSATYYCtrdp---------ygpaaywgQGTLVTVsaa------
+>2f19h-1-DOMAK | (cluster B) sequence |  143 residues
+---qvqlqqsgAELVRAGSSVKMSCKAsgyt----ftsyGVNWVKqrpgqgLEWigyinpgkg--ylsynekfkGKTTlt
+v-drsSSTAYMQLRSLTSEDAAVYFCarsfygg--sdlavyyfdswgQGTTLTVss-------
+>1dfbh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvesgGGLVQPGRSLRLSCAAsgft----fndyAMHWVRqapgkgLEWvsgiswdss--sigyadsvkGRFTis
+r-dnaKNSLYLQMNSLRAEDMALYYCvkgrdyydsggyftvafdiwgQGTMVTVss-------
+>1mrfh-1-AUTO.2 | (cluster B) sequence |  143 residues
+----vqlqqsgAELVKPGASVKLSCKAsgyt----ftsyWMQWVKqrpgqgLEWigeidpsds--ytnynqkfkGKATl-
+---tvDSTAYMQLSSLTSEDSAVYYCanl----------rgyfdywgQGTTLTVssa------
+>1fbih-1-AUTO.1 | (cluster B) sequence |  143 residues
+---qvqlqqpgAELVKPGASVKLSCKAsgyt----ftsyWMHWVKqgpgqgLEWigeidpsds--ypnynekfkGKATlt
+v-dksSSTAYMQLSSLTSEDSAVYYCaslyyy----gtsygvldywgQGTSVTVssa------
+>1ikfh-1-AUTO.1 | (cluster B) sequence |  143 residues
+---evklvesgGGLVQPGGSLKLSCATsgft----fsdyYMYWVRqnsekrLEWvafisnggg--safyadivkGRFTis
+r-dnaKNTLYLQMSRLKSEDTAMYYCtrhtlydtlygnypvwfadwgQGTLVTVsaa------
+>1nmah-1-AUTO.1 | (cluster B) sequence |  143 residues
+---evqlqqpgAELVKPGASVRMSCKAsgyt----ftnyNMYWVKqspgqgLEWigifypgng--dtsynqkfkDKATlt
+a-dksSNTAYMQLSSLTSEDSAVYYCarsggs----yrydggfdywgQGTTLTVss-------
+>1cbvh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqpvetgGGLVQPKGSLKLSCAAsgfs----fntnAMNWVRqapgkgLEWvarirsksnnyatyyadsvkDRFTis
+r-ddsQNMLYLQMNNLKTEDTAMYYCvrdqt-------gtawfaywgQGTLVTVsa-------
+>1knof-1-AUTO.1 | (cluster B) sequence |  143 residues
+---dvklvesgGGLVQPGGSRKLSCAAsgft----fssfGMHWVRqapekgLEWvayissgss--tiyyadtvkGRFTis
+r-dnpKNTLFLQMTSLRSEDTAMYYCargdy-------ygsrgaywgQGTLVTVsaa------
+>1eapb-1-AUTO.1 | (cluster B) sequence |  143 residues
+---evqlqesgTELVKPGASVKISCKAsgyi----stdhAIHWVKqrpeqgLEWigyispgng--dikynekfkVKATlt
+a-dqsSSTAYMQLNSLTSEDSAVYFCkrsyy-------gssyvdywgQGTTLTVssa------
+>2iffh-1-AUTO.2 | (cluster B) sequence |  143 residues
+----vqlqqsgAELMKPGASVKISCKAsgyt----fsdyWIEWVKqrpghgLEWigeilpgsg--stnyherfkGKATft
+a-dtsSSTAYMQLNSLTSEDSGVYYClhg----------nydfdgwgQGTTLTVssa------
+>2fb4h-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvqsgGGVVQPGRSLRLSCSSsgfi----fssyAMYWVRqapgkgLEWvaiiwddgs--dqhyadsvkGRFTis
+r-ndsKNTLFLQMDSLRPEDTGVYFCardgghgfcssascfgpdywgQGTPVTVssa------
+>1acyh-1-DOMAK | (cluster B) sequence |  143 residues
+---qvklqesgPAVIKPSQSLSLTCIVsgfsi--trtnyCWHWIRqapgkgLEWmgricyeg---siyyspsikSRSTis
+r-dtsLNKFFIQLISVTNEDTAMYYCsrenh------myetyfdvwgQGTTVTVss-------
+>2mcph-1-DOMAK | (cluster B) sequence |  143 residues
+---evklvesgGGLVQPGGSLRLSCATsgft----fsdfYMEWVRqppgkrLEWiaasrnkgnkytteysasvkGRFIvs
+r-dtsQSILYLQMNALRAEDTAIYYCarnyy------gstwyfdvwgAGTTVTVss-------
+>1igfj-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvesgGDLVKPGGSLKLSCAAsgft----fsrcAMSWVRqtpekrLEWvagissggs--ytfypdtvkGRFIis
+r-nnaRNTLSLQMSSLRSEDTAIYYCtryss-------dpfyfdywgQGTTLTVssa------
+>1frgh-1-DOMAK | (cluster B) sequence |  143 residues
+---evllvesgGDLVKPGGFLKLSCAAsgft----fssfGMSWVRhtpdkrLEWvatisnggg--ytyyqdsvkGRFTis
+r-dnaKNTLFLEMTSLKSEDAGLYYCarrer------ydekgfaywgRGTLVTVsa-------
+>1ifhh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvesgGDLVKPGGSLKLSCAAsgfs----fssyGMSWVRqtpdkrLEWvatisnggg--ytyypdsvkGRFTis
+r-dnaKNTLYLQMSSLKSEDSAMYYCarrer------ydengfaywgQGTLVTVsa-------
+>1igmh-1-DOMAK | (cluster B) sequence |  143 residues
+---evhllesgGNLVQPGGSLRLSCAAsgft----fnifVMSWVRqapgkgLEWvsgvfgsgg--ntdyadavkGRFTit
+r-dnsKNTLYLQMNSLRAEDTAIYYCakhrvs-----yvltgfdswgQGTLVTV---------
+>8fabb-1-DOMAK | (cluster B) sequence |  143 residues
+---avklvqagGGVVQPGRSLRLSCIAsgft----fsnyGMHWVRqapgkgLEWvaviwyngs--rtyygdsvkGRFTis
+r-dnsKRTLYMQMNSLRTEDTAVYYCardpdi-----ltafsfdywgQGVLVTVss-------
+>1fveb-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvesgGGLVQPGGSLRLSCAAsgfn----ikdtYIHWVRqapgkgLEWvariyptng--ytryadsvkGRFTis
+a-dtsKNTAYLQMNSLRAEDTAVYYCsrwgg------dgfyamdywgQGTLVTVssa------
+>1fgvh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvesgGGLVQPGGSLRLSCATsgyt----fteyTMHWMRqapgkgLEWvaginpkng--gtsyadsvkGRFTis
+v-dksKNTLYLQMNSLRAEDTAVYYCarwrg------ldvryfdvwgQGTLVTVss-------
+>1iaih-1-AUTO.1 | (cluster B) sequence |  143 residues
+---qiqlvqsgPELKKPGETVKISCKAsgyt----ftnyGMNWVKqapgkgLKWmawintytg--eptyaddfkGRFAfs
+l-etsASTAYLQINNLKNEDTATYFCardgyy-----enyyamdywgQGTSVTVssa------
+>1forh-1-DOMAK | (cluster B) sequence |  143 residues
+---qgqlqqsgAELVRPGSSVKISCKAsgya----fssfWVNWVKqrpgqgLEWigqiypgdg--dnkyngkfkGKATlt
+a-dksSTTAYMQLYSLTSEDSAVYFCarsgn-------ypyamdywgQGTSVTVss-------
+>1ncdh-1-DOMAK | (cluster B) sequence |  143 residues
+---qiqlvqsgPELKKPGETVKISCKAsgyt----ftnyGMNWVKqapgkgLEWmgwintntg--eptygeefkGRFAfs
+l-etsASTANLQINNLKNEDKATFFCarged------nfgslsdywgQGTTLTVss-------
+>1ncah-1-DOMAK | (cluster B) sequence |  143 residues
+---qiqlvqsgPELKKPGETVKISCKAsgyt----ftnyGMNWVKqapgkgLKWmgwintntg--eptygeefkGRFAfs
+l-etsASTANLQINNLKNEDTATFFCarged------nfgslsdywgQGTTVTVss-------
+>1dbah-1-DOMAK | (cluster B) sequence |  143 residues
+---qiqlvqsgPELKKPGETVKISCKAsgya----ftnyGVNWVKeapgkeLKWmgwiniytg--eptyvddfkGRFAfs
+l-etsASTAYLEINNLKNEDTATYFCtrgdy-------vnwyfdvwgAGTTVTVss-------
+>1jhlh-1-DOMAK | (cluster B) sequence |  143 residues
+---qvqlqqsgAELVRPGASVKLSCKAsgyt----fisyWINWVKqrpgqgLEWigniypsds--ytnynqkfkDKATlt
+v-dksSSTAYMQLSSPTSEDSAVYYCtrdd--------nygamdywgQGTTVTV---------
+>1teth-1-DOMAK | (cluster B) sequence |  143 residues
+---qiqlvqsgPELKTPGETVRISCKAsgyt----fttyGMSWVKqtpgkgFKWmgwintysg--vptyaddfkGRFAfs
+l-etsASTAYLQINNLKNEDTATYFCarr----------swyfdvwgTGTTVTVss-------
+>1bbjh-1-DOMAK | (cluster B) sequence |  143 residues
+---xvqlqqsdAELVKPGASVKISCKAsgyt----ftdhAIHWAKqkpeqgLEWigyispgnd--dikynekfkGKATlt
+a-dksSSTAYMQLNSLTSEDSAVYFCkr------------syyghwgQGTTLTVssa------
+>2cgrh-1-DOMAK | (cluster B) sequence |  143 residues
+---rvqllesgAELMKPGASVQISCKAtgyt----fseyWIEWVKerpghgLEWigeilpgsg--rtnyrekfkGKATft
+a-dtsSNTAYMQLSSLTSEDSAVYYCtrg----------yssmdywgQGTSVTVsaa------
+>1mlbb-1-AUTO.1 | (cluster B) sequence |  143 residues
+---qvqlqesgAEVMKPGASVKISCKAtgyt----fstyWIEWVKqrpghgLEWigeilpgsg--styynekfkGKATft
+a-dtsSNTAYMQLSSLTSEDSAVYYCarg----------dgnygywgQGTTLTVssa------
+>1mfbh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqvqqsgTVLARPGASVKMSCKAsgyt----ftnyWMHWIKqrpgqgLEWigaiypgns--atfynhkfrAKTKlt
+a-vtsTITAYMELSSLTNEDSAVYYCtrgg--------hgyygdywgQGASLTVss-------
+>1mfa-2-DOMAK | (cluster B) sequence |  143 residues
+--gevqvqqsgTVVARPGASVKMSCKAsgyt----ftnyWMHWIKqrpgqgLEWigaiypgns--atfynhkfrAKTKlt
+a-vtsTTTAYMELSSLTSEDSAVYYCtrgg--------hgyygdywgQGASLTVs--------
+>2fgwh-1-DOMAK | (cluster B) sequence |  143 residues
+---evqlvesgGGLVQPGGSLRLSCATsgyt----fteyTMHWMRqapgkgLEWvaginpkng--gtshnqrfmDRFTis
+v-dksTSTAYMQMNSLRAEDTAVYYCarw----------rryfdvwgQGTLVTVssa------
+>1plgh-1-AUTO.1 | (cluster B) sequence |  143 residues
+---qiqlqqsgPELVRPGASVKISCKAsgyt----ftdyYIHWVKqrpgegLEWigwiypgsg--ntkynekfkGKATlt
+v-dtsSSTAYMQLSSLTSEDSAVYFCargg---------kfamdywgQGTSVTVssa------
+>1fpth-1-AUTO.1 | (cluster B) sequence |  143 residues
+---qvqlqqsgAELVRPGTSVKVSCKAsgya----ftnyLIQWIKqrpgqgLEWigvinpgsg--gtdynanfkGKATlt
+a-dksSSIVYMQLSSLTSDDSAVYFCardfy------dydvgfdywgQGTTLTVssa------
+>1jelh-1-DOMAK | (cluster B) sequence |  143 residues
+---qvqlqqsgPELVRPGSSVKISCKGsgyt----fttyAMHWVKqshaksLEWiglispssg--ytsyngefkGKATmt
+v-dksSSTAYMELARLTSEDSAIYYCarvm--------geqyfdvwgAGTTVTVssa------
+>1gigh-1-DOMAK | (cluster B) sequence |  143 residues
+---qvqlkesgPGLVAPSQSLSITCTVsgfl----lisnGVHWVRqppgkgLEWlgviwagg---ntnynsalmSRVSis
+k-dnsKSQVFLKMKSLQTDDTAMYYCardfydy---dvfyyamdywgQGTSVTVss-------
+>7fabh-1-DOMAK | (cluster B) sequence |  143 residues
+---avqleqsgPGLVRPSQTLSLTCTVsgts----fddyYWTWVRqppgrgLEWigyvfytg---ttlldpslrGRVTml
+v-ntsKNQFSLRLSSVTAADTAVYYCarnl--------iaggidvwgQGSLVTVssa------
+>1vfab-1-DOMAK | (cluster B) sequence |  143 residues
+---qvqlqesgPGLVAPSQSLSITCTVsgfs----ltgyGVNWVRqppgkgLEWlgmiwgdg---ntdynsalkSRLSis
+k-dnsKSQVFLKMNSLHTDDTARYYCarer---------dyrldywgQGTTLTVss-------
+>2fbjh-1-DOMAK | (cluster B) sequence |  143 residues
+---evkllesgGGLVQPGGSLKLSCAAsgfd----fskyWMSWVRqapgkgLEWigeihpdsg--tinytpslkDKFIis
+r-dnaKNSLYLQMSKVRSEDTALYYCarlh--------yygynaywgQGTLVTVsa-------
+>1ggih-1-DOMAK | (cluster B) sequence |  143 residues
+---qvqlkesgPGILQPSQTLSLTCSFsgfsl--stygmGVSWIRqpsgkgLEWlahifwdg---dkrynpslkSRLKis
+k-dtsNNQVFLKITSVDTADTATYYCvq------------egyiywgQGTSVTVssa------
+>1bafh-1-DOMAK | (cluster B) sequence |  143 residues
+---dvqlqesgPGLVKPSQSQSLTCTVtgys---itsdyAWNWIRqfpgnkLEWmgymsysg---strynpslrSRISit
+r-dtsKNQFFLQLKSVTTEDTATYFCarg-----------wplaywgQGTQVSVsea------
+>3hfmh-1-DOMAK | (cluster B) sequence |  143 residues
+---dvqlqesgPSLVKPSQTLSLTCSVtgds----itsdYWSWIRkfpgnrLEYmgyvsysg---styynpslkSRISit
+r-dtsKNQYYLDLNSVTTEDTATYYCan------------wdgdywgQGTLVTVsa-------
+>1ineh-1-DOMAK | (cluster B) sequence |  143 residues
+---evtlvesgGDSVKPGGSLKLSCAAsgft----lsgeTMSWVRqtpekrLEWvattlsggg--ftfysasvkGRFTis
+r-dnaQNNLYLQLNSLRSEDTALYFCas------------hrfvhwgHGTLVTVs--------

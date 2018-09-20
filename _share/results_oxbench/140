@@ -1,0 +1,56 @@
+>2cmd-2-GJB | (cluster A) sequence |  193 residues
+--ttLDIIRSNTFVAELKGKQPGE-vEVPVIGGHSGvTILPLLSQvpgvs--------------fteqeVADLTKRIqna
+gTEVveakagggsatlsMGQAAARFGLSLvralqgeq---gVVECAYVEGdg-----qyaRFFSQPLLLGkn-gvEERks
+iGTLSAFEQNALEGMLDTLKKDIalgqefvnk-
+>1mldc-2-AUTO.1 | (cluster A) sequence |  193 residues
+--ttLDIVRANAFVAELKGLDPAR-vSVPVIGGHAGkTIIPLISQctpkv-------------dfpqdqLSTLTGRIqea
+gTEVvkakagagsatlsMAYAGARFVFSLvdamngke---gVVECSFVKSqe-----tdcPYFSTPLLLGkk-giEKNlg
+iGKISPFEEKMIAEAIPELKASIkkgeefvknm
+>1llda-2-GJB | (cluster B) sequence |  193 residues
+-gtnLDSARLRFLIAQQTGVNVKN-vHAYIAGEHGD-SEVPLWESatiggvpmsdwtplpghdpldadkREEIHQEVkna
+aYKIingkg---atnyaIGMSGVDIIEAVl---hdtn----RILPVSSMLkdf--hgisdICMSVPTLLNrq-gvNNT-i
+nTPVSDKELAALKRSAETLKETAaqfgf-----
+>5ldh-2-GJB | (cluster B) sequence |  193 residues
+sgcnLDSARFRYLMGEKLGVHPSS-cHGWILGEHGD-SSVAVWSGvnvagvvlqql-npemgtdndsenWKEVHKMVves
+aYEViklkg---ytnwaIGLSVADLIESMl---knls----RIHPVSTMVqgmy-gieneVFLSLPCVLNar-glTSV-i
+nQKLKDDEVAQLKNSADTLWGIQkdlkdl----
+>1hlpa-2-AUTO.1 | (cluster B) sequence |  193 residues
+---rLDSARFRYVLSEEFDAPVQN-vEGTILGEHGD-AQVPVFSKvrvdgtd----------pefsgdeKEQLLGDLqes
+aMDVierkg---atewgPARGVAHMVEAIl---hdtg----EVLPASVKLege--fghedTAFGVPVRLGsn-gvEEI-v
+eWDLDDYEQDLMADAAEKLSDQYdkis------
+>1hyhc-2-AUTO.1 | (cluster B) sequence |  193 residues
+---lLDTARMQRAVGEAFDLDPRS-vSGYNLGEHGN-SQFVAWSTvrvmgqpi--------vtladaidLAAIEEEArkg
+gFTVlngkg---ytsygVATSAIRIAKAVm---adah----AELVVSNRRd------dmgMYLSYPAIIGrd-gvLAE-t
+tLDLTTDEQEKLLQSRDYIQQRFdeivdtl---
+>1ldne-2-GJB | (cluster B) sequence |  193 residues
+----LDTARFRFLLGEYFSVAPQN-vHAYIIGEHGD-TELPVWSQayigvmpirkl--veskgeeaqkdLERIFVNVrda
+aYQIiekkg---atyygIAMGLARVTRAIl---hnen----AILTVSAYLdgl--ygerdVYIGVPAVINrn-giREV-i
+eIELNDDEKNRFHHSAATLKSVLaraft-----
+>1llc-2-GJB | (cluster B) sequence |  193 residues
+--tsLDTARFRQSIAEMVNVDARS-vHAYIMGEHGD-TEFPVWSHaniggvtiaew--vkahpeikedkLVKMFEDVrda
+aYEIiklkg---atfygIATALARISKAIl---nden----AVLPLSVYMdgq--ygindLYIGTPAVINrn-giQNI-l
+eIPLTDHEEESMQKSASQLKKVLtdafaknd--
+>3ldh-2-GJB | (cluster B) sequence |  193 residues
+--cnLDSARFRYLMGERLGVHSCL-vIGWVIGQHGD-SVPSVWSGmwdaklhkdv---vdsayeviklkGYTSWAIGlvv
+sNPVdvlt-----yvawKGCSVADLAQTIm---kdlc----RVHPVSTMVkdfy-gikdnVFLSLPCVLNngishCNI-v
+kMKLKPDEEQQLQKSATTLWDIQkdlkf-----
+>2ldx-2-GJB | (cluster B) sequence |  193 residues
+--cnLDSARFRYLIGEKLGVNPTS-cHGWVLGEHGD-SSVPIWSGvnvagvtlksl-npaigtdknkqhWKNVHKQVveg
+gYEVldmkg---ytswaIGLSVTDLARSIl---knlk----RVHPVTTLVkgfh-gikeeVFLSIPCVLGes-giTDF-v
+kVNMTAEEEGLLKKSADTLWNMQknlel-----
+>1ldm-2-GJB | (cluster B) sequence |  193 residues
+--cnLDSARFRYLMGERLGVHSCS-cHGWVIGEHGD-SVPSVWSGmnvasiklhp----ldgtnkdkqdWKKLHKDVvds
+aYEViklkg---ytswaIGLSVADLAETIm---knlc----RVHPVSTMVkdfy-gikdnVFLSLPCVLNdh-giSNI-v
+kMKLKPNEEQQLQKSATTLWDIQkdlkf-----
+>9ldba-2-GJB | (cluster B) sequence |  193 residues
+-gcnLDSARFRYLMGERLGVHPLS-cHGWILGEHGD-SSVPVWSGvnvagvslknl-hpelgtdadkehWKAVHKEVvds
+aYEViklkg---ytswaIGLSVADLAESIm---knlr----RVHPISTMIkgly-gikenVFLSVPCILGqn-giSDV-v
+kVTLTPEEEAHLKKSADTLWGIQkelqf-----
+>4mdha-2-GJB | (cluster B) sequence |  193 residues
+-ltrLDHNRAKAQIALKLGVTSDDvkNVIIWGNHSS-TQYPDVNHakvklqakevg--vyeavkddswlKGEFITTVqqr
+gAAVikark--lssamsAAKAICDHVRDI-----wfgtpegEFVSMGIISdgnsygvpddLLYSFPVTIKd--ktWKIve
+gLPINDFSREKMDLTAKELAEEKetafeflssa
+>1bmda-2-GJB | (cluster B) sequence |  193 residues
+---rLDHNRAKAQLAKKTGTGVDRirRMTVWGNHSS-TMFPDLFHaevdgrpa-------lelvdmewyEKVFIPTVaqr
+gAAIiqarg--assaasAANAAIEHIRDW-----algtpegDWVSMAVPSqgey-gipegIVYSFPVTAKd--gaYRVve
+gLEINEFARKRMEITAQELLDEMeqvkalgli-

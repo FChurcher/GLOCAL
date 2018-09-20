@@ -1,0 +1,52 @@
+>1fga-1-GJB | (cluster A) sequence |  198 residues
+----------------PKRLYc-kngg-FFLri------hpdGRVDGvre---ksdphIKLQLQAee-------rgVVSI
+Kgv-----canRYLAm---kedGRLLAskc----------vtdecFFFERLes---nnYNTYRSRk------ytSWYVAl
+k---rtgQYKLgskt-gpgqkaILFLPMS---------
+>1bara-1-DOMAK | (cluster A) sequence |  198 residues
+----------------PKLLYc-sngg-YFLri------lpdGTVDGtkd---rsdqhIQLQLAAes-------igEVYI
+Kst-----etgQFLAm---dtdGLLYGsqt----------pneecLFLERLee---ngYNTYISKkh----aekHWFVGl
+k---kngRSKLgprt-hfgqkaILFLPLPv--------
+>2afgc-1-AUTO.1 | (cluster A) sequence |  198 residues
+----------------PKLLYc-sngg-HFLri------lpdGTVDGtrd---rsdqhIQLQLSAes-------vgEVYI
+Kst-----etgQYLAm---dtdGLLYGsqt----------pneecLFLERLee---nhYNTYISKkh----aekNWFVGl
+k---kngSCKRgprt-hygqkaILFLPLPv--------
+>2aaib-2-DOMAK | (cluster A) sequence |  198 residues
+--------------pfVTTIV--glyg-LCLqa-------nsGQVWIedcs--sekaeQQWALYA-----------DGSI
+Rpq----qnrdNCLTsdsnireTVVKIlscg--------passgqRWMFKN-------DGTILNLy-------sGLVLDv
+rasdpslKQIIlypl--hgdpnQIWLPLF---------
+>1abrb-2-AUTO.1 | (cluster A) sequence |  198 residues
+--------------pfVTSIS--gysd-LCMqa-------qgSNVWMadcd--snkkeQQWALYT-----------DGSI
+Rsv----qntnNCLTskdhkqgSTILLmgcs--------ngwasqRWVFKN-------DGSIYSLy-------dDMVMDv
+kgsdpslKQIIlwpy--tgkpnQIWLTLF---------
+>2aaib-1-DOMAK | (cluster A) sequence |  198 residues
+-------advcmdpepIVRIV--grng-LCVdvrdg-rfhngNAIQLwpck-sntdanQLWTLKR-----------DNTI
+Rs-------ngKCLTtygyspgVYVMIydcnt-------aatdatRWQIWD-------NGTIINPr-------sSLVLAa
+ts-gnsgTTLTvqtn--iyavsQGWLPTNntq------
+>1abrb-1-AUTO.1 | (cluster A) sequence |  198 residues
+--ivekskicssryepTVRIG--grdg-MCVdvydn-gyhngNRIIMwkck-drleenQLWTLKS-----------DKTI
+Rs-------ngKCLTtygyapgSYVMIydcts-------avaeatYWEIWD-------NGTIINPk-------sALVLSa
+es-ssmgGTLTvqtn--eylmrQGWRTGNnts------
+>1ilr1-1-AUTO.1 | (cluster A) sequence |  198 residues
+------------skmqAFRIW--dvnq-KTFyl-------rnNQLVAgylqgpnvnleEKIDVVPie-------phALFL
+Gih-----ggkMCLScvksgdeTRLQLeavnitdlsenrkqdkrfAFIRSDs----gpTTSFESAa------cpGWFLCt
+am--eadQPVSltnmpdegvmvTKFYFQEde-------
+>8i1b-1-DOMAK | (cluster A) sequence |  198 residues
+--------------qlHYRLR--deqq-KSLvl------sdpYELKAlhlngqninqqVIFSMSFvqgep-sndkiPVAL
+Glk-----gknLYLScvmkdgtPTLQLesvdpkqy-pkkkmekrfVFNKIEv----ksKVEFESAe------fpNWYISt
+sq--aehKPVFlgnn--sgqdiIDFTMESv--------
+>1hib-1-GJB | (cluster A) sequence |  198 residues
+------------vrslNCGLR--dsqq-KSLvm------sgpYELKAlhlqgqdmeqqVVFSMSFvqgee-sndkiPVAL
+Glk-----eknLYLScvlkddkPTLQLesvdpkny-pkkkmekrfVFNKIEi-----nKLEFESAq------fpNWYISt
+sq--aenMPVFlggt-kggqdiTDFTMQFvss------
+>2i1b-1-DOMAK | (cluster A) sequence |  198 residues
+----------apvrslNCTLR--dsqq-KSLvm------sgpYELKAlhlqgqdmeqqVVFSMSFvqgee-sndkiPVAL
+Glk-----eknLYLScvlkddkPTLQLesvdpkny-pkkkmekrfVFNKIEi----nnKLEFESAq------fpNWYISt
+sq--aenMPVFlggt-kggqdiTDFTMQFvss------
+>1tie-1-DOMAK | (cluster B) sequence |  198 residues
+--vlldgngevvqnggTYYLLpqvwaqgGGVqlaktgeetcpLTVVQspn---elsdgKPIRIESrlrsafipdddKVRI
+GfayapkcapsPWWTv---vegLSVKLsede--------stqfdyPFKFEQvsd-qlhSYKLLYCegk---hekCASIGi
+nrdqkgyRRLVvt-----edypLTVVLKKde-------
+>1wbc-1-AUTO.1 | (cluster B) sequence |  198 residues
+dddlvdaegnlvenggTYYLLphiwahgGGIetaktgnepcpLTVVRspn---evskgEPIRISSqflslfiprgsLVAL
+GfanppscaasPWWTvvdspqgPAVKLsqqkl-------pekdilVFKFEKvshsnihVYKLLYCqhdeedvkcDQYIGi
+hrdrngnRRLVvt-----eenpLELVLLKaksetassh

@@ -1,0 +1,42 @@
+>1ppi-1-AS | (cluster A) sequence |  477 residues
+---------qyapqtqsgrTSIVHLF-----------------------------ewRWVDIALECE-rYLGpkGFGGVQ
+VSPPNENVVvt-----npsrpwweRYQPVS-YKLCTRSGNENEFRDMVTRCNNVGVRIYVDAVINHMCGsgaaagtgttc
+gsycnpgsrefpavp--------ysaWDFNdgkcktasgGIESynDPYQVRDCQLVGLLDLALEKDYVRSMIADYLNKLI
+DIGVAGFRIDASKHMWPGDIKAVLDKlhnlntnwfpagsRPFIFQEVIdlg-geaikSSEy--fGNGRVTEFKYGAKLGT
+VVrkwsgEKMsylknwgegw--gfmpsdrALVFVDNHDNqrghgaggssiltf---wdARLYKVAVGFMLAhPYGFTRVM
+S----syrwarnfvngedvndw-igppnnngvikevtinadttcgndwvce---hrwREIRNMVWFRNVvdg-----
+>1hny-1-AUTO.1 | (cluster A) sequence |  477 residues
+---------xyspntqqgrTSIVHLF-----------------------------ewRWVDIALECE-rYLApkGFGGVQ
+VSPPNENVAiy-----npfrpwweRYQPVS-YKLCTRSGNEDEFRNMVTRCNNVGVRIYVDAVINHMCGnavsagtsstc
+gsyfnpgsrdfpavp--------ysgWDFNdgkcktgsgDIENynDATQVRDCRLTGLLDLALEKDYVRSKIAEYMNHLI
+DIGVAGFRLDASKHMWPGDIKAILDKlhnlnsnwfpagsKPFIYQEVIdlg-gepikSSDy--fGNGRVTEFKYGAKLGT
+VIrkwngEKMsylknwgegw--gfvpsdrALVFVDNHDNqrghgaggasiltf---wdARLYKMAVGFMLAhPYGFTRVM
+S----syrwprqfqngndvndw-vgppnnngvikevtinpdttcgndwvce---hrwRQIRNMVIFRNVvdg-----
+>1cyg-1-AS | (cluster B) sequence |  477 residues
+---agnlnkvnf-----tsDVVYQIVvdrfvdgntsnnpsgalfssgctnlrkycggDWQGIINKINdgYLTdmGVTAIW
+ISQPVENVFsvm--ndasgsasyhGYWARDfKKPNPFFGTLSDFQRLVDAAHAKGIKVIIDFAPNHTSPasetn------
+--psymengrlydngtllggytndanMYFHh------ngGTTF-sSLEDGIYRNLFDLADLNHQNPVIDRYLKDAVKMWI
+DMGIDGIRMDAVKHMPFGWQKSLMDEid--------nyrPVFTFGEWFlsenevdanNHYfaneSGMSLLDFRFGQKLRQ
+VLr-nnsDNWygfnqmiqdtasaydevldQVTFIDNHDM----------drfmidggdPRKVDMALAVLLT-SRGVPNIY
+Ygteqymtg---------ngdpnnrk-------------------mmssfnkntrayQVIQKLSSLRRNnpalaygd
+>1ciu-1-AUTO.1 | (cluster B) sequence |  477 residues
+asdtavsnvvny-----stDVIYQIVtdrfvdgntsnnptgdlydpthtslkkyfggDWQGIINKINdgYLTgmGVTAIW
+ISQPVENIYavlpdstfggstsyhGYWARDfKRTNPYFGSFTDFQNLINTAHAHNIKVIIDFAPNHTSPasetd------
+--ptyaengrlydngtllggytndtnGYFHh------ygGTDF-sSYEDGIYRNLFDLADLNQQNSTIDSYLKSAIKVWL
+DMGIDGIRLDAVKHMPFGWQKNFMDSil--------syrPVFTFGEWFlgtneidvnNTYfaneSGMSLLDFRFSQKVRQ
+VFr-dntDTMygldsmiqstasdynfindMVTFIDNHDM----------drfyn-ggsTRPVEQALAFTLT-SRGVPAIY
+Ygteqymtg---------ngdpynra-------------------mmtsfntsttayNVIKKLAPLRKS--------
+>1cgt-1-GJB | (cluster B) sequence |  477 residues
+dpdtavtnkqsf-----stDVIYQVFtdrfldgnpsnnptgaaydatcsnlklycggDWQGLINKINdnYFSdlGVTALW
+ISQPVENIFatin-ysgvtntayhGYWARDfKKTNPYFGTMADFQNLITTAHAKGIKIVIDFAPNHTSPametd------
+--tsfaengrlydngtlvggytndtnGYFHh------ngGSDF-sSLENGIYKNLYDLADFNHNNATIDKYFKDAIKLWL
+DMGVDGIRVDAVKHMPLGWQKSWMSSiy--------ahkPVFTFGEWFlgsaasdadNTDfankSGMSLLDFRFNSAVRN
+VFr-dntSNMyaldsminstatdynqvndQVTFIDNHDM----------drfktsavnNRRLEQALAFTLT-SRGVPAIY
+Ygteqyltg---------ngdpdnra-------------------kmpsfsksttafNVISKLAPLRKS--------
+>1cxf-1-AUTO.1 | (cluster B) sequence |  477 residues
+apdtsvsnkqnf-----stDVIYQIFtdrfsdgnpannptgaafdgtctnlrlycggDWQGIINKINdgYLTgmGVTAIW
+ISQPVENIYsiin-ysgvnntayhGYWARDfKKTNPAYGTIADFQNLIAAAHAKNIKVIIDFAPNHTSPassdq------
+--psfaengrlydngtllggytndtqNLFHh------ngGTDF-sTTENGIYKNLYDLADLNHNNSTVDVYLKDAIKMWL
+DLGIDGIRMNAVKHMPFGWQKSFMAAvn--------nykPVFTFGQWFlgvnevspeNHKfaneSGMSLLDFRFAQKVRQ
+VFr-dntDNMyglkamlegsaadyaqvddQVTFIDNHDM----------erfhasnanRRKLEQALAFTLT-SRGVPAIY
+Ygteqymsg---------gtdpdnra-------------------ripsfststtayQVIQKLAPLRKC--------

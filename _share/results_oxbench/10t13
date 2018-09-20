@@ -1,0 +1,60 @@
+>4mdha-1-GJB | (cluster A) sequence |  182 residues
+-----------------sepIRVLVtgaAGQIAYSLLYSIGNGsvfgkdqpIILVLlditpmmGVLDGVLMELQDcal--
+pllKDVIat---dkeeiaFKDLDVAilvgsmprrdgmerkdllKANVKIFKCQGAALDKYaKKSVKVIVVGNPANTNCLT
+ASKs---apsIPKENFSC----
+>1bmda-1-GJB | (cluster A) sequence |  182 residues
+----------------mkapVRVAVtgaAGQIGYSLLFRIAAGemlgkdqpVILQLleipqamKALEGVVMELEDcaf--
+pllAGLEat---ddpdvaFKDADYAllvgaaprkagmerrdllQVNGKIFTEQGRALAEVaKKDVKVLVVGNPANTNALI
+AYKn---apgLNPRNFTAm---
+>2cmd-1-GJB | (cluster B) sequence |  182 residues
+--------------------MKVAVlgaAGGIGQALALLLKTQlp----sgSELSLyd---iaPVTPGVAVDLSHip---
+-taVKIKgfs-gedatpaLEGADVVlisagvrrkpgmdrsdlfNVNAGIVKNLVQQVAKT-CPKACIGIITNPVNTTVAI
+AAEvlkkagvYDKNKLFGv---
+>1mldc-1-AUTO.1 | (cluster B) sequence |  182 residues
+--------------------AKVAVlgaSGGIGQPLSLLLKNSpl-----vSRLTLy----diAHTPGVAADLSHie---
+-trATVKgylgpeqlpdcLKGCDVVvipagvprkpgmtrddlfNTNATIVATLTAACAQH-CPDAMICIISNPVNSTIPI
+TAEvfkkhgvYNPNKIFGv---
+>5ldh-1-GJB | (cluster B) sequence |  182 residues
+atlkekliapvaqqettipdNKITVv-gVGQVGMACAISILGKsl-----tDELALvd--vleDKLKGEMMDLQHgsl-f
+lqtPKIVan----kdysvTANSKIVvvtagvrqqegesrlnlvQRNVNVFKFIIPQIVKY-SPNCIIIVVSNPVDILTYV
+AWKl----sgLPKHRVIG----
+>3ldh-1-GJB | (cluster B) sequence |  182 residues
+talkdklighlatsqeprsyNKITVv-gCDAVGMADAISVLMKdl-----aDEVALvd--vmeDKLKGEMMDLEHgsl-f
+lhtAKIVsg----kdysvSAGSKLVvitagarqqegesrlnlvQRNVNIFKFIIPNIVKH-SPDCLKELHPELGTDKNKQ
+DWKl----sgLPMHRIIGsg--
+>2ldx-1-GJB | (cluster B) sequence |  182 residues
+-stvkeqliqnlvpedklsrCKITVv-gVGDVGMACAISILLKgl-----aDELALvd--adtDKLRGEALDLQHgsl-f
+lstPKIVfg----kdynvSANSKLViitagarmvsgqtrldllQRNVAIMKAIVPGVIQN-SPDCKIIVVTNPVDILTYV
+VWKi----sgFPVGRVIGsg--
+>1ldm-1-GJB | (cluster B) sequence |  182 residues
+atlkdklighlatsqeprsyNKITVv-gVGAVGMACAISILMKdl-----aDEVALvd--vmeDKLKGEMMDLQHgsl-f
+lhtAKIVsg----kdysvSAGSKLVvitagarqqegesrlnlvQRNVNIFKFIIPNIVKH-SPDCIILVVSNPVDVLTYV
+AWKl----sgLPMHRIIGsg--
+>9ldba-1-GJB | (cluster B) sequence |  182 residues
+-atlkdqlihnllkeehvphNKITVv-gVGAVGMACAISILMKel-----aDEIALvd--vmeDKLKGEMMDLQHgsl-f
+lrtPKIVsg----kdynvTANSRLVvitagarqqegesrlnlvQRNVNIFKFIIPNIVKY-SPNCKLLVVSNPVDILTYV
+AWKi----sgFPKNRVIGs---
+>1llc-1-GJB | (cluster B) sequence |  182 residues
+------------asitdkdhQKVILv-gDGAVGSSYAFAMVLQgi-----aQEIGIvd--ifkDKTKGDAIDLSNalp-f
+tspKKIYs-----aeysdAKDADLVvitagapkqpgetrldlvNKNLKILKSIVDPIVDS-GFNLIFLVAANPVDILTYA
+TWKl----sgFPKNRVVGsg--
+>1ldne-1-GJB | (cluster B) sequence |  182 residues
+--------------mknnggARVVVi-gAGFVGASYVFALMNQgi-----aDEIVLid--aneSKAIGDAMDFNHgkvfa
+pkpVDIWh-----gdyddCRDADLVvicaganqkpgetrldlvDKNIAIFRSIVESVMAS-GFQGLFLVATNPVDILTYA
+TWKf----sgLPHERVIGsgti
+>1hyha-1-AUTO.1 | (cluster B) sequence |  182 residues
+-------------------aRKIGIi-gLGNVGAAVAHGLIAQgv-----aDDYVFid--aneAKVKADQIDFQDamanl
+eahGNIVi-----ndwaaLADADVVistlgni---klqqfaelKFTSSMVQSVGTNLKES-GFHGVLVVISNPVDVITAL
+FQHv----tgFPAHKVIGtgt-
+>1hyhc-1-AUTO.1 | (cluster B) sequence |  182 residues
+-------------------aRKIGIi-gLGNVGAAVAHGLIAQgv-----aDDYVFid--aneAKVKADQIDFQDamanl
+eahGNIVi-----ndwaaLADADVVistlgg------drfaelKFTSSMVQSVGTNLKES-GFHGVLVVISNPVDVITAL
+FQHv----tgFPAHKVIGtgt-
+>1llda-1-GJB | (cluster B) sequence |  182 residues
+-------------------pTKLAVi-gAGAVGSTLAFAAAQRgi-----aREIVLed--iakERVEAEVLDMQHgss-f
+yptVSIDgs----ddpeiCRDADMVvitagprqkpgqsrlelvGATVNILKAIMPNLVKV-APNAIYMLITNPVDIATHV
+AQKl----tgLPENQIFGs---
+>1hlpa-1-AUTO.1 | (cluster B) sequence |  182 residues
+--------------------TKVSVvgaAGTVGAAAGYNIALRdi-----aDEVVFvdipdkeDDTVGQAADTNHgia--
+ydsNTRVrq----ggyedTAGSDVVvitagiprqpgqtridlaGDNAPIMEDIQSSLDEH-NDDYISLTTSNPVDLLNRH
+LYEa----gdRSREQVIGfgg-
