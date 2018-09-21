@@ -23,7 +23,7 @@ public class FileExplorer {
 					System.out.println("step");
 					refresh();
 					try {
-						Thread.sleep(100);
+						Thread.sleep(10000);
 					} catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
