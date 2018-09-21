@@ -16,9 +16,11 @@ public class FileExplorer {
 		Thread t = new Thread(new Runnable() {
 			public void run() {
 				while (run) {
+					System.out.println("step");
 					refresh();
 					try {
-						Thread.sleep(10000);
+						Thread.sleep(100);
+						System.out.println("waiting");
 					} catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
