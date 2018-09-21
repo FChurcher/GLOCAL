@@ -23,7 +23,7 @@ public class AlignmentStarter {
 	
 	public static Job startMafft(String fileName) {
 		System.out.println("starting mafft");
-		Job j = JobBuilder.buildJob("mafft --maxiterate 1000 --globalpair " + "LMATFU" + File.separator + "to_align" + File.separator + fileName+".fasta" + " > " + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".aln.fasta.mafft");
+		return JobBuilder.buildJob("mafft --maxiterate 1000 --globalpair " + "LMATFU" + File.separator + "to_align" + File.separator + fileName+".fasta" + " > " + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".aln.fasta.mafft");
 	}
 	
 	public static Job startClustalw(String fileName) {
