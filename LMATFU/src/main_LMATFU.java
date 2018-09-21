@@ -10,6 +10,6 @@ public class main_LMATFU {
 	
 	public static void main(String[] args) {
 		FileCollector.start();
-		AlignmentStarter.startGlocal(FileCollector.fileNamesToAlign.get(0));
+		AlignmentStarter.startAll(FileCollector.fileNamesToAlign.get(0));
 	}
 }
