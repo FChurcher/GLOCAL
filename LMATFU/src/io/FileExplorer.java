@@ -12,7 +12,8 @@ public class FileExplorer {
 	
 	public static void start() {
 		run = true;
-		refresh();
+		//refresh();
+		System.out.println("step");
 		Thread t = new Thread(new Runnable() {
 			public void run() {
 				while (run) {
