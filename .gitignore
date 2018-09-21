@@ -16,11 +16,16 @@
 .project
 .classpath
 
-# ignore eclpise specific dirs and files for measures
-/measures/bin
-/measures/.settings
-/measures/.project
-/measures/.classpath
+# ignore eclpise specific dirs and files for MEASURES
+/MEASURES/.settings
+/MEASURES/.project
+/MEASURES/.classpath
+
+# ignore eclpise specific dirs and files for LMATFU
+/LMATFU/bin
+/LMATFU/.settings
+/LMATFU/.project
+/LMATFU/.classpath
 
 
 
