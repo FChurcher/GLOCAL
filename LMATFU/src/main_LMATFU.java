@@ -9,6 +9,6 @@ public class main_LMATFU {
 		FileExplorer.refresh();
 		Job j = JobBuilder.buildJob("touch" + FileExplorer.toAlignDir + "add.fasta");
 		FileExplorer.refresh();
-		Job j = JobBuilder.buildJob("sleep 10");
+		Job j2 = JobBuilder.buildJob("sleep 10");
 	}
 }
