@@ -3,6 +3,8 @@ package io;
 import java.io.File;
 import java.util.ArrayList;
 
+import controller.JobBuilder;
+
 public class FileExplorer {
 	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_align");
 	
@@ -19,6 +21,7 @@ public class FileExplorer {
 			public void run() {
 				while (true) {
 					System.out.println("step");
+					JobBuilder.buildJob("mkdir aaa");
 					refresh();
 					try {
 						Thread.sleep(100);
