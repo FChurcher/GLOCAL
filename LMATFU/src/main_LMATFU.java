@@ -2,13 +2,14 @@ import model.Job;
 
 import java.io.File;
 
+import controller.AlignmentStarter;
 import controller.JobBuilder;
-import io.FileExplorer;
+import io.FileCollector;
 
 public class main_LMATFU {
 	
 	public static void main(String[] args) {
-		FileExplorer.start();
-		Job j = JobBuilder.buildJob("touch " + FileExplorer.toAlignDir + File.separator + "add.fasta");
+		FileCollector.start();
+		AlignmentStarter.startGlocal(FileCollector.fileNamesToAlign.get(0));
 	}
 }

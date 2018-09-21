@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import controller.JobBuilder;
 
-public class FileExplorer {
+public class FileCollector {
 	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_align");
 	
 	public static ArrayList<String> fileNamesToAlign = new ArrayList<>();
@@ -20,7 +20,6 @@ public class FileExplorer {
 		Thread t = new Thread(new Runnable() {
 			public void run() {
 				while (true) {
-					System.out.println("step");
 					refresh();
 					try {
 						Thread.sleep(2500);
@@ -36,6 +35,7 @@ public class FileExplorer {
 	}
 	
 	public static void refresh() {
+		System.out.println("refreshing...");
 		for (File file : toAlignDir.listFiles()) {
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
 			if (!fileNamesToAlign.contains(name)) {
@@ -43,7 +43,6 @@ public class FileExplorer {
 				System.out.println("new file found:" + name);
 			}
 		}
-		System.out.println("done");
 	}
 
 }
