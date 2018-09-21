@@ -16,12 +16,11 @@ public class FileExplorer {
 		System.out.println("step");
 		Thread t = new Thread(new Runnable() {
 			public void run() {
-				while (run) {
+				while (true) {
 					System.out.println("step");
 					refresh();
 					try {
 						Thread.sleep(100);
-						System.out.println("waiting");
 					} catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
