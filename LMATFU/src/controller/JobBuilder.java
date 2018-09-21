@@ -1,7 +1,9 @@
-package model;
+package controller;
 
 import java.io.File;
 import java.io.IOException;
+
+import model.Job;
 
 public class JobBuilder {
 	public static Runtime rt = Runtime.getRuntime();
