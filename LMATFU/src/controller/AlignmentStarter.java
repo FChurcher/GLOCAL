@@ -23,12 +23,12 @@ public class AlignmentStarter {
 	
 	public static Job startMafft(String fileName) {
 		System.out.println("starting mafft");
-		return JobBuilder.buildJob("mafft --maxiterate 1000 --globalpair " + "LMATFU" + File.separator + "to_align" + File.separator + fileName+".fasta" + " > " + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".fasta_aln");
+		return JobBuilder.buildJob("mafft --maxiterate 1000 --globalpair " + "LMATFU" + File.separator + "to_align" + File.separator + fileName+".fasta" + " > " + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".aln.fasta.mafft");
 	}
 	
 	public static Job startClustalw(String fileName) {
 		System.out.println("starting clustalw");
-		return JobBuilder.buildJob("clustalw -infile=" + "LMATFU" + File.separator + "to_align" + File.separator + fileName + ".fasta" + " -matrix=Blosum -OUTORDER=INPUT");
+		return JobBuilder.buildJob("clustalw -infile=" + "LMATFU" + File.separator + "to_align" + File.separator + fileName + ".fasta" + " -matrix=Blosum -OUTORDER=INPUT -OUTFILE=" + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".aln.fasta.clustal");
 	}
 
 }
