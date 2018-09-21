@@ -14,7 +14,18 @@ public class FileExplorer {
 		run = true;
 		//refresh();
 		System.out.println("step");
-		
+		System.out.println(run);
+		Thread t = new Thread(new Runnable() {
+			public void run() {
+				while (true) {
+					System.out.println("step");
+					refresh();
+					try {
+						Thread.sleep(100);
+					} catch (InterruptedException e) {e.printStackTrace();}
+				}
+			}
+		});
 	}
 	
 	public static void stop() {
