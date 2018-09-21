@@ -21,7 +21,6 @@ public class FileExplorer {
 			public void run() {
 				while (true) {
 					System.out.println("step");
-					JobBuilder.buildJob("mkdir aaa");
 					refresh();
 					try {
 						Thread.sleep(100);
@@ -29,6 +28,7 @@ public class FileExplorer {
 				}
 			}
 		});
+		t.start();
 	}
 	
 	public static void stop() {
