@@ -23,7 +23,7 @@ public class FileExplorer {
 					System.out.println("step");
 					refresh();
 					try {
-						Thread.sleep(10000);
+						Thread.sleep(2500);
 					} catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
@@ -36,13 +36,11 @@ public class FileExplorer {
 	}
 	
 	public static void refresh() {
-		System.out.println(toAlignDir);
-		System.out.println(toAlignDir.listFiles());
 		for (File file : toAlignDir.listFiles()) {
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
 			if (!fileNamesToAlign.contains(name)) {
 				fileNamesToAlign.add(name);
-				System.out.println(name);
+				System.out.println("new file found:" + name);
 			}
 		}
 		System.out.println("done");
