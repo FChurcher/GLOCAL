@@ -8,9 +8,12 @@ import model.Job;
 public class JobBuilder {
 	public static ProcessBuilder pb = new ProcessBuilder();
 	
-	public static Job buildJob(String command) {
+	public static Job buildJob(String command, String redirectedOutPath) {
 		System.out.println("executing:" + command);
 		pb.command(command.split(" "));
+		if (redirectedOutPath != null) {
+			pb.redirectOutput(new File(redirectedOutPath));
+		}
 		try {
 			Process process = pb.start();
 			return new Job(process);
