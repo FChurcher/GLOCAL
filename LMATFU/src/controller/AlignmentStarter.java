@@ -8,7 +8,7 @@ public class AlignmentStarter {
 	
 	public static void startGlocal(String fileName) {
 		System.out.println("starting GLOCAL");
-		Job j = JobBuilder.buildJob("java -jar -Xmx 100G -Xms 100G GLOCAL.jar " + "LMATFU" + File.separator + "to_align" + File.separator + fileName);
+		Job j = JobBuilder.buildJob("java -Xmx50G -Xms200G -jar GLOCAL.jar " + "LMATFU" + File.separator + "to_align" + File.separator + fileName);
 	}
 
 }
