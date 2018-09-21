@@ -19,7 +19,7 @@ import model.hasse.State;
  */
 public class Writer {
   // static values an methods
-	public static final String DIR_NAME_OUTPUT = "out" + File.separator;
+	public static final String DIR_NAME_OUTPUT = "LMATFU/aligned" + File.separator;
 	public static final String DIR_NAME_DEBUG = "out" + File.separator + "debug" + File.separator;
 	
 	/** stores all the writers */
