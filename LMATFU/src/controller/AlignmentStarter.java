@@ -13,7 +13,7 @@ public class AlignmentStarter {
 	
 	public static Job startGlocal(String fileName) {
 		System.out.println("starting GLOCAL");
-		return JobBuilder.buildJob("java -Xms50G -Xmx200G -jar GLOCAL.jar " + "LMATFU" + File.separator + "to_align" + File.separator + fileName + "> asd.txt");
+		return JobBuilder.buildJob("java -Xms50G -Xmx200G -jar GLOCAL.jar " + "LMATFU" + File.separator + "to_align" + File.separator + fileName);
 	}
 	
 	public static Job startT_coffee(String fileName) {
@@ -23,7 +23,7 @@ public class AlignmentStarter {
 	
 	public static Job startMafft(String fileName) {
 		System.out.println("starting mafft");
-		return JobBuilder.buildJob("mafft --maxiterate 1000 --globalpair " + "LMATFU" + File.separator + "to_align" + File.separator + fileName+".fasta" + " > " + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".aln.fasta.mafft");
+		Job j = JobBuilder.buildJob("mafft --maxiterate 1000 --globalpair " + "LMATFU" + File.separator + "to_align" + File.separator + fileName+".fasta" + " > " + "LMATFU" + File.separator + "aligned" + File.separator +  fileName + ".aln.fasta.mafft");
 	}
 	
 	public static Job startClustalw(String fileName) {

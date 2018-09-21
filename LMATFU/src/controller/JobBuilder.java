@@ -6,13 +6,13 @@ import java.io.IOException;
 import model.Job;
 
 public class JobBuilder {
-	public static Runtime rt = Runtime.getRuntime();
+	public static ProcessBuilder pb = new ProcessBuilder();
 	
 	public static Job buildJob(String command) {
 		System.out.println("executing:" + command);
-		rt = Runtime.getRuntime();
+		pb.command(command.split(" "));
 		try {
-			Process process = rt.exec(command);
+			Process process = pb.start();
 			return new Job(process);
 		} catch (IOException e) { e.printStackTrace(); }
 		return null;
