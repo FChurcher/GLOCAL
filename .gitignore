@@ -13,20 +13,14 @@
 # ignore eclpise specific dirs and files for GLOCAL
 /bin
 /.settings
-.project
-.classpath
 
 # ignore eclpise specific dirs and files for MEASURES
 /MEASURES/bin
 /MEASURES/.settings
-/MEASURES/.project
-/MEASURES/.classpath
 
 # ignore eclpise specific dirs and files for LMATFU
 /LMATFU/bin
 /LMATFU/.settings
-/LMATFU/.project
-/LMATFU/.classpath
 
 
 
