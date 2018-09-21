@@ -17,6 +17,7 @@
 .classpath
 
 # ignore eclpise specific dirs and files for MEASURES
+/MEASURES/bin
 /MEASURES/.settings
 /MEASURES/.project
 /MEASURES/.classpath
