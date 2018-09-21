@@ -1,0 +1,15 @@
+t_coffee x.fasta -mode accurate -output=fasta_aln
+default scoring: ?
+define scoring: ?
+
+mafft --maxiterate 1000 --globalpair x.fasta > x.aln.fasta
+>x.aln.fasta
+default scoring: Blosum62
+
+clustalw -infile=x.fasta -matrix=Blosum -OUTORDER=INPUT
+>x.aln
+default scoring: Blosum62?
+
+java -jar -Xmx 100G -Xms 100G GLOCAL.jar x 
+>x.aln.gloacal
+default scoring: Blosum62

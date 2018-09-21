@@ -35,7 +35,7 @@ public class Writer {
 	public static void registerWriter(String dir, String name) {
 		if (writers.containsKey(name)) { return; }
 		Date date = new Date();
-		String filename = dir + "/" + name + "_" + Writer.dateFormat.format(date).toString() + ".txt";
+		String filename = dir + "/" + name +".aln.glocal";
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true));
 			writers.put(name, writer);
