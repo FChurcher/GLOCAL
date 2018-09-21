@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class FileExplorer {
-	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_align" + File.separator);
+	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_align");
 	
 	public static ArrayList<String> fileNamesToAlign = new ArrayList<>();
 	
