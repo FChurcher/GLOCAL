@@ -14,7 +14,7 @@ public class FileCollector {
 	
 	public static void start() {
 		run = true;
-		//refresh();
+		refresh();
 		System.out.println("step");
 		System.out.println(run);
 		Thread t = new Thread(new Runnable() {
