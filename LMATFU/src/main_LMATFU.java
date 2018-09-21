@@ -11,11 +11,5 @@ public class main_LMATFU {
 		System.out.println("asd");
 		FileExplorer.start();
 		Job j = JobBuilder.buildJob("touch " + FileExplorer.toAlignDir + File.separator + "add.fasta");
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 }
