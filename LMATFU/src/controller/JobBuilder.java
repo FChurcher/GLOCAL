@@ -9,6 +9,7 @@ public class JobBuilder {
 	public static Runtime rt = Runtime.getRuntime();
 	
 	public static Job buildJob(String command) {
+		System.out.println("executing:" + command);
 		rt = Runtime.getRuntime();
 		try {
 			Process process = rt.exec(command);
