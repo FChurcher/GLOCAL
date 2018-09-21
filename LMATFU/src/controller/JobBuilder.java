@@ -11,7 +11,6 @@ public class JobBuilder {
 	public static Job buildJob(String command, String redirectedOutPath) {
 		System.out.println("executing:" + command);
 		pb.command(command.split(" "));
-		pb.comma
 		if (redirectedOutPath != null) {
 			pb.redirectOutput(new File(redirectedOutPath));
 		}
