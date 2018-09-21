@@ -18,7 +18,7 @@ public class AlignmentStarter {
 	
 	public static Job startT_coffee(String fileName) {
 		System.out.println("starting t_coffee");
-		return JobBuilder.buildJob("t_coffee " + "LMATFU" + File.separator + "to_align" + File.separator + fileName + ".fasta -output=fasta_aln");
+		return JobBuilder.buildJob("t_coffee " + "LMATFU" + File.separator + "to_align" + File.separator + fileName + ".fasta -output=fasta_aln", null);
 	}
 	
 	public static Job startMafft(String fileName) {
