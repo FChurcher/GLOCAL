@@ -19,9 +19,9 @@ public class JobHolder {
 		Thread t = new Thread(new Runnable() {
 			public void run() {
 				while (run) {
-					System.out.println("[running jobs " + runningjobs.size() + "]");
 					clean();
 					startJob();
+					System.out.println("[running jobs " + runningjobs.size() + "]");
 					try { Thread.sleep(500); } catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
@@ -38,7 +38,7 @@ public class JobHolder {
 		if (runningjobs.size() < maxJobs) {
 			for (AlignmentJobGroup waitingAlignment : waitingAlignments) {
 				if (!waitingAlignment.isFullyRunning()) {
-					waitingAlignment.startOne();
+					runningjobs.add(waitingAlignment.startOne());
 					break;
 				}
 			}

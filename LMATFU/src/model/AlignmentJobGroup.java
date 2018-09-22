@@ -14,16 +14,21 @@ public class AlignmentJobGroup {
 		this.clustalw = null;
 	}
 	
-	public void startOne(){
+	public Job startOne(){
 		if (this.glocal == null) {
 			this.glocal = AlignmentStarter.startGlocal(name);
+			return this.glocal;
 		} else if (this.t_coffee == null) {
 			this.t_coffee = AlignmentStarter.startT_coffee(name);
+			return this.t_coffee;
 		} else if (this.mafft == null) {
 			this.mafft = AlignmentStarter.startMafft(name);
+			return this.mafft;
 		} else if (this.clustalw == null) {
 			this.clustalw = AlignmentStarter.startClustalw(name);
+			return this.clustalw;
 		}
+		return null;
 	}
 	
 	public boolean isFullyRunning() {
