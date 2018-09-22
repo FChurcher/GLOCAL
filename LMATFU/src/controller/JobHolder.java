@@ -20,8 +20,11 @@ public class JobHolder {
 	public static void fill() {
 		clean();
 		while (runningjobs.size() < maxJobs) {
-			waitingAlignments.getFirst().startOne();
-			clean();
+			for (AlignmentJobGroup waitingAlignment : waitingAlignments) {
+				if (!waitingAlignment.isFullyRunning()) {
+					waitingAlignment.startOne();
+				}
+			}
 		}
 	}
 	
