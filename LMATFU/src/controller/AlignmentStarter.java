@@ -2,7 +2,6 @@ package controller;
 
 import java.io.File;
 
-import model.AlignmentJobGroup;
 import model.Job;
 
 public class AlignmentStarter {

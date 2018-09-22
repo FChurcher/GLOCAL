@@ -3,6 +3,7 @@ package controller;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import io.TimesWriter;
 import model.AlignmentJobGroup;
 import model.Job;
 
@@ -55,6 +56,7 @@ public class JobHolder {
 		for (Iterator<AlignmentJobGroup> it = waitingAlignments.iterator(); it.hasNext();) {
 			AlignmentJobGroup alignmentJobGroup = it.next();
 			if (alignmentJobGroup.isDone()) {
+				TimesWriter.writeTimes(alignmentJobGroup);
 				it.remove();
 			}
 		}

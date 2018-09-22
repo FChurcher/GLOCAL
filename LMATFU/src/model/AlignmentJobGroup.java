@@ -49,5 +49,21 @@ public class AlignmentJobGroup {
 		return name;
 	}
 
+	public Job getGlocal() {
+		return glocal;
+	}
+
+	public Job getT_coffee() {
+		return t_coffee;
+	}
+
+	public Job getMafft() {
+		return mafft;
+	}
+
+	public Job getClustalw() {
+		return clustalw;
+	}
+
 	
 }

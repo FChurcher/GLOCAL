@@ -3,7 +3,6 @@ package io;
 import java.io.File;
 import java.util.ArrayList;
 
-import controller.JobBuilder;
 import controller.JobHolder;
 import model.AlignmentJobGroup;
 
