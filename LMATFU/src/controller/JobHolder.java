@@ -22,7 +22,7 @@ public class JobHolder {
 				while (run) {
 					clean();
 					startJob();
-					System.out.println("[running jobs " + runningjobs.size() + "]");
+					System.out.println("[running jobs " + runningjobs.size() + " | " + waitingAlignments.size() + "]");
 					try { Thread.sleep(500); } catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
@@ -32,7 +32,7 @@ public class JobHolder {
 	
 	public static void add(AlignmentJobGroup alignmentJobGroup) {
 		waitingAlignments.add(alignmentJobGroup);
-		System.out.println("added: " + alignmentJobGroup.getName());
+		System.out.println("added Alignment: " + alignmentJobGroup.getName());
 	}
 	
 	public static void startJob() {
@@ -58,6 +58,7 @@ public class JobHolder {
 			if (alignmentJobGroup.isDone()) {
 				TimesWriter.writeTimes(alignmentJobGroup);
 				it.remove();
+				System.out.println("removed Alignment: " + alignmentJobGroup.getName());
 			}
 		}
 	}

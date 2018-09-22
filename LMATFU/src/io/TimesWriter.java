@@ -8,7 +8,7 @@ import java.io.IOException;
 import model.AlignmentJobGroup;
 
 public class TimesWriter {
-	public static final String path = "LMATFU" + File.separator + "aligned" + File.separator + "times";
+	public static final String path = "LMATFU" + File.separator + "aligned" + File.separator + "times.txt";
 	
 	private static BufferedWriter writer;
 	
@@ -17,6 +17,7 @@ public class TimesWriter {
 		try {
 			writer = new BufferedWriter(new FileWriter(path, true));
 		} catch (IOException e) { e.printStackTrace(); }
+		write("asd");
 	}
 	
 	public static void writeTimes(AlignmentJobGroup alignmentJobGroup) {
