@@ -24,7 +24,7 @@ public class Main_GLOCAL {
 		TimeStampMaganer.getInstance().printTimeStamp("writing files...");
 		String writername = Settings.name;
 		Writer.registerWriter(Writer.DIR_NAME_OUTPUT, writername);
-		Writer.write(writername, "took " + TimeStampMaganer.getInstance().getActualRunTime() + " seconds\n\n");
+		Writer.write(writername, "took " + TimeStampMaganer.getInstance().getActualRunTime() + " ms\n\n");
 		Writer.write(writername, Settings.printToString() + "\n\n");
 		Writer.write(writername, a.toString() + "\n");
 		//Writer.write(writername, a.getHasseGraph().toLongString());

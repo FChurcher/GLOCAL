@@ -5,21 +5,32 @@ public class Job {
 	private Thread waiter;
 	private boolean done;
 	
+	private long startTime;
+	private long endTime;
+	
 	public Job(Process p) {
+		this.startTime = System.currentTimeMillis();
 		this.process = p;
 		this.done = false;
-		
-		waiter = new Thread(new Runnable() {
+		this.waiter = new Thread(new Runnable() {
 			public void run() {
 				try { process.waitFor(); } catch (InterruptedException e) { e.printStackTrace(); }
+				endTime = System.currentTimeMillis();
 				done = true;
 			}
 		});
-		waiter.start();
+		this.waiter.start();
 	}
 	
 	public boolean isDone() {
-		return !process.isAlive();
+		return done;
+	}
+	
+	public long getDuration() {
+		if (isDone()) {
+			return this.endTime - this.startTime;
+		}
+		return -1;
 	}
 
 }

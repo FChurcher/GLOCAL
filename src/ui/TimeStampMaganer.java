@@ -46,6 +46,6 @@ public class TimeStampMaganer {
 	}
 	
 	public long getSystemSeconds() {
-		return System.currentTimeMillis()/1000;
+		return System.currentTimeMillis();
 	}
 }

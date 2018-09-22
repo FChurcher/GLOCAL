@@ -4,11 +4,13 @@ import java.io.File;
 import java.util.ArrayList;
 
 import controller.JobBuilder;
+import controller.JobHolder;
+import model.AlignmentJobGroup;
 
 public class FileCollector {
 	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_align");
 	
-	public static ArrayList<String> fileNamesToAlign = new ArrayList<>();
+	public static ArrayList<String> regocnicedAlignmentNames = new ArrayList<>();
 	public static Process refreshingProcess;
 	public static boolean run;
 	
@@ -38,8 +40,9 @@ public class FileCollector {
 		System.out.println("refreshing...");
 		for (File file : toAlignDir.listFiles()) {
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
-			if (!fileNamesToAlign.contains(name)) {
-				fileNamesToAlign.add(name);
+			if (!regocnicedAlignmentNames.contains(name)) {
+				regocnicedAlignmentNames.add(name);
+				JobHolder.add(new AlignmentJobGroup(name));
 				System.out.println("new file found:" + name);
 			}
 		}
