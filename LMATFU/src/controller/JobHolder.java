@@ -25,6 +25,7 @@ public class JobHolder {
 				}
 			}
 		});
+		t.start();
 	}
 	
 	public static void add(AlignmentJobGroup alignmentJobGroup) {
