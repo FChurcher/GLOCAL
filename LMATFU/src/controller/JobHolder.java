@@ -11,18 +11,33 @@ public class JobHolder {
 	private static LinkedList<AlignmentJobGroup> waitingAlignments = new LinkedList<>();
 	private static int maxJobs = 7;
 	
+	private static boolean run;
+	
+	
+	public static void start() {
+		run = true;
+		Thread t = new Thread(new Runnable() {
+			public void run() {
+				while (run) {
+					clean();
+					startJob();
+					try { Thread.sleep(500); } catch (InterruptedException e) {e.printStackTrace();}
+				}
+			}
+		});
+	}
+	
 	public static void add(AlignmentJobGroup alignmentJobGroup) {
 		waitingAlignments.add(alignmentJobGroup);
 		System.out.println("added: " + alignmentJobGroup.getName());
-		fill();
 	}
 	
-	public static void fill() {
-		clean();
-		while (runningjobs.size() < maxJobs) {
+	public static void startJob() {
+		if (runningjobs.size() < maxJobs) {
 			for (AlignmentJobGroup waitingAlignment : waitingAlignments) {
 				if (!waitingAlignment.isFullyRunning()) {
 					waitingAlignment.startOne();
+					break;
 				}
 			}
 		}

@@ -11,21 +11,18 @@ public class FileCollector {
 	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_align");
 	
 	public static ArrayList<String> regocnicedAlignmentNames = new ArrayList<>();
-	public static Process refreshingProcess;
+	
 	public static boolean run;
+	
 	
 	public static void start() {
 		run = true;
 		refresh();
-		System.out.println("step");
-		System.out.println(run);
 		Thread t = new Thread(new Runnable() {
 			public void run() {
-				while (true) {
+				while (run) {
 					refresh();
-					try {
-						Thread.sleep(2500);
-					} catch (InterruptedException e) {e.printStackTrace();}
+					try { Thread.sleep(2500); } catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
 		});
