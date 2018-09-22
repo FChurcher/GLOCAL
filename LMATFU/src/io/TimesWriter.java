@@ -15,6 +15,7 @@ public class TimesWriter {
 	
 	public static void writeTimes(AlignmentJobGroup alignmentJobGroup) {
 		openWriter();
+		write(alignmentJobGroup.getName() + "\t");
 		write(alignmentJobGroup.getGlocal().getDuration() + "\t");
 		write(alignmentJobGroup.getT_coffee().getDuration() + "\t");
 		write(alignmentJobGroup.getMafft().getDuration() + "\t");
