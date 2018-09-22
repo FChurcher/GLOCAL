@@ -58,7 +58,7 @@ public class JobHolder {
 			if (alignmentJobGroup.isDone()) {
 				TimesWriter.writeTimes(alignmentJobGroup);
 				it.remove();
-				System.out.println("removed Alignment: " + alignmentJobGroup.getName());
+				System.out.println("completed Alignment: " + alignmentJobGroup.getName());
 			}
 		}
 	}

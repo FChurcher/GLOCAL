@@ -13,18 +13,25 @@ public class TimesWriter {
 	private static BufferedWriter writer;
 	
 	
-	public static void init() {
-		try {
-			writer = new BufferedWriter(new FileWriter(path, true));
-		} catch (IOException e) { e.printStackTrace(); }
-		write("asd");
-	}
-	
 	public static void writeTimes(AlignmentJobGroup alignmentJobGroup) {
+		openWriter();
 		write(alignmentJobGroup.getGlocal().getDuration() + "\t");
 		write(alignmentJobGroup.getT_coffee().getDuration() + "\t");
 		write(alignmentJobGroup.getMafft().getDuration() + "\t");
 		write(alignmentJobGroup.getClustalw().getDuration() + "\n");
+		closeWriter();
+	}
+	
+	private static void openWriter() {
+		try {
+			writer = new BufferedWriter(new FileWriter(path, true));
+		} catch (IOException e) { e.printStackTrace(); }
+	}
+	
+	private static void closeWriter() {
+		try {
+			writer.close();
+		} catch (IOException e) { e.printStackTrace(); }
 	}
 	
 	private static void write(String text) {
