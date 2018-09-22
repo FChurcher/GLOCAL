@@ -13,6 +13,8 @@ public class JobBuilder {
 		pb.command(command.split(" "));
 		if (redirectedOutPath != null) {
 			pb.redirectOutput(new File(redirectedOutPath));
+		} else {
+			pb.inheritIO();
 		}
 		try {
 			Process process = pb.start();
