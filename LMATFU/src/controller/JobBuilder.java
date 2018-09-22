@@ -6,15 +6,14 @@ import java.io.IOException;
 import model.Job;
 
 public class JobBuilder {
-	public static ProcessBuilder pb = new ProcessBuilder();
+	public static ProcessBuilder pb;
 	
 	public static Job buildJob(String command, String redirectedOutPath) {
-		System.out.println("executing: " + command);
+		System.out.println("executing:" + command);
+		pb = new ProcessBuilder();
 		pb.command(command.split(" "));
 		if (redirectedOutPath != null) {
 			pb.redirectOutput(new File(redirectedOutPath));
-		} else {
-			pb.inheritIO();
 		}
 		try {
 			Process process = pb.start();
