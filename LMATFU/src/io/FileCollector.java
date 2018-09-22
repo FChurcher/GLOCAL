@@ -34,7 +34,7 @@ public class FileCollector {
 	}
 	
 	public static void refresh() {
-		System.out.println("refreshing...");
+		System.out.println("[refreshing files]");
 		for (File file : toAlignDir.listFiles()) {
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
 			if (!regocnicedAlignmentNames.contains(name)) {

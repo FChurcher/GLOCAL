@@ -19,6 +19,7 @@ public class JobHolder {
 		Thread t = new Thread(new Runnable() {
 			public void run() {
 				while (run) {
+					System.out.println("[running jobs " + runningjobs.size() + "]");
 					clean();
 					startJob();
 					try { Thread.sleep(500); } catch (InterruptedException e) {e.printStackTrace();}
