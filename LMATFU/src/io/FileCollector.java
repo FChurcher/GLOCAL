@@ -42,8 +42,8 @@ public class FileCollector {
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
 			if (!regocnicedAlignmentNames.contains(name)) {
 				regocnicedAlignmentNames.add(name);
+				System.out.println("new aligment name found: " + name);
 				JobHolder.add(new AlignmentJobGroup(name));
-				System.out.println("new file found:" + name);
 			}
 		}
 	}

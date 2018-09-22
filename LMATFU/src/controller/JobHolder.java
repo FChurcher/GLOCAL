@@ -14,6 +14,7 @@ public class JobHolder {
 	public static void add(AlignmentJobGroup alignmentJobGroup) {
 		waitingAlignments.add(alignmentJobGroup);
 		System.out.println("added: " + alignmentJobGroup.getName());
+		fill();
 	}
 	
 	public static void fill() {
