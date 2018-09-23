@@ -10,7 +10,7 @@ import model.Job;
 public class JobHolder {
 	private static LinkedList<Job> runningjobs = new LinkedList<>();
 	private static LinkedList<AlignmentJobGroup> waitingAlignments = new LinkedList<>();
-	private static int maxJobs = 7;
+	private static int maxJobs = 10;
 	
 	private static boolean run;
 	
@@ -22,7 +22,7 @@ public class JobHolder {
 				while (run) {
 					clean();
 					startJob();
-					System.out.println("[running jobs " + runningjobs.size() + " | " + waitingAlignments.size() + "]");
+					System.out.println("[running jobs " + runningjobs.size() + " | " + waitingAlignments.size() + " waiting alignments]");
 					try { Thread.sleep(500); } catch (InterruptedException e) {e.printStackTrace();}
 				}
 			}
