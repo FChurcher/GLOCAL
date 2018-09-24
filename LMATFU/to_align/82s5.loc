@@ -1,0 +1,8 @@
+>2npx2AS.1 | (cluster A) sequence |  136 residues
+true true
+>1lvl2AS | (cluster B) sequence |  136 residues
+true false
+>1lpfa2AS | (cluster B) sequence |  136 residues
+false false
+>3lada2AS | (cluster B) sequence |  136 residues
+false false
