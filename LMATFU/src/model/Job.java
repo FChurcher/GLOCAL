@@ -4,6 +4,7 @@ public class Job {
 	private Process process;
 	private Thread waiter;
 	private boolean done;
+	private int exitValue;
 	
 	private long startTime;
 	private long endTime;
@@ -14,7 +15,7 @@ public class Job {
 		this.done = false;
 		this.waiter = new Thread(new Runnable() {
 			public void run() {
-				try { process.waitFor(); } catch (InterruptedException e) { e.printStackTrace(); }
+				try { exitValue = process.waitFor(); } catch (InterruptedException e) { e.printStackTrace(); }
 				endTime = System.currentTimeMillis();
 				done = true;
 			}
@@ -24,6 +25,10 @@ public class Job {
 	
 	public boolean isDone() {
 		return done;
+	}
+	
+	public int getExitValue() {
+		return exitValue;
 	}
 	
 	public long getDuration() {

@@ -16,10 +16,29 @@ public class TimesWriter {
 	public static void writeTimes(AlignmentJobGroup alignmentJobGroup) {
 		openWriter();
 		write(alignmentJobGroup.getName() + "\t");
-		write(alignmentJobGroup.getGlocal().getDuration() + "\t");
-		write(alignmentJobGroup.getT_coffee().getDuration() + "\t");
-		write(alignmentJobGroup.getMafft().getDuration() + "\t");
-		write(alignmentJobGroup.getClustalw().getDuration() + "\n");
+		if (alignmentJobGroup.getGlocal().getExitValue() == 0) {
+			write(alignmentJobGroup.getGlocal().getDuration() + "\t");
+		} else {
+			write("err" + "\t");
+		}
+		
+		if (alignmentJobGroup.getT_coffee().getExitValue() == 0) {
+			write(alignmentJobGroup.getT_coffee().getDuration() + "\t");
+		} else {
+			write("err" + "\t");
+		}
+		
+		if (alignmentJobGroup.getMafft().getExitValue() == 0) {
+			write(alignmentJobGroup.getMafft().getDuration() + "\t");
+		} else {
+			write("err" + "\t");
+		}
+		
+		if (alignmentJobGroup.getClustalw().getExitValue() == 0) {
+			write(alignmentJobGroup.getClustalw().getDuration() + "\n");
+		} else {
+			write("err" + "\n");
+		}
 		closeWriter();
 	}
 	
