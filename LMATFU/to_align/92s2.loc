@@ -1,0 +1,8 @@
+>1bsra1DOMAK | (cluster A) sequence |  124 residues
+false true
+>2rns1DOMAK | (cluster B) sequence |  124 residues
+false true
+>1ssaa1DOMAK | (cluster B) sequence |  124 residues
+true false
+>5rsa1AS | (cluster B) sequence |  124 residues
+true true
