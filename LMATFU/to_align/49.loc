@@ -1,0 +1,6 @@
+>1tkca2AUTO.1 | (cluster A) sequence |  238 residues
+true false
+>1pvda3AUTO.1 | (cluster B) sequence |  238 residues
+false true
+>1poxa3DOMAK | (cluster B) sequence |  238 residues
+false false

@@ -46,7 +46,7 @@ public class Reader {
 				System.out.println("invalid format");
 				return null;
 			}
-			sequecnes.add(new Sequence(sequence.toCharArray(), true, true, sequenceName));
+			sequecnes.add(new Sequence(sequence.toUpperCase().toCharArray(), true, true, sequenceName));
 		}
 		return sequecnes.toArray(new Sequence[sequecnes.size()]);
 	}
