@@ -9,10 +9,10 @@ import model.Alignment;
 public class Main_MEASURING {
 	public static void main(String[] args) {
 		Writer.openWriter();
-		String path = "LMATFU" + File.separator + "to_compare";
+		String path = args[0];
 		Alignment test = null, ref = null;
 		String alignmentFilePath = "";
-		for (String alignmentName : FileCollector.getAlignmentNames(new File(args[0]))) {
+		for (String alignmentName : FileCollector.getAlignmentNames(new File(path))) {
 			Writer.write(alignmentName + "\t");
 			alignmentFilePath = path + File.separator + alignmentName + ".glocal";
 			System.out.println(alignmentFilePath);
