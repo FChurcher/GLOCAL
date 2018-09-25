@@ -8,6 +8,14 @@ import model.Alignment;
 
 public class Main_MEASURING {
 	public static void main(String[] args) {
+		
+//		Alignment a, b;
+//		a = Reader.readFasta("test1.fasta");
+//		b = Reader.readFasta("test2.fasta");
+//		System.out.println(Measurer.acW(a, b));
+//		System.out.println(Measurer.pse(a, b));
+		
+		
 		Writer.openWriter();
 		String path = args[0];
 		Alignment test = null, ref = null;
@@ -40,7 +48,8 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + alignmentName + ".tcoffee";
+			alignmentFilePath = path + alignmentName + ".tcoffe";
+			System.out.println(alignmentFilePath);
 			if (new File(alignmentFilePath).exists()) {
 				System.out.println(alignmentFilePath);
 				ref = Reader.readFasta(alignmentFilePath);
@@ -77,5 +86,6 @@ public class Main_MEASURING {
 			Writer.write("\n");
 		}
 		Writer.closeWriter();
+		
 	}
 }

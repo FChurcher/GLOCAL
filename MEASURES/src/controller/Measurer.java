@@ -72,7 +72,7 @@ public class Measurer {
 			}
 		}
 //		System.out.println("correctlyAlignedPositionCount: " + correctlyAlignedPositionCount);
-		float acW = 100 * (float)correctlyAlignedPositionCount / ((((refAlignment.getSequences().size()-1) * refAlignment.getSequences().size())/2) * refAlignment.getAlignedSequences().get(0).getSequence().length());
+		float acW = 100 * (float)correctlyAlignedPositionCount / ((((refAlignment.getSequences().size()-1) * refAlignment.getSequences().size())/2f) * refAlignment.getAlignedSequences().get(0).getSequence().length());
 //		System.out.println("ACw: " + acW + " %");
 		return acW;
 		
