@@ -1,3 +1,5 @@
+import java.io.File;
+
 import controller.Measurer;
 import io.FileCollector;
 import io.Reader;
@@ -8,10 +10,13 @@ import model.Sequence;
 public class Main_MEASURING {
 	public static void main(String[] args) {
 		Alignment a1, a2;
+		String path = "LMATFU" + File.separator + "to_compare";
 		
 		Writer.openWriter();
 		for (String alignmentName : FileCollector.getAlignmentNames()) {
-			
+			if (new File(path + File.separator + alignmentName + ".aln.ox").exists()) {
+				
+			}
 		}
 		Writer.closeWriter();
 		
