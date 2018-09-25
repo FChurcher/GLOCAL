@@ -15,6 +15,7 @@ public class Main_MEASURING {
 		for (String alignmentName : FileCollector.getAlignmentNames(new File(args[0]))) {
 			Writer.write(alignmentName + "\t");
 			alignmentFilePath = path + File.separator + alignmentName + ".glocal";
+			System.out.println(alignmentFilePath);
 			if (new File(alignmentFilePath).exists()) {
 				test = Reader.readGLOCAL(alignmentFilePath);
 			}
