@@ -12,7 +12,7 @@ public class Main_MEASURING {
 		String path = "LMATFU" + File.separator + "to_compare";
 		Alignment test = null, ref = null;
 		String alignmentFilePath = "";
-		for (String alignmentName : FileCollector.getAlignmentNames(new File(args[1]))) {
+		for (String alignmentName : FileCollector.getAlignmentNames(new File(args[0]))) {
 			Writer.write(alignmentName + "\t");
 			alignmentFilePath = path + File.separator + alignmentName + ".aln.glocal";
 			if (new File(alignmentFilePath).exists()) {
