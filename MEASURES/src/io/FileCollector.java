@@ -10,6 +10,7 @@ public class FileCollector {
 		// get all alignment names
 		ArrayList<String> alignmentNames = new ArrayList<>();
 		for (File file : toAlignDir.listFiles()) {
+			if (file.isDirectory()) {continue;}
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
 			if (!alignmentNames.contains(name)) {
 				alignmentNames.add(name);
