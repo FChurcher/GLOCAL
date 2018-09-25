@@ -1,0 +1,8 @@
+>1nsnl-1-AUTO.1 1nsn 1nsnl-1-AUTO.1 {  L 1 _ TO L 107 _  } , 111 bases, EA8 checksum. 
+true true
+>1acyl-1-DOMAK 1acy 1acyl-1-DOMAK {  L 1 _ TO L 107 _  } , 111 bases, 572 checksum. 
+true false
+>1ggil-1-DOMAK 1ggi 1ggil-1-DOMAK {  L 1 _ TO L 107 _  } , 111 bases, 544 checksum. 
+true true
+>1ibgl-1-AUTO.1 1ibg 1ibgl-1-AUTO.1 {  L 2 _ TO L 107 _  } , 110 bases, 1B9D checksum. 
+false false
