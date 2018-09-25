@@ -8,7 +8,7 @@ import model.Sequence;
 public class Measurer {
 	
 	public static float acW(Alignment refAlignment, Alignment testAlignment) {
-		System.out.println("\nacW");
+//		System.out.println("\nacW");
 		int[] refIndices = new int[refAlignment.getSequences().size()];
 		int[] testIndices = new int[testAlignment.getSequences().size()];
 		int correctlyAlignedPositionCount = 0;
@@ -79,7 +79,7 @@ public class Measurer {
 	}
 	
 	public static float pse(Alignment refAlignment, Alignment testAlignment) {
-		System.out.println("\npse");
+//		System.out.println("\npse");
 		float pseP, pse = 0;
 		for (int i = 0; i < refAlignment.getSequences().size()-1; i++) {
 			for (int j = i+1; j < refAlignment.getSequences().size(); j++) {

@@ -13,7 +13,8 @@ public class Main_MEASURING {
 		Alignment test = null, ref = null;
 		String alignmentFilePath = "";
 		for (String alignmentName : FileCollector.getAlignmentNames(new File(path))) {
-			
+			test = null; 
+			ref = null;
 			Writer.write(alignmentName + "\t");
 			alignmentFilePath = path + alignmentName + ".glocal";
 			if (new File(alignmentFilePath).exists()) {
