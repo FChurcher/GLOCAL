@@ -1,11 +1,20 @@
 import controller.Measurer;
+import io.FileCollector;
 import io.Reader;
+import io.Writer;
 import model.Alignment;
 import model.Sequence;
 
 public class Main_MEASURING {
 	public static void main(String[] args) {
 		Alignment a1, a2;
+		
+		Writer.openWriter();
+		for (String alignmentName : FileCollector.getAlignmentNames()) {
+			
+		}
+		Writer.closeWriter();
+		
 		
 		a1 = Reader.readGLOCAL(args[0]);
 		for (Sequence sequence : a1.getSequences()) {

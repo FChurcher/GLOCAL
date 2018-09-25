@@ -14,11 +14,11 @@ public class Scorer {
 
   // static values an methods
 	/** default score */
-	public static float scoreGap = -1;
+	public static float scoreGap = -9;
 	/** default score */
-	public static float scoreMatch = 2;
+	public static float scoreMatch = 4;
 	/** default score */
-	public static float scoreMissMatch = -1;
+	public static float scoreMissMatch = -2;
 	
 	/** sets all the static values */
 	public static void init(float scoreGap, float scoreMatch, float scoreMissMatch){

@@ -7,7 +7,7 @@ import model.Sequence;
 
 public class Measurer {
 	
-	public static void acW(Alignment refAlignment, Alignment testAlignment) {
+	public static float acW(Alignment refAlignment, Alignment testAlignment) {
 		System.out.println("\nacW");
 		int[] refIndices = new int[refAlignment.getSequences().size()];
 		int[] testIndices = new int[testAlignment.getSequences().size()];
@@ -36,18 +36,6 @@ public class Measurer {
 			testindicesList.add(testIndices.clone());
 		}
 		
-//		for (int i = 0; i < refindicesList.size()-1; i++) {	
-//			for (int r = 0; r < refindicesList.get(i).length-1; r++) {
-//				for (int j = 0; j < testindicesList.size(); j++) {
-//					if (testindicesList.get(j)[r] == refindicesList.get(i)[r]) {
-//						test = testindicesList.get(j);
-//						break;
-//					}
-//				}
-//			}
-//		}
-		
-		
 		// count correctly aligned sequences
 		for (int i = 0; i < refindicesList.size(); i++) {										// for each position of alignment
 			int[] ref = refindicesList.get(i);													// reference row at alignment position 1
@@ -64,7 +52,7 @@ public class Measurer {
 					}
 					if (test != null) {
 						for (int t = r+1; t < test.length; t++) {					// for each pair of sequences
-							System.out.println("::" + r + " " + t);
+//							System.out.println("::" + r + " " + t);
 							if (ref[t] == test[t]) {
 								char refChar = refAlignment.getAlignedSequences().get(r).getSequence().charAt(i);
 								char testChar = testAlignment.getAlignedSequences().get(t).getSequence().charAt(tes);
@@ -73,9 +61,9 @@ public class Measurer {
 								if (refChar == ' ' || refChar == '-' || testChar == ' ' || testChar == '-' || reftestChar == ' ' || reftestChar == '-' || testrefChar == ' ' || testrefChar == '-') {
 									continue;
 								}
-								System.out.println(i + ":" + r + " " + tes + ":" + t);
-								System.out.println(ref[t] + " " + test[t]);
-								System.out.println(refChar + " " + testChar);
+//								System.out.println(i + ":" + r + " " + tes + ":" + t);
+//								System.out.println(ref[t] + " " + test[t]);
+//								System.out.println(refChar + " " + testChar);
 								correctlyAlignedPositionCount++;
 							}
 						}
@@ -83,13 +71,14 @@ public class Measurer {
 				}
 			}
 		}
-		System.out.println("correctlyAlignedPositionCount: " + correctlyAlignedPositionCount);
+//		System.out.println("correctlyAlignedPositionCount: " + correctlyAlignedPositionCount);
 		float acW = 100 * (float)correctlyAlignedPositionCount / ((((refAlignment.getSequences().size()-1) * refAlignment.getSequences().size())/2) * refAlignment.getAlignedSequences().get(0).getSequence().length());
-		System.out.println("ACw: " + acW + " %");
+//		System.out.println("ACw: " + acW + " %");
+		return acW;
 		
 	}
 	
-	public static void pse(Alignment refAlignment, Alignment testAlignment) {
+	public static float pse(Alignment refAlignment, Alignment testAlignment) {
 		System.out.println("\npse");
 		float pseP, pse = 0;
 		for (int i = 0; i < refAlignment.getSequences().size()-1; i++) {
@@ -195,7 +184,8 @@ public class Measurer {
 		}
 		int n = refAlignment.getSequences().size();
 		pse = 100 * pse / (float)(((float)n*(float)(n-1f)/2f));
-		System.out.println("PSE: " + pse + "%");
+//		System.out.println("PSE: " + pse + "%");
+		return pse;
 	}
 
 }
