@@ -136,7 +136,7 @@ public class Measurer {
 				
 				float errorSum = 0;
 				for (int k = 0; k < refseq1Counts.size(); k++) {
-					if (refseq1.getSequence().charAt(k) != '-' && refseq1.getSequence().charAt(k) != ' ') {
+					if (refseq1.getSequence().charAt(k) != '-' && refseq1.getSequence().charAt(k) != ' ' && testseq1Counts.contains(refseq1Counts.get(k))) {
 						errorSum += (Math.abs(refseq2Counts.get(k) - testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k)))));
 //						System.out.println(Math.abs(refseq2Counts.get(k) - testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k)))) + "=" + refseq2Counts.get(k) + "-" + testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k))));
 					}
