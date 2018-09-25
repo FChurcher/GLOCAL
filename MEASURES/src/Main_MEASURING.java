@@ -66,6 +66,7 @@ public class Main_MEASURING {
 			} else {
 				Writer.write("no file\t");
 			}
+			Writer.write("\n");
 		}
 		Writer.closeWriter();
 	}
