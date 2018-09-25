@@ -14,16 +14,16 @@ public class Main_MEASURING {
 		String alignmentFilePath = "";
 		for (String alignmentName : FileCollector.getAlignmentNames(new File(args[0]))) {
 			Writer.write(alignmentName + "\t");
-			alignmentFilePath = path + File.separator + alignmentName + ".aln.glocal";
+			alignmentFilePath = path + File.separator + alignmentName + ".glocal";
 			if (new File(alignmentFilePath).exists()) {
 				test = Reader.readGLOCAL(alignmentFilePath);
 			}
 			
-			alignmentFilePath = path + File.separator + alignmentName + ".aln.ox";
+			alignmentFilePath = path + File.separator + alignmentName + ".ox";
 			if (new File(alignmentFilePath).exists()) {
 				ref = Reader.readFasta(alignmentFilePath);
 			} else {
-				alignmentFilePath = path + File.separator + alignmentName + ".aln.bb";
+				alignmentFilePath = path + File.separator + alignmentName + ".bb";
 				if (new File(alignmentFilePath).exists()) {
 					ref = Reader.readFasta(alignmentFilePath);
 				}
@@ -35,7 +35,7 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + File.separator + alignmentName + ".aln.tcoffee";
+			alignmentFilePath = path + File.separator + alignmentName + ".tcoffee";
 			if (new File(alignmentFilePath).exists()) {
 				ref = Reader.readFasta(alignmentFilePath);
 			}
@@ -46,7 +46,7 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + File.separator + alignmentName + ".aln.mafft";
+			alignmentFilePath = path + File.separator + alignmentName + ".mafft";
 			if (new File(alignmentFilePath).exists()) {
 				ref = Reader.readFasta(alignmentFilePath);
 			}
@@ -57,7 +57,7 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + File.separator + alignmentName + ".aln.clustalw";
+			alignmentFilePath = path + File.separator + alignmentName + ".clustalw";
 			if (new File(alignmentFilePath).exists()) {
 				ref = Reader.readFasta(alignmentFilePath);
 			}
