@@ -13,19 +13,22 @@ public class Main_MEASURING {
 		Alignment test = null, ref = null;
 		String alignmentFilePath = "";
 		for (String alignmentName : FileCollector.getAlignmentNames(new File(path))) {
+			
 			Writer.write(alignmentName + "\t");
-			alignmentFilePath = path + File.separator + alignmentName + ".glocal";
-			System.out.println(alignmentFilePath);
+			alignmentFilePath = path + alignmentName + ".glocal";
 			if (new File(alignmentFilePath).exists()) {
+				System.out.println(alignmentFilePath);
 				test = Reader.readGLOCAL(alignmentFilePath);
 			}
 			
-			alignmentFilePath = path + File.separator + alignmentName + ".ox";
+			alignmentFilePath = path + alignmentName + ".ox";
 			if (new File(alignmentFilePath).exists()) {
+				System.out.println(alignmentFilePath);
 				ref = Reader.readFasta(alignmentFilePath);
 			} else {
-				alignmentFilePath = path + File.separator + alignmentName + ".bb";
+				alignmentFilePath = path + alignmentName + ".bb";
 				if (new File(alignmentFilePath).exists()) {
+					System.out.println(alignmentFilePath);
 					ref = Reader.readFasta(alignmentFilePath);
 				}
 			}
@@ -36,8 +39,9 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + File.separator + alignmentName + ".tcoffee";
+			alignmentFilePath = path + alignmentName + ".tcoffee";
 			if (new File(alignmentFilePath).exists()) {
+				System.out.println(alignmentFilePath);
 				ref = Reader.readFasta(alignmentFilePath);
 			}
 			if (test != null && ref != null) {
@@ -47,8 +51,9 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + File.separator + alignmentName + ".mafft";
+			alignmentFilePath = path + alignmentName + ".mafft";
 			if (new File(alignmentFilePath).exists()) {
+				System.out.println(alignmentFilePath);
 				ref = Reader.readFasta(alignmentFilePath);
 			}
 			if (test != null && ref != null) {
@@ -58,8 +63,9 @@ public class Main_MEASURING {
 			}
 			
 			ref = null;
-			alignmentFilePath = path + File.separator + alignmentName + ".clustalw";
+			alignmentFilePath = path + alignmentName + ".clustalw";
 			if (new File(alignmentFilePath).exists()) {
+				System.out.println(alignmentFilePath);
 				ref = Reader.readFasta(alignmentFilePath);
 			}
 			if (test != null && ref != null) {
