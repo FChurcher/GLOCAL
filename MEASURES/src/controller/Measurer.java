@@ -183,7 +183,7 @@ public class Measurer {
 			}
 		}
 		int n = refAlignment.getSequences().size();
-		pse = 100 * pse / (float)(((float)n*(float)(n-1f)/2f));
+//		pse = 100 * pse / (float)(((float)n*(float)(n-1f)/2f));
 //		System.out.println("PSE: " + pse + "%");
 		return pse;
 	}
