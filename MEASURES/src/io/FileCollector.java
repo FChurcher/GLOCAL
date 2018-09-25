@@ -5,9 +5,8 @@ import java.util.ArrayList;
 
 
 public class FileCollector {
-	public static final File toAlignDir = new File("LMATFU" + File.separator + "to_compare");
 	
-	public static ArrayList<String> getAlignmentNames() {
+	public static ArrayList<String> getAlignmentNames(File toAlignDir) {
 		// get all alignment names
 		ArrayList<String> alignmentNames = new ArrayList<>();
 		for (File file : toAlignDir.listFiles()) {

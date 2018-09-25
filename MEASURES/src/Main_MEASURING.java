@@ -5,41 +5,68 @@ import io.FileCollector;
 import io.Reader;
 import io.Writer;
 import model.Alignment;
-import model.Sequence;
 
 public class Main_MEASURING {
 	public static void main(String[] args) {
-		Alignment a1, a2;
-		String path = "LMATFU" + File.separator + "to_compare";
-		
 		Writer.openWriter();
-		for (String alignmentName : FileCollector.getAlignmentNames()) {
-			if (new File(path + File.separator + alignmentName + ".aln.ox").exists()) {
-				
+		String path = "LMATFU" + File.separator + "to_compare";
+		Alignment test = null, ref = null;
+		String alignmentFilePath = "";
+		for (String alignmentName : FileCollector.getAlignmentNames(new File(args[1]))) {
+			Writer.write(alignmentName + "\t");
+			alignmentFilePath = path + File.separator + alignmentName + ".aln.glocal";
+			if (new File(alignmentFilePath).exists()) {
+				test = Reader.readGLOCAL(alignmentFilePath);
+			}
+			
+			alignmentFilePath = path + File.separator + alignmentName + ".aln.ox";
+			if (new File(alignmentFilePath).exists()) {
+				ref = Reader.readFasta(alignmentFilePath);
+			} else {
+				alignmentFilePath = path + File.separator + alignmentName + ".aln.bb";
+				if (new File(alignmentFilePath).exists()) {
+					ref = Reader.readFasta(alignmentFilePath);
+				}
+			}
+			if (test != null && ref != null) {
+				Writer.write(Measurer.acW(ref, test) + " " + Measurer.pse(ref, test) + "\t");
+			} else {
+				Writer.write("no file\t");
+			}
+			
+			ref = null;
+			alignmentFilePath = path + File.separator + alignmentName + ".aln.tcoffee";
+			if (new File(alignmentFilePath).exists()) {
+				ref = Reader.readFasta(alignmentFilePath);
+			}
+			if (test != null && ref != null) {
+				Writer.write(Measurer.acW(ref, test) + " " + Measurer.pse(ref, test) + "\t");
+			} else {
+				Writer.write("no file\t");
+			}
+			
+			ref = null;
+			alignmentFilePath = path + File.separator + alignmentName + ".aln.mafft";
+			if (new File(alignmentFilePath).exists()) {
+				ref = Reader.readFasta(alignmentFilePath);
+			}
+			if (test != null && ref != null) {
+				Writer.write(Measurer.acW(ref, test) + " " + Measurer.pse(ref, test) + "\t");
+			} else {
+				Writer.write("no file\t");
+			}
+			
+			ref = null;
+			alignmentFilePath = path + File.separator + alignmentName + ".aln.clustalw";
+			if (new File(alignmentFilePath).exists()) {
+				ref = Reader.readFasta(alignmentFilePath);
+			}
+			if (test != null && ref != null) {
+				Writer.write(Measurer.acW(ref, test) + " " + Measurer.pse(ref, test) + "\t");
+			} else {
+				Writer.write("no file\t");
 			}
 		}
 		Writer.closeWriter();
-		
-		
-		a1 = Reader.readGLOCAL(args[0]);
-		for (Sequence sequence : a1.getSequences()) {
-			System.out.println(sequence.getName() + "\t|" + sequence.getSequence() + "|");
-		}
-		for (Sequence sequence : a1.getAlignedSequences()) {
-			System.out.println(sequence.getName() + "\t|" + sequence.getSequence() + "|");
-		}
-		
-		System.out.println();
-		
-		a2 = Reader.readFasta(args[1]);
-		for (Sequence sequence : a2.getSequences()) {
-			System.out.println(sequence.getName() + "\t|" + sequence.getSequence() + "|");
-		}
-		for (Sequence sequence : a2.getAlignedSequences()) {
-			System.out.println(sequence.getName() + "\t|" + sequence.getSequence() + "|");
-		}
-		
-		Measurer.pse(a1, a2);
-		Measurer.acW(a1, a2);
 	}
 }
