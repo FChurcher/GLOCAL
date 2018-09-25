@@ -1,0 +1,6 @@
+>1dpc1AUTO.1 | (cluster A) sequence |  238 residues
+false true
+>1cia1AS | (cluster B) sequence |  238 residues
+true false
+>1qca1AS | (cluster B) sequence |  238 residues
+true false

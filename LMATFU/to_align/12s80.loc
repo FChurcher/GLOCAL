@@ -1,0 +1,8 @@
+>1mcia1DOMAK | (cluster A) sequence |  115 residues
+truefalse
+>2rhe1DOMAK | (cluster B) sequence |  115 residues
+true true
+>2fb4l1DOMAK | (cluster B) sequence |  115 residues
+true false
+>4bjla1AUTO.1 | (cluster B) sequence |  115 residues
+true false

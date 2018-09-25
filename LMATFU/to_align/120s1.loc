@@ -1,0 +1,6 @@
+>1gcs2AS | (cluster A) sequence |  93 residues
+true false
+>1gcs1AS | (cluster B) sequence |  93 residues
+false false
+>2bb22DOMAK | (cluster B) sequence |  93 residues
+false true

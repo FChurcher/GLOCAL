@@ -1,0 +1,6 @@
+>1napc1AUTO.1 | (cluster A) sequence |  66 residues
+false true
+>1plfb1DOMAK | (cluster B) sequence |  66 residues
+true false
+>1rhpc1AUTO.1 | (cluster B) sequence |  66 residues
+false false

@@ -1,0 +1,9 @@
+>1hc5-1-AUTO.1 | (cluster A) sequence |  141 residues
+tgNAQKQQDINHLLDKiyeptkypdlkdiaenfnplgdtsiyndhgaavetlmkelndhrlLEQRHWYSLFNTRQRKEAL
+MLFAVLNQCKEWYCFRSNAAYFRERMNEGEFVYALYVSVIHSKLGDGIVLPPLYQIT----
+>1oxy-1-AS | (cluster B) sequence |  141 residues
+-tLHDKQIRICHLFEQl---------------------------------srlknv---gkLQPGAIFSCFHPDHLEEAR
+HLYEVFWEAGDFNDFIEIAKEARTFVNEGLFAFAAEVAVLHRDDCKGLYVPPVQEIFpdkf
+>1lla-1-AS.1 | (cluster B) sequence |  141 residues
+--LHDKQIRICHLFEQlssa---------------------------thsdrlknv---gkLQPGAIFSCFHPDHLEEAR
+HLYEVFWEAGDFNDFIEIAKEARTFVNEGLFAFAAEVAVLHRDDCKGLYVPPVQEIFpd--

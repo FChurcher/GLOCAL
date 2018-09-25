@@ -1,0 +1,6 @@
+>1hc51AUTO.1 | (cluster A) sequence |  141 residues
+true false
+>1oxy1AS | (cluster B) sequence |  141 residues
+false true
+>1lla1AS.1 | (cluster B) sequence |  141 residues
+false false
