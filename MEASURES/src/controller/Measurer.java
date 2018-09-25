@@ -22,7 +22,7 @@ public class Measurer {
 		}
 		
 		// safe aligned posisions for all positions of all sequences
-		for (int j = 0; j < Math.min(refAlignment.getSequences().get(0).getSequence().length(), testAlignment.getSequences().get(0).getSequence().length()); j++) {
+		for (int j = 0; j < Math.min(refAlignment.getAlignedSequences().get(0).getSequence().length(), testAlignment.getAlignedSequences().get(0).getSequence().length()); j++) {
 			// one incremetation step
 			for (int i = 0; i < refIndices.length; i++) {
 				if (refAlignment.getAlignedSequences().get(i).getSequence().charAt(j) != '-' && refAlignment.getAlignedSequences().get(i).getSequence().charAt(j) != ' ') {
