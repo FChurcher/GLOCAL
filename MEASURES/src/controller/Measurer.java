@@ -72,7 +72,7 @@ public class Measurer {
 			}
 		}
 		int positions = ((((refAlignment.getSequences().size()-1) * refAlignment.getSequences().size())/2) * refAlignment.getAlignedSequences().get(0).getSequence().length());
-		System.out.println("falsly: " + falsly + " of " + positions);
+//		System.out.println("falsly: " + falsly + " of " + positions);
 		float acW = 100 * (float)(positions-falsly) / (float)positions;
 //		System.out.println("ACw: " + acW + " %");
 		return acW;
