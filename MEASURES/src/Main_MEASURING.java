@@ -43,7 +43,7 @@ public class Main_MEASURING {
 			} else {
 				Writer.writeAc("no ref file\t");
 				Writer.writePse("no ref file\t");
-				continue;
+				//continue;
 			}
 			
 			test = null;
