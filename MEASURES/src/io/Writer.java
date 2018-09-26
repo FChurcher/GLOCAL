@@ -15,8 +15,8 @@ public class Writer {
 	
 	public static void openWriters() {
 		try {
-			acWriter = new BufferedWriter(new FileWriter(acPath, true));
-			pseWriter = new BufferedWriter(new FileWriter(psePath, true));
+			acWriter = new BufferedWriter(new FileWriter(acPath));
+			pseWriter = new BufferedWriter(new FileWriter(psePath));
 		} catch (IOException e) { e.printStackTrace(); }
 	}
 	

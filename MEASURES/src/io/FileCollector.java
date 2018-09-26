@@ -12,7 +12,7 @@ public class FileCollector {
 		for (File file : toAlignDir.listFiles()) {
 			if (file.isDirectory()) {continue;}
 			String name = file.getName().substring(0, file.getName().lastIndexOf('.'));
-			if (!alignmentNames.contains(name)) {
+			if (name.contains(".aln") && !alignmentNames.contains(name)) {
 				alignmentNames.add(name);
 			}
 		}
