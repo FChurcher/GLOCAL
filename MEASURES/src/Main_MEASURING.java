@@ -37,10 +37,7 @@ public class Main_MEASURING {
 					ref = Reader.readFasta(alignmentFilePath);
 				}
 			}
-			if (ref != null) {
-				Writer.writeAc(Measurer.acW(ref, test) + "\t");
-				Writer.writePse(Measurer.pse(ref, test) + "\t");
-			} else {
+			if (ref == null) {
 				Writer.writeAc("no ref file\t");
 				Writer.writePse("no ref file\t");
 				//continue;
@@ -51,6 +48,13 @@ public class Main_MEASURING {
 			if (new File(alignmentFilePath).exists()) {
 				System.out.println(alignmentFilePath);
 				test = Reader.readGLOCAL(alignmentFilePath);
+			}
+			if (test != null && ref != null) {
+				Writer.writeAc(Measurer.acW(ref, test) + "\t");
+				Writer.writePse(Measurer.pse(ref, test) + "\t");
+			} else {
+				Writer.writeAc("nf\t");
+				Writer.writePse("nf\t");
 			}
 				
 			test = null;
