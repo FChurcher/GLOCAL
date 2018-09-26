@@ -6,26 +6,36 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Writer {
-	public static final String path = "LMATFU" + File.separator + "to_compare" + File.separator + "measures.txt";
+	public static final String acPath = "LMATFU" + File.separator + "to_compare" + File.separator + "ac.txt";
+	public static final String psePath = "LMATFU" + File.separator + "to_compare" + File.separator + "pse.txt";
 	
-	private static BufferedWriter writer;
+	private static BufferedWriter acWriter;
+	private static BufferedWriter pseWriter;
 	
 	
-	public static void openWriter() {
+	public static void openWriters() {
 		try {
-			writer = new BufferedWriter(new FileWriter(path, true));
+			acWriter = new BufferedWriter(new FileWriter(acPath, true));
+			pseWriter = new BufferedWriter(new FileWriter(psePath, true));
 		} catch (IOException e) { e.printStackTrace(); }
 	}
 	
-	public static void closeWriter() {
+	public static void closeWriters() {
 		try {
-			writer.close();
+			acWriter.close();
+			pseWriter.close();
 		} catch (IOException e) { e.printStackTrace(); }
 	}
 	
-	public static void write(String text) {
+	public static void writeAc(String text) {
 		try {
-			writer.write(text);
+			acWriter.write(text);
+		} catch (IOException e) { e.printStackTrace(); }
+	}
+	
+	public static void writePse(String text) {
+		try {
+			pseWriter.write(text);
 		} catch (IOException e) { e.printStackTrace(); }
 	}
 

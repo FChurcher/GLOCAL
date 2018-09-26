@@ -11,7 +11,7 @@ public class Measurer {
 //		System.out.println("\nacW");
 		int[] refIndices = new int[refAlignment.getSequences().size()];
 		int[] testIndices = new int[testAlignment.getSequences().size()];
-		int correctlyAlignedPositionCount = 0;
+		int falsly = 0;
 		ArrayList<int[]> refindicesList = new ArrayList<>();
 		ArrayList<int[]> testindicesList = new ArrayList<>();
 		
@@ -53,26 +53,27 @@ public class Measurer {
 					if (test != null) {
 						for (int t = r+1; t < test.length; t++) {					// for each pair of sequences
 //							System.out.println("::" + r + " " + t);
-							if (ref[t] == test[t]) {
-								char refChar = refAlignment.getAlignedSequences().get(r).getSequence().charAt(i);
-								char testChar = testAlignment.getAlignedSequences().get(t).getSequence().charAt(tes);
-								char reftestChar = refAlignment.getAlignedSequences().get(t).getSequence().charAt(i);
-								char testrefChar = testAlignment.getAlignedSequences().get(r).getSequence().charAt(tes);
-								if (refChar == ' ' || refChar == '-' || testChar == ' ' || testChar == '-' || reftestChar == ' ' || reftestChar == '-' || testrefChar == ' ' || testrefChar == '-') {
-									continue;
-								}
+							if (ref[t] != test[t]) {
+//								char refChar = refAlignment.getAlignedSequences().get(r).getSequence().charAt(i);
+//								char testChar = testAlignment.getAlignedSequences().get(t).getSequence().charAt(tes);
+//								char reftestChar = refAlignment.getAlignedSequences().get(t).getSequence().charAt(i);
+//								char testrefChar = testAlignment.getAlignedSequences().get(r).getSequence().charAt(tes);
+//								if (refChar == ' ' || refChar == '-' || testChar == ' ' || testChar == '-' || reftestChar == ' ' || reftestChar == '-' || testrefChar == ' ' || testrefChar == '-') {
+//									continue;
+//								}
 //								System.out.println(i + ":" + r + " " + tes + ":" + t);
 //								System.out.println(ref[t] + " " + test[t]);
 //								System.out.println(refChar + " " + testChar);
-								correctlyAlignedPositionCount++;
+								falsly++;
 							}
 						}
 					}
 				}
 			}
 		}
-//		System.out.println("correctlyAlignedPositionCount: " + correctlyAlignedPositionCount);
-		float acW = 100 * (float)correctlyAlignedPositionCount / ((((refAlignment.getSequences().size()-1) * refAlignment.getSequences().size())/2f) * refAlignment.getAlignedSequences().get(0).getSequence().length());
+		int positions = ((((refAlignment.getSequences().size()-1) * refAlignment.getSequences().size())/2) * refAlignment.getAlignedSequences().get(0).getSequence().length());
+		System.out.println("falsly: " + falsly + " of " + positions);
+		float acW = 100 * (float)(positions-falsly) / (float)positions;
 //		System.out.println("ACw: " + acW + " %");
 		return acW;
 		
