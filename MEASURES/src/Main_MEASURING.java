@@ -103,6 +103,5 @@ public class Main_MEASURING {
 			Writer.writePse("\n");
 		}
 		Writer.closeWriters();
-		
 	}
 }
