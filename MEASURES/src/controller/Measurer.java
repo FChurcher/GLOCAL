@@ -122,7 +122,7 @@ public class Measurer {
 				startet = false;
 				for (int k = 0; k < testseq1.getSequence().length(); k++) {
 					if (testseq1.getSequence().charAt(k) == '-' || testseq1.getSequence().charAt(k) == ' ') {
-						if (testseq1.getSequence().charAt(k) == ' ' && k > 0) {
+						if (testseq1.getSequence().charAt(k) == ' ' && k > 0 && k < refseq1Counts.size()) {
 							c = c + (refseq1Counts.get(k) - refseq1Counts.get(k-1));
 						} else {
 							c = (float) ((int)c + 0.5);
@@ -137,7 +137,7 @@ public class Measurer {
 				startet = false;
 				for (int k = 0; k < testseq2.getSequence().length(); k++) {
 					if (testseq2.getSequence().charAt(k) == '-' || testseq2.getSequence().charAt(k) == ' ') {
-						if (testseq2.getSequence().charAt(k) == ' ' && k > 0) {
+						if (testseq2.getSequence().charAt(k) == ' ' && k > 0 && k < refseq1Counts.size()) {
 							c = c + (refseq2Counts.get(k) - refseq2Counts.get(k-1));
 						} else {
 							c = (float) ((int)c + 0.5);
