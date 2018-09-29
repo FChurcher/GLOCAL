@@ -1,0 +1,12 @@
+>1hcqe1AUTO.1  | (cluster A) sequence |  83 residues
+mketRYCAVCNDYASGYHYGVWSCEGCKAFFKRSIqghndYMCPATNQCTIDknrrksCQ
+ACRLRKCYEVGM-------MK
+>1hcqf1AUTO.1  | (cluster A) sequence |  83 residues
+-ketRYCAVCNDYASGYHYGVWSCEGCKAFFKRSIqg--dYMCPATNQCTIDknrrksCQ
+ACRLRKCYEVGM-------MK
+>1glua1DOMAK  | (cluster B) sequence |  83 residues
+mkpaRPCLVCSDEASGCHYGVLTCGSCKVFFKRAVegqhnYLCAGRNDCIIDkirrknCP
+ACRYRKCLQAGMNLearktkk
+>1lata1AUTO.1  | (cluster B) sequence |  83 residues
+----RPCLVCSDEASGCHYGVLTCEGCKAFFKRAVegqhnYLCKYEGKCIIDkirrknCP
+ACRYRKCLQAGMN------Le
