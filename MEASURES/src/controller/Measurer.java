@@ -101,12 +101,7 @@ public class Measurer {
 					if (refseq1.getSequence().charAt(k) == '-' || refseq1.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
 					} else {
-						if (c < 1 && !startet) {
-							c = refAlignment.getSequences().get(i).getSequence().lastIndexOf(refAlignment.getSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", "")) + 1;
-							startet = true;
-						} else {
-							c = (float) ((int)c + 1);
-						}
+						c = (float) ((int)c + 1);
 					}
 					refseq1Counts.add(c);
 				}
@@ -117,12 +112,7 @@ public class Measurer {
 					if (refseq2.getSequence().charAt(k) == '-' || refseq2.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
 					} else {
-						if (c < 1 && !startet) {
-							c = refAlignment.getSequences().get(j).getSequence().lastIndexOf(refAlignment.getSequences().get(j).getSequence().replaceAll("-", "").replaceAll(" ", "")) + 1;
-							startet = true;
-						} else {
-							c = (float) ((int)c + 1);
-						}
+						c = (float) ((int)c + 1);
 					}
 					refseq2Counts.add(c);
 				}
@@ -132,14 +122,13 @@ public class Measurer {
 				startet = false;
 				for (int k = 0; k < testseq1.getSequence().length(); k++) {
 					if (testseq1.getSequence().charAt(k) == '-' || testseq1.getSequence().charAt(k) == ' ') {
-						c = (float) ((int)c + 0.5);
-					} else {
-						if (c < 1 && !startet) {
-							c = testAlignment.getSequences().get(i).getSequence().lastIndexOf(testAlignment.getSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", "")) + 1;
-							startet = true;
-						}else {
-							c = (float) ((int)c + 1);
+						if (testseq1.getSequence().charAt(k) == ' ' && k > 0) {
+							c = c + (refseq1Counts.get(k) - refseq1Counts.get(k-1));
+						} else {
+							c = (float) ((int)c + 0.5);
 						}
+					} else {
+						c = (float) ((int)c + 1);
 					}
 					testseq1Counts.add(c);
 				}
@@ -148,14 +137,13 @@ public class Measurer {
 				startet = false;
 				for (int k = 0; k < testseq2.getSequence().length(); k++) {
 					if (testseq2.getSequence().charAt(k) == '-' || testseq2.getSequence().charAt(k) == ' ') {
-						c = (float) ((int)c + 0.5);
-					} else {
-						if (c < 1 && !startet) {
-							c = testAlignment.getSequences().get(j).getSequence().lastIndexOf(testAlignment.getSequences().get(j).getSequence().replaceAll("-", "").replaceAll(" ", "")) + 1;
-							startet = true;
+						if (testseq2.getSequence().charAt(k) == ' ' && k > 0) {
+							c = c + (refseq2Counts.get(k) - refseq2Counts.get(k-1));
 						} else {
-							c = (float) ((int)c + 1);
+							c = (float) ((int)c + 0.5);
 						}
+					} else {
+						c = (float) ((int)c + 1);
 					}
 					testseq2Counts.add(c);
 				}
@@ -170,43 +158,43 @@ public class Measurer {
 				}
 				pseP = errorSum/refAlignment.getAlignedSequences().get(0).getSequence().length();
 				pse += pseP;
-				System.out.println("SUM: " + errorSum);
-				System.out.println(pseP);
 				
-				System.out.println();
-				for (float f : refseq1Counts) {
-					System.out.print(f + "\t");
-				}
-				System.out.println();
-				for (char charr : refseq1.getSequence().toCharArray()) {
-					System.out.print(charr + "\t");
-				}
-				System.out.println();
-				for (char charr : refseq2.getSequence().toCharArray()) {
-					System.out.print(charr + "\t");
-				}
-				System.out.println();
-				for (float f : refseq2Counts) {
-					System.out.print(f + "\t");
-				}
-				System.out.println();
-				System.out.println();
-				for (float f : testseq1Counts) {
-					System.out.print(f + "\t");
-				}
-				System.out.println();
-				for (char charr : testseq1.getSequence().toCharArray()) {
-					System.out.print(charr + "\t");
-				}
-				System.out.println();
-				for (char charr : testseq2.getSequence().toCharArray()) {
-					System.out.print(charr + "\t");
-				}
-				System.out.println();
-				for (float f : testseq2Counts) {
-					System.out.print(f + "\t");
-				}
-				System.out.println();
+//				System.out.println();
+//				System.out.println("SUM: " + errorSum);
+//				System.out.println(pseP);
+//				for (float f : refseq1Counts) {
+//					System.out.print(f + "\t");
+//				}
+//				System.out.println();
+//				for (char charr : refseq1.getSequence().toCharArray()) {
+//					System.out.print(charr + "\t");
+//				}
+//				System.out.println();
+//				for (char charr : refseq2.getSequence().toCharArray()) {
+//					System.out.print(charr + "\t");
+//				}
+//				System.out.println();
+//				for (float f : refseq2Counts) {
+//					System.out.print(f + "\t");
+//				}
+//				System.out.println();
+//				System.out.println();
+//				for (float f : testseq1Counts) {
+//					System.out.print(f + "\t");
+//				}
+//				System.out.println();
+//				for (char charr : testseq1.getSequence().toCharArray()) {
+//					System.out.print(charr + "\t");
+//				}
+//				System.out.println();
+//				for (char charr : testseq2.getSequence().toCharArray()) {
+//					System.out.print(charr + "\t");
+//				}
+//				System.out.println();
+//				for (float f : testseq2Counts) {
+//					System.out.print(f + "\t");
+//				}
+//				System.out.println();
 			}
 		}
 //		int n = refAlignment.getSequences().size();
