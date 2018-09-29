@@ -11,7 +11,7 @@ public class Main_MEASURING {
 		
 //		Alignment a, b;
 //		a = Reader.readFasta("test1.fasta");
-//		b = Reader.readFasta("test2.fasta");
+//		b = Reader.readGLOCAL("test2.fasta");
 //		System.out.println(Measurer.acW(a, b));
 //		System.out.println(Measurer.pse(a, b));
 		

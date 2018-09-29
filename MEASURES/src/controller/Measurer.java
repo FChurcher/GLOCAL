@@ -115,21 +115,31 @@ public class Measurer {
 					refseq2Counts.add(c);
 				}
 				
+				boolean startet = false;
 				c = 0;
 				for (int k = 0; k < testseq1.getSequence().length(); k++) {
 					if (testseq1.getSequence().charAt(k) == '-' || testseq1.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
 					} else {
+						if (c < 1 && !startet) {
+							c = testAlignment.getSequences().get(i).getSequence().lastIndexOf(testAlignment.getAlignedSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", ""));
+							startet = true;
+						}
 						c = (float) ((int)c + 1);
 					}
 					testseq1Counts.add(c);
 				}
 				
 				c = 0;
+				startet = false;
 				for (int k = 0; k < testseq2.getSequence().length(); k++) {
 					if (testseq2.getSequence().charAt(k) == '-' || testseq2.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
 					} else {
+						if (c < 1 && !startet) {
+							c = testAlignment.getSequences().get(j).getSequence().lastIndexOf(testAlignment.getAlignedSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", ""));
+							startet = true;
+						}
 						c = (float) ((int)c + 1);
 					}
 					testseq2Counts.add(c);
@@ -137,6 +147,7 @@ public class Measurer {
 				
 				float errorSum = 0;
 				for (int k = 0; k < refseq1Counts.size(); k++) {
+					if (testseq1Counts.indexOf(refseq1Counts.get(k)) == -1) { continue; }
 					if (refseq1.getSequence().charAt(k) != '-' && refseq1.getSequence().charAt(k) != ' ' && testseq1Counts.contains(refseq1Counts.get(k))) {
 						errorSum += (Math.abs(refseq2Counts.get(k) - testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k)))));
 //						System.out.println(Math.abs(refseq2Counts.get(k) - testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k)))) + "=" + refseq2Counts.get(k) + "-" + testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k))));
@@ -183,7 +194,7 @@ public class Measurer {
 //				System.out.println();
 			}
 		}
-		int n = refAlignment.getSequences().size();
+//		int n = refAlignment.getSequences().size();
 //		pse = 100 * pse / (float)(((float)n*(float)(n-1f)/2f));
 //		System.out.println("PSE: " + pse + "%");
 		return pse;

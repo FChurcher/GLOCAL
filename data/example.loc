@@ -1,9 +1,9 @@
-# global = 1; local = 0
+# global = true; local = false
 # leftglobal rightglobal
 
->dog_3726
-false false
->trump_0815
-false false
->pig_2314
-false false
+>s1
+true true
+>s2
+true false
+>s3
+false true
