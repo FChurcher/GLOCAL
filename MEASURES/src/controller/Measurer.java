@@ -96,27 +96,40 @@ public class Measurer {
 				ArrayList<Float> testseq2Counts = new ArrayList<>();
 				
 				float c = 0;
+				boolean startet = false;
 				for (int k = 0; k < refseq1.getSequence().length(); k++) {
 					if (refseq1.getSequence().charAt(k) == '-' || refseq1.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
 					} else {
-						c = (float) ((int)c + 1);
+						if (c < 1 && !startet) {
+							c = refAlignment.getSequences().get(i).getSequence().lastIndexOf(testAlignment.getAlignedSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", ""));
+							startet = true;
+						} else {
+							c = (float) ((int)c + 1);
+						}
 					}
 					refseq1Counts.add(c);
 				}
 				
 				c = 0;
+				startet = false;
 				for (int k = 0; k < refseq2.getSequence().length(); k++) {
 					if (refseq2.getSequence().charAt(k) == '-' || refseq2.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
 					} else {
-						c = (float) ((int)c + 1);
+						if (c < 1 && !startet) {
+							c = refAlignment.getSequences().get(j).getSequence().lastIndexOf(testAlignment.getAlignedSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", ""));
+							startet = true;
+						} else {
+							c = (float) ((int)c + 1);
+						}
 					}
 					refseq2Counts.add(c);
 				}
 				
-				boolean startet = false;
+				
 				c = 0;
+				startet = false;
 				for (int k = 0; k < testseq1.getSequence().length(); k++) {
 					if (testseq1.getSequence().charAt(k) == '-' || testseq1.getSequence().charAt(k) == ' ') {
 						c = (float) ((int)c + 0.5);
@@ -124,8 +137,9 @@ public class Measurer {
 						if (c < 1 && !startet) {
 							c = testAlignment.getSequences().get(i).getSequence().lastIndexOf(testAlignment.getAlignedSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", ""));
 							startet = true;
+						}else {
+							c = (float) ((int)c + 1);
 						}
-						c = (float) ((int)c + 1);
 					}
 					testseq1Counts.add(c);
 				}
@@ -139,8 +153,9 @@ public class Measurer {
 						if (c < 1 && !startet) {
 							c = testAlignment.getSequences().get(j).getSequence().lastIndexOf(testAlignment.getAlignedSequences().get(i).getSequence().replaceAll("-", "").replaceAll(" ", ""));
 							startet = true;
+						} else {
+							c = (float) ((int)c + 1);
 						}
-						c = (float) ((int)c + 1);
 					}
 					testseq2Counts.add(c);
 				}
@@ -148,7 +163,7 @@ public class Measurer {
 				float errorSum = 0;
 				for (int k = 0; k < refseq1Counts.size(); k++) {
 					if (testseq1Counts.indexOf(refseq1Counts.get(k)) == -1) { continue; }
-					if (refseq1.getSequence().charAt(k) != '-' && refseq1.getSequence().charAt(k) != ' ' && testseq1Counts.contains(refseq1Counts.get(k))) {
+					if (refseq1.getSequence().charAt(k) != '-' && refseq1.getSequence().charAt(k) != ' ' && testseq2.getSequence().charAt(testseq1Counts.indexOf(refseq1Counts.get(k))) != '-' && testseq2.getSequence().charAt(testseq1Counts.indexOf(refseq1Counts.get(k))) != ' ' && testseq1Counts.contains(refseq1Counts.get(k))) {
 						errorSum += (Math.abs(refseq2Counts.get(k) - testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k)))));
 //						System.out.println(Math.abs(refseq2Counts.get(k) - testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k)))) + "=" + refseq2Counts.get(k) + "-" + testseq2Counts.get(testseq1Counts.indexOf(refseq1Counts.get(k))));
 					}
