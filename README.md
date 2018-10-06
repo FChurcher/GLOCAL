@@ -7,5 +7,6 @@ GLOCAL is the first implementation of partially local multiple alignments of a f
 
 source: https://github.com/Nunca131/implementationGLOCAL
 
-http://www.compbio.dundee.ac.uk/downloads/oxbench/
-http://www.lbgi.fr/balibase/
+Benchmark Databases:
+oxbench: http://www.compbio.dundee.ac.uk/downloads/oxbench/
+balibase: http://www.lbgi.fr/balibase/
