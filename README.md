@@ -1,4 +1,4 @@
-# GLOCAL
+# AnyAlign aka GLOCAL 
 
 A General Framework for Partially Local Multi-Way Alignments
 
