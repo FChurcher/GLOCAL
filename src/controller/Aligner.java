@@ -86,9 +86,9 @@ public class Aligner {
 		
 		//System.out.println(activatable.size());
 		oldStates.add(startState);
-		//System.out.println("initial:");
+		System.out.println("initial:");
 		for (State state : oldStates) {
-			//System.out.println(state);
+			System.out.println(state);
 		}
 		
 		if (!totallyLocal) {										// if there is a totally local Sequence test finishing last
@@ -123,7 +123,7 @@ public class Aligner {
 					if (newState.activate(i)) {
 						newState.order();									// put the indexlists in ascending order
 						if (!newStates.contains(newState)) { 
-							newStates.add(newState); 
+							newStates.add(newState);
 						}
 					}
 				}
@@ -131,16 +131,16 @@ public class Aligner {
 			if (newStates.size() == 0) {
 				break;
 			}
-			//System.out.println("activating:");
+			System.out.println("activating:");
 			for (State state : newStates) {
-				//System.out.println(state);
+				System.out.println(state);
 			}
-			for (State newstate : newStates) {								// connecting all old states to the new states
+			for (State newState : newStates) {								// connecting all old states to the new states
 				for (State oldstate : oldStates) {							// connect old to new (if valid)
-					State.connect(oldstate, newstate);
+					State.connect(oldstate, newState);
 				}
 				for (State newState2 : newStates) {							// connect new to new (if valid)
-					State.connect(newstate, newState2);
+					State.connect(newState, newState2);
 				}
 			}	
 			oldStates.addAll(newStates);
@@ -163,7 +163,6 @@ public class Aligner {
 				for (int j = 0; j < states.size(); j++) {					// finish all the right global sequences in each state
 					State newState = (State) states.get(j).clone();
 					if (newState.finish(i)) {
-						
 						if (newState.isOrdered()) {
 							newStates.add(newState);
 						}
@@ -173,9 +172,9 @@ public class Aligner {
 			if (newStates.size() == 0) {
 				break;
 			}
-			//System.out.println("finishing:");
+			System.out.println("finishing:");
 			for (State state : newStates) {
-				//System.out.println(state);
+				System.out.println(state);
 			}
 			for (State newstate : newStates) {								// connecting all old states to the new states
 				for (State oldstate : oldStates) {							// connect old to new (if valid)
@@ -341,6 +340,9 @@ public class Aligner {
 					scores.add(scoreMatrix.get(predecessorIPattern, indicesToCount) + Scorer.getInstance().getScoreSumOfPairs(getSequencesCharAraryByIndices(iPattern.toArray(), piPattern.toArray(), sequences, indicesToCount)));
 				}
 				
+				// move "/// if a state is given, we need to consider previous states"-Block here
+				// update getMaxScoreCandidateIndices
+				
 				// iteration logic (PI-Pattern)	
 				piPattern.addTo(-1, piPattern.length()-1);									// iteration logic (PI-Pattern)
 				for (int i = piPattern.length()-1; i >= 0; i--) {
@@ -437,15 +439,15 @@ public class Aligner {
 		IndexVector matchingIPattern = new IndexVector(new int[matchingIndices.size()]);		// the index Vector used for iteration (I-Pattern)
 		IndexVector matchingPiPattern = new IndexVector(new int[matchingIndices.size()]);		// the PI-Pattern vector used in case distinctions (PI-Pattern)
 		
-		// DEBUGGING
-		//System.out.println("actualState:             " + actualState);
-		if (indicesToCount != null) { //System.out.print("indicesToCount:          ");
-			for (int index : indicesToCount) {
-				//System.out.print(index + ",");	
-			}
-		} //System.out.println();
-		//System.out.println("actual indices:          " + actualActiveIndices);
-		//System.out.println("previous indices:        " + previousState.getActive());
+//		//DEBUGGING
+//		System.out.println("actualState:             " + actualState);
+//		if (indicesToCount != null) { System.out.print("indicesToCount:          ");
+//			for (int index : indicesToCount) {
+//				System.out.print(index + ",");	
+//			}
+//		} System.out.println();
+//		System.out.println("actual indices:          " + actualActiveIndices);
+//		System.out.println("previous indices:        " + previousState.getActive());
 		
 		int matchingIndex = 0;
 		for (int i = 0; i < actualStateIPattern.length(); i++) {								// reduce actualStateIPattern to matchingIPattern

@@ -38,12 +38,35 @@ public class State {
 		// ==> valid connection
 		previousState.addFollowingState(followingState);
 		followingState.addPreviousState(previousState);
+		
+		// check immediate connection
+		int changesCount = 0;
+		for (Integer prevReadyIndex : previousState.ready) {
+			if (!followingState.ready.contains(prevReadyIndex)) {
+				if (followingState.done.contains(prevReadyIndex)) {
+					return;		// change from ready to done => 2 changes
+				}
+				changesCount++;
+			}
+		}
+		
+		for (Integer prevActiveIndex : previousState.active) {
+			if (!followingState.active.contains(prevActiveIndex)) {
+				changesCount++;
+			}
+		}
+		
+		if (changesCount == 1) {
+			previousState.addDirectlyFollowingState(followingState);
+			followingState.addDirectlyPreviousState(previousState);
+		}
+		
 	}
 	
 	
   // object definition
 	private ArrayList<Integer> ready, active, done;
-	private ArrayList<State> previous, following;
+	private ArrayList<State> previous, following, directlyPrevios, directlyFollowing;
 	private boolean initialState, finalState;
 	private Matrix scoreMatrix;
 	private IndexVector maxScoreIndices;
@@ -57,29 +80,32 @@ public class State {
 		this.done = new ArrayList<>();
 		this.previous = new ArrayList<>();
 		this.following = new ArrayList<>();
+		this.directlyPrevios = new ArrayList<>();
+		this.directlyFollowing = new ArrayList<>();
 		this.initialState = false;
 		this.finalState = false;
 	}
 	
 	/** genereates a new state with the given parameters */
 	public State(ArrayList<Integer> ready, ArrayList<Integer> active, ArrayList<Integer> done, boolean initialState, boolean finalState) {
+		this();
 		this.ready = ready;
 		this.active = active;
 		this.done = done;
-		this.previous = new ArrayList<>();
-		this.following = new ArrayList<>();
 		this.initialState = initialState;
 		this.finalState = finalState;
 	}
 	
 	/** genereates a new state with the given parameters */
-	public State(ArrayList<Integer> ready, ArrayList<Integer> active, ArrayList<Integer> done, ArrayList<State> previous, ArrayList<State> following, boolean initialState, boolean finalState) {
-		super();
+	public State(ArrayList<Integer> ready, ArrayList<Integer> active, ArrayList<Integer> done, ArrayList<State> previous, ArrayList<State> following, ArrayList<State> directlyPrevios, ArrayList<State> directlyFollowing, boolean initialState, boolean finalState) {
+		this();
 		this.ready = ready;
 		this.active = active;
 		this.done = done;
 		this.previous = previous;
 		this.following = following;
+		this.directlyPrevios = directlyPrevios;
+		this.directlyFollowing = directlyFollowing;
 		this.initialState = initialState;
 		this.finalState = finalState;
 	}
@@ -87,21 +113,28 @@ public class State {
 	/** @return a String representation of this object */
 	@Override
 	public String toString() {
-		String s = toShortString() + "  \t prev states: [";
+		String s = toShortString() + "  \t directly previous: [";
+		for (int i = 0; i < directlyPrevios.size(); i++) {
+			s += directlyPrevios.get(i).toShortString();
+			if (i <= directlyPrevios.size()-2) { s += "; "; }
+		}
+		s += "]";
+		
+		s += "  \t trans previous: [";
 		for (int i = 0; i < previous.size(); i++) {
 			s += previous.get(i).toShortString();
 			if (i <= previous.size()-2) { s += "; "; }
 		}
-		s += "] )";
+		s += "]";
 		return s;
 	}
 
 	/** @return a short String representation of this object */
 	public String toShortString() {
 		String s = "(";
-		if (initialState) { s += "I"; }
-		if (finalState) { s += "F"; }
-		s += " {";
+		if (initialState) { s += "I "; }
+		if (finalState) { s += "F "; }
+		s += "{";
 		for (int i = 0; i < ready.size(); i++) {
 			s += ready.get(i);
 			if (i < ready.size()-1) { s += ","; }
@@ -145,7 +178,7 @@ public class State {
 	public State clone() {
 		State s = new State(
 				new ArrayList<Integer>(this.ready), new ArrayList<Integer>(this.active), new ArrayList<Integer>(this.done), // === (?) (ArrayList<Integer>) this.ready.clone(), (ArrayList<Integer>) this.active.clone(), (ArrayList<Integer>) this.done.clone()
-				new ArrayList<State>(), new ArrayList<State>(),
+				new ArrayList<State>(), new ArrayList<State>(), new ArrayList<State>(), new ArrayList<State>(),
 				false, false
 		);
 		return s;
@@ -304,6 +337,20 @@ public class State {
 		}
 	}
 	
+	/** adds the given state to the list of previous states of this state */
+	public void addDirectlyPreviousState(State previousState) {
+		if (!directlyPrevios.contains(previousState)) {
+			this.directlyPrevios.add(previousState);	
+		}
+	}
+	
+	/** adds the given state to the list of following states of this state */
+	public void addDirectlyFollowingState(State followingState) {
+		if (!directlyFollowing.contains(followingState)) {
+			this.directlyFollowing.add(followingState);	
+		}
+	}
+	
 	/** adds the given index of a sequence to the ready set of this state */
 	public void addToReady(Integer i) {
 		this.ready.add(i);
@@ -348,6 +395,14 @@ public class State {
 
 	public ArrayList<State> getFollowing() {
 		return following;
+	}
+	
+	public ArrayList<State> getDirectlyPrevious() {
+		return directlyPrevios;
+	}
+
+	public ArrayList<State> getDirectlyFollowing() {
+		return directlyFollowing;
 	}
 
 	/**

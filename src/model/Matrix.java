@@ -1,7 +1,5 @@
 package model;
 
-import java.util.ArrayList;
-
 /**
  * Objects of this class are representing represent lengths.length-dimensional Matrices stored in 1-dimensional matrices. lengths.length-dimensional indices are mapped to 1-dimensional indices.
  * @author Falco
@@ -204,13 +202,13 @@ public class Matrix {
 	private int getFlatIndex(int[] indices){
 		if (lengths.length == indices.length) {
 			int flatIndex = 0;
-			int multiplyer = 1;
+			int multiplier = 1;
 			
 			for (int i = 0; i < indices.length; i++) {
 				int index = indices[i]+1;
 				if (index <= lengths[i]) {
-					flatIndex += multiplyer * (index-1);
-					multiplyer *= lengths[i];
+					flatIndex += multiplier * (index-1);
+					multiplier *= lengths[i];
 				} else {
 					throw new java.lang.Error("Matrix.get: ArrayIndexOutOfBoundsException: " + (index-1));
 				}

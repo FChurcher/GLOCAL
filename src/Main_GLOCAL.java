@@ -36,5 +36,7 @@ public class Main_GLOCAL {
 		
 		Writer.closeAll();
 		TimeStampMaganer.getInstance().printTimeStamp("done");
+		
+		System.out.println(a);
 	}
 }
