@@ -22,7 +22,5 @@
 /LMATFU/bin
 /LMATFU/.settings
 
-
-
 # ignore log files
 *.log
