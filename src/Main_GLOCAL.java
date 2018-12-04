@@ -13,7 +13,7 @@ public class Main_GLOCAL {
 		TimeStampMaganer.getInstance().printGuide();
 		TimeStampMaganer.getInstance().printTimeStamp("reading input files...");
 		Sequence[] sequences = Settings.init();
-		//Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
+//		Sequence[] sequences = ArgsParser.getInstance().initWithArgs(args);
 		for (Sequence sequence : sequences) {
 			System.out.println(sequence);
 		}
@@ -27,7 +27,7 @@ public class Main_GLOCAL {
 		Writer.write(writername, "took " + TimeStampMaganer.getInstance().getActualRunTime() + " ms\n\n");
 		Writer.write(writername, Settings.printToString() + "\n\n");
 		Writer.write(writername, a.toString() + "\n");
-		//Writer.write(writername, a.getHasseGraph().toLongString());
+//		Writer.write(writername, a.getHasseGraph().toLongString());
 		
 		// print graph
 //		String graphWriterName = Settings.name + "_graph";

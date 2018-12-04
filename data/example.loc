@@ -4,6 +4,8 @@
 >s1
 true true
 >s2
-true false
+false false
 >s3
 false false
+>s4
+true false

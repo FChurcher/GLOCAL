@@ -191,12 +191,33 @@ public class Aligner {
 	}
 		
 	private void markFinalStates(ArrayList<State> states, Sequence[] sequences) {
+		boolean thereIsAtLeastOneGlobalRightSequence = false;
+		for (int i = 0; i < sequences.length; i++) {									// check if there is any rightGlobal sequence
+			if (sequences[i].isGlobalRight()) {
+				thereIsAtLeastOneGlobalRightSequence = true;
+			}
+		}
+		
 		for (State state : states) {
+			
+			if (!thereIsAtLeastOneGlobalRightSequence) {
+				state.setFinalState(true);
+				continue;
+			}
+			
 			boolean isFinal = true;
 			for (int i = 0; i < sequences.length; i++) {
 				if (sequences[i].isGlobalRight() && !state.getActive().contains(i)) {
 					isFinal = false;
-					break;																// if one globalRight sequence sis not contained in state.getActive() => jump to next state
+					break;																// if one globalRight sequence is not contained in state.getActive() => jump to next state
+				}
+				if (!sequences[i].isGlobalRight() && state.getActive().contains(i)) {
+					isFinal = false;
+					break;																// if one non-globalRight sequence is contained in state.getActive() => jump to next state
+				}
+				if (state.getReady().size() > 0) {
+					isFinal = false;													// only consider "last" states as final
+					break;
 				}
 			} 
 			state.setFinalState(isFinal);
@@ -320,43 +341,44 @@ public class Aligner {
 		
 		IndexVector iPattern = new IndexVector(new int[indicesToCount.length]);		// the index Vector used for iteration (I-Pattern)
 		for (int i = 0; i < iPattern.length(); i++) {								// start with I-Pattern (1,...,1)
-			iPattern.set(1, i);
+			iPattern.set(0, i);
 		}
 		
 		boolean b = false;
 		while (true) {																// iteration over I-Pattern starts here
-			
-			// calculation
-			IndexVector piPattern = new IndexVector(new int[indicesToCount.length]);		// the PI-Pattern vector used in case distinctions (PI-Pattern)
 			ArrayList<Float> scores = new ArrayList<Float>();								// stores the scores, used to find max score
-			boolean c = false;
-			
-			// compute scores in the same matrix
-			while (true) {																	// iteration over (negative!) PI-Pattern starts here. (Pi-Pattern {0,-1}^n)
-				if (!piPattern.isNullVector()) {											// ignore case where PI-Pattern = (0,...,0) (total gap is not allowed)
-					// case distinctions
-					int[] predecessorIPattern = iPattern.addToArray(piPattern);				// (miss)match/gaps in different sequences
-					// add scores using all sequences (null stands for all)
-					scores.add(scoreMatrix.get(predecessorIPattern, indicesToCount) + Scorer.getInstance().getScoreSumOfPairs(getSequencesCharAraryByIndices(iPattern.toArray(), piPattern.toArray(), sequences, indicesToCount)));
-				}
+			if (!iPattern.contains(0)) {
+				// calculation
+				IndexVector piPattern = new IndexVector(new int[indicesToCount.length]);		// the PI-Pattern vector used in case distinctions (PI-Pattern)
+				boolean c = false;
 				
-				// move "/// if a state is given, we need to consider previous states"-Block here
-				// update getMaxScoreCandidateIndices
-				
-				// iteration logic (PI-Pattern)	
-				piPattern.addTo(-1, piPattern.length()-1);									// iteration logic (PI-Pattern)
-				for (int i = piPattern.length()-1; i >= 0; i--) {
-					if (piPattern.get(i) == -2) {										
-						if (i == 0) {														// check iteration completeness
-							c = true;
-							break;
-						}
-						piPattern.set(0, i);
-						piPattern.addTo(-1, i-1);
+				// compute scores in the same matrix
+				while (true) {																	// iteration over (negative!) PI-Pattern starts here. (Pi-Pattern {0,-1}^n)
+					if (!piPattern.isNullVector()) {											// ignore case where PI-Pattern = (0,...,0) (total gap is not allowed)
+						// case distinctions
+						int[] predecessorIPattern = iPattern.addToArray(piPattern);				// (miss)match/gaps in different sequences
+						// add scores using all sequences (null stands for all)
+						scores.add(scoreMatrix.get(predecessorIPattern, indicesToCount) + Scorer.getInstance().getScoreSumOfPairs(getSequencesCharAraryByIndices(iPattern.toArray(), piPattern.toArray(), sequences, indicesToCount)));
 					}
-				}
-				if (c) { break; }															// iteration complete?
-			}																		// iteration over PI-Pattern ends here
+					
+					// move "/// if a state is given, we need to consider previous states"-Block here
+					// update getMaxScoreCandidateIndices
+					
+					// iteration logic (PI-Pattern)	
+					piPattern.addTo(-1, piPattern.length()-1);									// iteration logic (PI-Pattern)
+					for (int i = piPattern.length()-1; i >= 0; i--) {
+						if (piPattern.get(i) == -2) {										
+							if (i == 0) {														// check iteration completeness
+								c = true;
+								break;
+							}
+							piPattern.set(0, i);
+							piPattern.addTo(-1, i-1);
+						}
+					}
+					if (c) { break; }															// iteration complete?
+				}																		// iteration over PI-Pattern ends here
+			}
 			
 			// if a state is given, we need to consider previous states
 			if (state != null) {
@@ -368,22 +390,25 @@ public class Aligner {
 				}
 				
 				//System.out.println("imaginaryPlaneState: " + imaginaryPlaneState);
-				for (State previousState : imaginaryPlaneState.getPrevious()) {								// look at previous states
+				for (State previousState : imaginaryPlaneState.getDirectlyPrevious()) {								// look at previous states
 					if (! state.getPrevious().contains(previousState)) {									// look at intersection state.getPrevious() and imaginaryPlaneState.getPrevious()
 						break;
 					}
 					// for every entry of the matrix (bc u were wondering last time)
 					IndexVector maxScoreCandidateIndices = getMaxScoreCandidateIndices(state, previousState, sequences, allSequences, iPattern, indicesToCount);
 					if (maxScoreCandidateIndices != null) {
-						IndexVector computedPiPattern = getPiPattern(state, previousState, iPattern, maxScoreCandidateIndices, indicesToCount);
-						scores.add(previousState.getScoreMatrix().get(maxScoreCandidateIndices.toArray()) + Scorer.getInstance().getScoreSumOfPairs(getSequencesCharAraryByIndices(iPattern.toArray(), computedPiPattern.toArray(), sequences, indicesToCount)));
+						//IndexVector computedPiPattern = getPiPattern(state, previousState, iPattern, maxScoreCandidateIndices, indicesToCount);
+						//System.out.println("computed piPattern:\t" + computedPiPattern);
+						scores.add(previousState.getScoreMatrix().get(maxScoreCandidateIndices.toArray()));
 						//System.out.println(iPattern + " :: " + maxScoreCandidateIndices + " :: " + computedPiPattern);
 					}
 				}
 			}
 			
-			float maxScore = Collections.max(scores);								// find max Score
-			scoreMatrix.set(maxScore, iPattern.toArray(), indicesToCount);			// set max score
+			if (scores.size() > 0) {
+				float maxScore = Collections.max(scores);								// find max Score
+				scoreMatrix.set(maxScore, iPattern.toArray(), indicesToCount);			// set max score
+			}
 			
 			// iteration logic (I-Pattern)
 			iPattern.addTo(1, iPattern.length()-1);									// iteration logic (I-Pattern)
@@ -393,7 +418,7 @@ public class Aligner {
 						b = true;														
 						break;
 					}
-					iPattern.set(1, i);
+					iPattern.set(0, i);
 					iPattern.addTo(1, i-1);
 				}
 			}
@@ -411,6 +436,8 @@ public class Aligner {
 	 * @return
 	 */
 	private IndexVector getMaxScoreCandidateIndices(State actualState, State previousState, Sequence[] sequences, Sequence[] allSequences, IndexVector actualStateIPattern, int[] indicesToCount){
+		if (previousState.getActive().size() == 0) { return null; }								// nothing to find here
+		
 		ArrayList<Integer> actualActiveIndices;
 		if (indicesToCount == null) {
 			actualActiveIndices = actualState.getActive();	
@@ -421,8 +448,7 @@ public class Aligner {
 				actualActiveIndices.add(actualState.getActive().get(index));
 			}
 		}
-		
-		if (previousState.getActive().size() == 0) { return null; }								// nothing to find here
+
 		ArrayList<Integer> matchingIndices = new ArrayList<>();
 		ArrayList<Integer> missingIndices = new ArrayList<>();									// missing in actualState
 		IndexVector maxScoreCandidateIPattern = null; 											// collecting the score candidates in here
@@ -436,8 +462,7 @@ public class Aligner {
 			}
 		}
 		
-		IndexVector matchingIPattern = new IndexVector(new int[matchingIndices.size()]);		// the index Vector used for iteration (I-Pattern)
-		IndexVector matchingPiPattern = new IndexVector(new int[matchingIndices.size()]);		// the PI-Pattern vector used in case distinctions (PI-Pattern)
+		IndexVector matchingIPattern = new IndexVector(new int[matchingIndices.size()]);		// the index Vector used for iteration (I-Pattern)s
 		
 //		//DEBUGGING
 //		System.out.println("actualState:             " + actualState);
@@ -459,21 +484,16 @@ public class Aligner {
 		
 		//System.out.println("matchingIndices:         " + matchingIndices);
 		//System.out.println("missingIndices(in act.): " + missingIndices);
-		//System.out.println("actualStateIPattern:     " + actualStateIPattern);
-		//System.out.println("matchingIPattern:        " + matchingIPattern);
+//		System.out.println("actualStateIPattern:    " + actualStateIPattern);
+//		System.out.println("matchingIPattern:       " + matchingIPattern);
 		
-		if (matchingPiPattern.length() == 0) {
+		if (matchingIndices.size() == 0) {
 			return previousState.getMaxScoreIndices();
 		}
 		
-		boolean c = false;
 		IndexVector previousSpaceKandidate = new IndexVector(new int[previousState.getActive().size()]);// the save the previous space candidate
-		while (true) {																					// iteration over (negative!) PI-Pattern starts here. (Pi-Pattern {0,-1}^n) // MIND THE INDEX MAPPING (matching indices to full index pattern)
-			//System.out.println();
-			if (!matchingPiPattern.isNullVector()) {													// ignore case where PI-Pattern = (0,...,0) (total gap is not allowed)
 				// case distinctions - find candidates in reduced (matching) space
-				int[] matchingPredecessorIPattern = matchingIPattern.addToArray(matchingPiPattern);		// (miss)match/gaps in the matching sequences - candidates in reduced (matching) space
-				//System.out.println("PiPattern: \t\t" + matchingPiPattern);
+				int[] matchingPredecessorIPattern = matchingIPattern.toArray();							// (miss)match/gaps in the matching sequences - candidates in reduced (matching) space
 				// multiply matching candidates to previous space cantidates
 				ArrayList<Integer> previousSpaceRunnungIndices = new ArrayList<>();						// the indices to iterate over to get multiplied candidates in previous state space
 				int j = 0;
@@ -489,52 +509,32 @@ public class Aligner {
 				// run over previousSpaceRunnungIndices here
 				boolean d = false;
 				IndexVector runningIndices = new IndexVector(previousSpaceRunnungIndices);
-				//System.out.println("runningIndices: \t" + runningIndices);// DEBUGGING
+//				System.out.println("runningIndices: \t" + runningIndices);// DEBUGGING
 				while (true) {																						// iteration over previousSpaceRunnungIndices starts here. (previousSpaceRunnungIndices {0,n}^n)
 					if (previousSpaceKandidate.hasNegetiveEntry()) { break; }
 					
-					IndexVector wholeIPattern = new IndexVector(new int[actualActiveIndices.size()]);
-					int k = 0;
-					for (int i = 0; i < wholeIPattern.length(); i++) {
-						if (matchingIndices.contains(actualActiveIndices.get(i))) {
-							wholeIPattern.set(matchingPiPattern.get(k), i);
-							k++;
-						} else {
-							wholeIPattern.set(-1, i);
-						}
-					}
-					
-					char[] chars = new char[actualActiveIndices.size()];
-					for (int i = 0; i < actualActiveIndices.size(); i++) {
-						if (wholeIPattern.get(i) == 0) { 
-							chars[i] = Scorer.GAP_CHAR;
-						} else {
-							chars[i] = allSequences[actualActiveIndices.get(i)].get(actualStateIPattern.get(i)-1);
-						}
-					}
-					
-					float score = previousState.getScoreMatrix().get(previousSpaceKandidate.toArray()) + Scorer.getInstance().getScoreSumOfPairs(chars);
+					float score = previousState.getScoreMatrix().get(previousSpaceKandidate.toArray());
 					//System.out.println("max candidate: " + maxScoreCandidateIPattern + " : " + maxScore);
-					//System.out.println("candidate: \t\t" + previousSpaceKandidate + " : " + previousState.getScoreMatrix().get(previousSpaceKandidate.toArray()) + " + " + Scorer.getInstance().getScoreSumOfPairs(chars) + " = " + score);
+//					System.out.println("candidate: \t\t" + previousSpaceKandidate + " : " + previousState.getScoreMatrix().get(previousSpaceKandidate.toArray()) + " = " + score);
 					if (score > maxScore) {
 						maxScoreCandidateIPattern = previousSpaceKandidate.clone();
 						maxScore = score;
-						//System.out.println("new max candidate: " + maxScoreCandidateIPattern + " : " + score);
+//						System.out.println("new max candidate:\t" + maxScoreCandidateIPattern + " : " + score);
 					}
 					
 					if (runningIndices.length() == 0) { break; }
-					if (previousSpaceKandidate.contains(0)) {
-						//System.out.println(previousSpaceKandidate + " is not a viable candidate"); 
-						break; 
-					}
+//					if (previousSpaceKandidate.contains(0)) {
+//						//System.out.println(previousSpaceKandidate + " is not a viable candidate"); 
+//						break; 
+//					}
 					
 					// DEBUGGING
 					//System.out.println("candidate: " + previousSpaceKandidate);
-					for (int i = 0; i < previousSpaceKandidate.length(); i++) {
+					//for (int i = 0; i < previousSpaceKandidate.length(); i++) {
 						//System.out.print(allSequences[previousState.getActive().get(i)] + "[");
 						//System.out.print(previousSpaceKandidate.get(i) + "] = ");
 						//System.out.println(allSequences[previousState.getActive().get(i)].toCharArray()[previousSpaceKandidate.get(i)-1]);
-					}
+					//}
 					//System.out.println(" Score: " + previousState.getScoreMatrix().get(previousSpaceKandidate.toArray()));
 					
 					// iteration logic (previousSpaceRunningIndices)
@@ -554,24 +554,9 @@ public class Aligner {
 					if (d) { break; }
 				}
 				
-			}
-			// iteration logic (PI-Pattern)
-			matchingPiPattern.addTo(-1, matchingPiPattern.length()-1);									// iteration logic (PI-Pattern)	
-			for (int i = matchingPiPattern.length()-1; i >= 0; i--) {
-				if (matchingPiPattern.get(i) == -2) {										
-					if (i == 0) {																		// check iteration completeness
-						c = true;
-						break;
-					}
-					matchingPiPattern.set(0, i);
-					matchingPiPattern.addTo(-1, i-1);
-				}
-			}
-			if (c) { break; }																			// iteration complete?
-		}
 		
 		if (maxScoreCandidateIPattern != null) {
-			//System.out.println("maxscoreCandidateIPattern: " + maxScoreCandidateIPattern + " Score: " + maxScore);// DEBUGGING
+			//System.out.println("maxscoreCandidateIPattern: " + maxScoreCandidateIPattern + " Score: " + maxScore);	// DEBUGGING
 			return maxScoreCandidateIPattern;
 		} else {
 			//System.out.println("NO CANDIDATES");
@@ -653,7 +638,7 @@ public class Aligner {
 		}
 		
 		State actualState = hasseGraph.getMaxFinalState();						// initialize with maxFinalState of the HasseGraph
-		//System.out.println("maxfinalstate: " + hasseGraph.getMaxFinalState());
+		System.out.println("maxfinalstate: " + hasseGraph.getMaxFinalState());
 		//System.out.println(hasseGraph.getInitialState().getScoreMatrix());
 		//System.out.println(hasseGraph.getInitialState().getFollowing().get(0).getScoreMatrix());
 		
@@ -677,13 +662,13 @@ public class Aligner {
 		while(true) {
 			boolean c = false;
 			Matrix scoreMatrix = actualState.getScoreMatrix();						// get the score matrix of the final state with maximal "end"-score
-			//System.out.println("ACTUAL STATE: " + actualState);
-			//System.out.println("ACTUAL PI:    " + piPattern);
-			//System.out.println("ACTUAL I:     " + iPattern);
-			//System.out.println("CHARS LEN:    " + chars.length);
+			System.out.println("ACTUAL STATE: " + actualState);
+			System.out.println("ACTUAL PI:    " + piPattern);
+			System.out.println("ACTUAL I:     " + iPattern);
+			System.out.println("CHARS LEN:    " + chars.length);
 			// Look for a match in the actual Matrix
 			while (true) {															// iteration over (negative!) PI-Pattern starts here. (Pi-Pattern {0,-1}^n)
-				//System.out.println("ACTUAL INNER PI:    " + piPattern);
+				System.out.println("ACTUAL INNER PI:    " + piPattern);
 				if (!piPattern.isNullVector() && !iPattern.addToVector(piPattern.toArray()).hasNegetiveEntry()) {	// ignore case where PI-Pattern = (0,...,0) (total gap is not allowed) or where one or more indices get negative
 					// case distinctions for SAME MATRIX (to compute the actual columns score)
 					for (int i = 0; i < chars.length; i++) {
@@ -696,10 +681,10 @@ public class Aligner {
 					
 					// DEBUGGING
 					for (int i = 0; i < iPattern.length(); i++) {
-						//System.out.print(iPattern.get(i) + ",");
+						System.out.print(iPattern.get(i) + ",");
 					}
-					//System.out.print(chars);
-					//System.out.println(" : " + scoreMatrix.get(iPattern.addToArray(piPattern)) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
+					System.out.print(chars);
+					System.out.println(" : " + scoreMatrix.get(iPattern.addToArray(piPattern)) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
 					
 					// find matching successor matrix entry ("looking at"-score = actual score - score for actual pi-pattern (column))
 					if (scoreMatrix.get(iPattern.addToArray(piPattern.toArray())) == scoreMatrix.get(iPattern.toArray()) - Scorer.getInstance().getScoreSumOfPairs(chars)) {
@@ -739,7 +724,7 @@ public class Aligner {
 			
 			// additional case distictions for previous ADJACENT MATRICES (you come here if no match in same matrix was found or alignment is complete) // Change to next Matrix
 			if (iPattern.isNullVector()) { break; }																								// if alignment is allready complete, skip this
-			//System.out.println("no way found in actual matrix...");
+			System.out.println("no way found in actual matrix...");
 			for (State state : actualState.getPrevious()) {
 				if (state.getScoreMatrix().getMaxScore() == Float.NEGATIVE_INFINITY) { continue; }													// skip void states
 				IndexVector candiadateIPattern = getMaxScoreCandidateIndices(actualState, state, sequences, allSequences, iPattern, null);		// the "previous" iPattern (of the previous state)
@@ -747,7 +732,7 @@ public class Aligner {
 				
 				// case distinctions for SAME MATRIX (to compute the actual columns score)
 				for (int i = 0; i < chars.length; i++) {
-					if (computedPiPattern.get(i) == 0) { 
+					if (computedPiPattern.get(i) == 0 || iPattern.get(i) == 0) { 
 						chars[i] = Scorer.GAP_CHAR;
 					} else {
 						chars[i] = sequences[i].get(iPattern.get(i)-1);	
@@ -756,21 +741,11 @@ public class Aligner {
 				
 				// DEBUGGING
 				for (int i = 0; i < iPattern.length(); i++) {
-					//System.out.print(iPattern.get(i) + ",");
+					System.out.print(iPattern.get(i) + ",");
 				}
-				//System.out.print(chars);
-				//System.out.println(" : " + state.getScoreMatrix().get(candiadateIPattern.toArray()) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
-				if (state.getScoreMatrix().get(candiadateIPattern.toArray()) == scoreMatrix.get(iPattern.toArray()) - Scorer.getInstance().getScoreSumOfPairs(chars)) {	// find matching successor matrix entry ("looking at"-score = actual score - score for actual pi-pattern (column))
-					int j = 0;
-					for (int i = 0; i < alignedSequences.length; i++) {					// mapping from sequences to allSequences
-						if (actualState.getActive().contains(i)) {
-							alignedSequences[i] = chars[j] + alignedSequences[i];		// writing the aligned sequences
-							j++;
-						} else {
-							alignedSequences[i] = ' ' + alignedSequences[i];
-						}
-					}
-					
+				System.out.print(chars);
+				System.out.println(" : " + state.getScoreMatrix().get(candiadateIPattern.toArray()) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
+				if (state.getScoreMatrix().get(candiadateIPattern.toArray()) == scoreMatrix.get(iPattern.toArray())) {	// find matching successor matrix entry ("looking at"-score = actual score - score for actual pi-pattern (column))
 					// reconfiguration to process the new State
 					actualState = state;
 					sequences = new Sequence[actualState.getActive().size()];
