@@ -68,6 +68,12 @@ public class HasseGraph {
 		return maxState;
 	}
 	
+	/**
+	 * looks for a state with the active sequences of the given state and creates a new state if none is found
+	 * @param fullState - the given state
+	 * @param indicesToCount - the indices to take into account
+	 * @return a state with the active sequences of the given state
+	 */
 	public State getOrCreateStateByActiveSequences(State fullState, int[] indicesToCount) {
 		int[] sequenceIndices = new int[indicesToCount.length];
 		for (int i = 0; i < sequenceIndices.length; i++) {

@@ -234,6 +234,11 @@ public class State {
 		return score;
 	}
 
+	/**
+	 * return a previous state with the given active sequences
+	 * @param indices - the active sequence indices
+	 * @return th e corresponding previous state
+	 */
 	public State getPreviousStateWithActiveSequences(int[] indices) {
 		for (State previousState : previous) {
 			if (previousState.getActive().size() != indices.length) { continue; } 		// same indices ==> same lengths
@@ -251,6 +256,9 @@ public class State {
 		return this;
 	}
 	
+	/**
+	 * orders the indices from low to high
+	 */
 	public void order() {
 		Collections.sort(ready);
 		Collections.sort(active);
