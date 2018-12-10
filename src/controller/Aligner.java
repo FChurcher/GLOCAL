@@ -190,6 +190,11 @@ public class Aligner {
 		}
 	}
 		
+	/**
+	 * identifies THE final state
+	 * @param states
+	 * @param sequences
+	 */
 	private void markFinalStates(ArrayList<State> states, Sequence[] sequences) {
 		boolean thereIsAtLeastOneGlobalRightSequence = false;
 		for (int i = 0; i < sequences.length; i++) {									// check if there is any rightGlobal sequence
@@ -662,13 +667,13 @@ public class Aligner {
 		while(true) {
 			boolean c = false;
 			Matrix scoreMatrix = actualState.getScoreMatrix();						// get the score matrix of the final state with maximal "end"-score
-			System.out.println("ACTUAL STATE: " + actualState);
-			System.out.println("ACTUAL PI:    " + piPattern);
-			System.out.println("ACTUAL I:     " + iPattern);
-			System.out.println("CHARS LEN:    " + chars.length);
+//			System.out.println("ACTUAL STATE: " + actualState);
+//			System.out.println("ACTUAL PI:    " + piPattern);
+//			System.out.println("ACTUAL I:     " + iPattern);
+//			System.out.println("CHARS LEN:    " + chars.length);
 			// Look for a match in the actual Matrix
 			while (true) {															// iteration over (negative!) PI-Pattern starts here. (Pi-Pattern {0,-1}^n)
-				System.out.println("ACTUAL INNER PI:    " + piPattern);
+//				System.out.println("ACTUAL INNER PI:    " + piPattern);
 				if (!piPattern.isNullVector() && !iPattern.addToVector(piPattern.toArray()).hasNegetiveEntry()) {	// ignore case where PI-Pattern = (0,...,0) (total gap is not allowed) or where one or more indices get negative
 					// case distinctions for SAME MATRIX (to compute the actual columns score)
 					for (int i = 0; i < chars.length; i++) {
@@ -680,11 +685,11 @@ public class Aligner {
 					}
 					
 					// DEBUGGING
-					for (int i = 0; i < iPattern.length(); i++) {
-						System.out.print(iPattern.get(i) + ",");
-					}
-					System.out.print(chars);
-					System.out.println(" : " + scoreMatrix.get(iPattern.addToArray(piPattern)) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
+//					for (int i = 0; i < iPattern.length(); i++) {
+//						System.out.print(iPattern.get(i) + ",");
+//					}
+//					System.out.print(chars);
+//					System.out.println(" : " + scoreMatrix.get(iPattern.addToArray(piPattern)) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
 					
 					// find matching successor matrix entry ("looking at"-score = actual score - score for actual pi-pattern (column))
 					if (scoreMatrix.get(iPattern.addToArray(piPattern.toArray())) == scoreMatrix.get(iPattern.toArray()) - Scorer.getInstance().getScoreSumOfPairs(chars)) {
@@ -724,7 +729,7 @@ public class Aligner {
 			
 			// additional case distictions for previous ADJACENT MATRICES (you come here if no match in same matrix was found or alignment is complete) // Change to next Matrix
 			if (iPattern.isNullVector()) { break; }																								// if alignment is allready complete, skip this
-			System.out.println("no way found in actual matrix...");
+//			System.out.println("no way found in actual matrix...");
 			for (State state : actualState.getPrevious()) {
 				if (state.getScoreMatrix().getMaxScore() == Float.NEGATIVE_INFINITY) { continue; }													// skip void states
 				IndexVector candiadateIPattern = getMaxScoreCandidateIndices(actualState, state, sequences, allSequences, iPattern, null);		// the "previous" iPattern (of the previous state)
@@ -740,11 +745,11 @@ public class Aligner {
 				}
 				
 				// DEBUGGING
-				for (int i = 0; i < iPattern.length(); i++) {
-					System.out.print(iPattern.get(i) + ",");
-				}
-				System.out.print(chars);
-				System.out.println(" : " + state.getScoreMatrix().get(candiadateIPattern.toArray()) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
+//				for (int i = 0; i < iPattern.length(); i++) {
+//					System.out.print(iPattern.get(i) + ",");
+//				}
+//				System.out.print(chars);
+//				System.out.println(" : " + state.getScoreMatrix().get(candiadateIPattern.toArray()) + " ==? " + scoreMatrix.get(iPattern.toArray()) + "-" + Scorer.getInstance().getScoreSumOfPairs(chars));
 				if (state.getScoreMatrix().get(candiadateIPattern.toArray()) == scoreMatrix.get(iPattern.toArray())) {	// find matching successor matrix entry ("looking at"-score = actual score - score for actual pi-pattern (column))
 					// reconfiguration to process the new State
 					actualState = state;

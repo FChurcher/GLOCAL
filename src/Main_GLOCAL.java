@@ -7,6 +7,10 @@ import model.Sequence;
 import ui.ArgsParser;
 import ui.TimeStampMaganer;
 
+/**
+ * the optimiced version
+ * @author falco
+ */
 public class Main_GLOCAL {
 
 	public static void main(String[] args) {

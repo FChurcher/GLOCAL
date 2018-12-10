@@ -36,6 +36,7 @@ public class TimeStampMaganer {
 		long actualStamp = getSystemSeconds();
 		long differenceToFirst = actualStamp - firstStamp;
 		long differenceToLast = actualStamp - lastStamp;
+		this.lastStamp = actualStamp;
 		
 		System.out.println("[" + differenceToFirst + "|" + differenceToLast + "]\t" + messege);
 	}

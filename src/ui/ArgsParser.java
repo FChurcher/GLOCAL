@@ -30,8 +30,8 @@ public class ArgsParser {
 		} else if (args.length == 4) {
 			return Settings.init(args[0], args[1], args[2], args[3]);
 		} else {
-			System.out.println("no or wrong input was given.");
-			System.out.println("usage:\nGLOCAL.jar [sequencesFilePath] [localityPath] [scoringFilePath] [codeFilePath]\nGLOCAL.jar [sequencesLocalitiesName] [scoringFilePath] [codeFilePath]\nGLOCAL.jar [sequencesLocalitiesName] [scoringFilePath]\nGLOCAL.jar [sequencesLocalitiesName]\nGLOCAL.jar example");
+			System.out.println("none or wrong input was given.");
+			System.out.println("usage:\nvaPLA.jar [sequencesFilePath] [localityPath] [scoringFilePath] [codeFilePath]\nvaPLA.jar [sequencesLocalitiesName] [scoringFilePath] [codeFilePath]\nvaPLA.jar [sequencesLocalitiesName] [scoringFilePath]\nvaPLA.jar [sequencesLocalitiesName]\n  EXAMPLE:\n  java -jar vaPLA.jar data/example");
 			System.exit(0);
 			return null;
 		}
