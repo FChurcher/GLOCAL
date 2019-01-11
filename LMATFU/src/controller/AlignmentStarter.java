@@ -7,7 +7,7 @@ import model.Job;
 public class AlignmentStarter {
 	public static Job startGlocal(String fileName) {
 		System.out.println("starting GLOCAL");
-		return JobBuilder.buildJob("java -Xms1G -Xmx8G -jar GLOCAL.jar " + "LMATFU" + File.separator + "to_align" + File.separator + fileName, null);
+		return JobBuilder.buildJob("java -Xms1G -Xmx4G -jar GLOCAL.jar " + "LMATFU" + File.separator + "to_align" + File.separator + fileName, null);
 	}
 	
 	public static Job startT_coffee(String fileName) {
